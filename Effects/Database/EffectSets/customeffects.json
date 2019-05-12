@@ -1,0 +1,1547 @@
+{
+	"ModHeadLight":
+	{
+		"parameterList":
+		{
+			"color": "df7f00",
+			"coneAngle": 25.0,
+			"coneFade": 0.5,
+			"luminance": 1.0
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"ModSpotlightBeam":
+	{
+		"parameterList":
+		{
+			"color": "ffffae",
+			"coneAngle": 0.0,
+			"coneFade": 0.0,
+			"luminance": 0.0
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"HPModHeadLight":
+	{
+		"parameterList":
+		{
+			"color": "eeeeee",
+			"coneAngle": 25.0,
+			"coneFade": 0.5,
+			"luminance": 100
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"WideModHeadLight":
+	{
+		"parameterList":
+		{
+			"color": "ffff66",
+			"coneAngle": 60.0,
+			"coneFade": 0.5,
+			"luminance": 1.0
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"ModJackOLanternLight":
+	{
+		"parameterList":
+		{
+			"color": "df7f00",
+			"coneAngle": 75.0,
+			"coneFade": 0.1,
+			"luminance": 1.0
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"ModSearchLight":
+	{
+		"parameterList":
+		{
+			"color": "eeeeee",
+			"coneAngle": 2.5,
+			"coneFade": 0.8,
+			"luminance": 4
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"ModTheatreLight":
+	{
+		"parameterList":
+		{
+			"color": "eeeeee",
+			"coneAngle": 5.0,
+			"coneFade": 1.0,
+			"luminance": 1.0
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"ModNegativeLight":
+	{
+		"parameterList":
+		{
+			"color": "eeeeee",
+			"coneAngle": 25.0,
+			"coneFade": 0.5,
+			"luminance": -5
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"ModPoliceLight":
+	{
+		"parameterList":
+		{
+			"color": "df0000",
+			"coneAngle": 25.0,
+			"coneFade": 0.5,
+			"luminance": 1.0
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": -1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+/*	"ModStreetLamp":
+	{
+		"parameterList":
+		{
+			"color": "ffff66",
+			"radius": 20,
+			"intensity": 1.0
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "Point",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"delay": 0.0
+			}
+		]
+	}
+*/
+
+	"ModStreetLamp":
+	{
+		"parameterList":
+		{
+			"color": "ffff66",
+			"coneAngle": 60.0,
+			"coneFade": 0.5,
+//			"coneAngle": 45.0,
+//			"coneFade": 1.0,
+			"luminance": 1.0
+		},
+		"effectList":
+		[
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": -1 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 1, "y": 0, "z": 0 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": -1, "y": 0, "z": 0 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 1, "z": 0 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": -1, "z": 0 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+
+
+
+
+
+	"Nuke - Explosion":
+	{
+		"parameterList":
+		{
+			"size": 20,
+			"color": "ffcc34",
+			"radius": 250.0,
+			"intensity": 25.0,
+			"shakeStrength": 1,
+			"shakeRadius": 50.0
+		},
+		"parameterCurves":
+		{
+			"radius":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":1000.0 },
+					{ "time":0.1, "value":1000.0 },
+					{ "time":0.2, "value":100.0 },
+					{ "time":29.6, "value":0.0 }				]
+			},
+			"intensity":
+			{
+				"timeline":
+				[
+					//{ "time":0.0, "value":100.0 },
+					{ "time":0.0, "value":-100.0 },
+					{ "time":0.1, "value":-100.0 },
+					{ "time":0.2, "value":100.0 },
+					{ "time":0.5, "value":3.0 },
+					{ "time":29.6, "value":0.0 }
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			},
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"size"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 10.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 30.0,
+				"delay": 0.0
+			},
+			{
+				"type": "cameraShake",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"shakeStrength",
+					"shakeRadius"
+				],
+				"duration": 0.4,
+				"delay": 0.0
+			}
+		]
+	},
+	"Nuke - Activate":
+	{
+		"parameterList":
+		{
+			"coneAngle": 90.0,
+			"coneFade": 0.5,
+			"luminance": 100.0,//
+			"color": "00aaff",
+			"radius": 1000.0,
+			"intensity": 200.0,
+			"progress":0.0
+		},
+		"parameterCurves":
+		{
+			"radius":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":1000.0 },
+					{ "time":0.4, "value":0.0 }				
+				]
+			},
+			"intensity":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":100.0 },
+					{ "time":0.4, "value":200.0 }				
+				]
+			},
+			"coneAngle":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":180.0 },
+					{ "time":0.4, "value":0.0 }				
+				]
+			},
+			"luminance":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":100.0 },
+					{ "time":0.4, "value":200.0 }				
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "Explosion_big_activation_startup",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			},/*/
+			{
+				"type": "light",
+				"name": "SpotLight",
+				"direction": { "x": 0, "y": 0, "z": 1 },
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"coneAngle",
+					"coneFade",
+					"luminance"
+				],
+				"duration": 0.5,
+				"delay": 0.0
+			},/*/			
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.5,
+				"delay": 0.0
+			},
+			{
+				"type": "audio",
+				"name": "Gas Leak",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"progress"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	"Nuke - SingleActivate":
+	{
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "Explosion_impact_activation_startup",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			}
+		]
+	},
+
+
+
+	"Shot":
+	{
+		"parameterList":
+		{
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "007fff",
+			"radius": 1.5,
+			"intensity": 0.01
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Thruster",
+				"offset": { "x": 0.0, "y": 0.0, "z": -0.5 },
+				"parameters":
+				[
+					"velocity",
+					"power"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "grenaderound",
+				"offset": { "x": 0.0, "y": 0.0, "z": -0.5 },
+				"delay": 0.0
+			}
+		]
+	},
+
+
+	"CannonShot":
+	{
+		"parameterList":
+		{
+			"Size": 0.0, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "007fff",
+			"radius": 1.5,
+			"intensity": 0.01
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"Size"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "orangeshot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"BigCannonShot":
+	{
+		"parameterList":
+		{
+			"size": 0.5, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "007fff",
+			"radius": 1.5,
+			"intensity": 0.01
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 1.0 },
+				"parameters":
+				[
+					"size"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "melonshot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+
+	"CannonAudio":
+	{
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+
+
+	"CornShot - ExplosionSmall":
+	{
+		"parameterList":
+		{
+			"size": 0.0,
+			"color": "ffcc34",
+			"radius": 16.0,
+			"intensity": 2.0,
+			"shakeStrength": 0.05,
+			"shakeRadius": 4.0
+		},
+		"parameterCurves":
+		{
+			"radius":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":0.0 },
+					{ "time":0.1, "value":15.0 },
+					{ "time":0.6, "value":0.0 }
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "popcorn",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			},
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"size"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 1.0,
+				"delay": 0.0
+			},
+			{
+				"type": "cameraShake",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"shakeStrength",
+					"shakeRadius"
+				],
+				"duration": 0.4,
+				"delay": 0.0
+			}
+		]
+	},
+
+	"CornShot":
+	{
+		"parameterList":
+		{
+			"size": 5, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "007fff",
+			"radius": 1.5,
+			"intensity": 0.01
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "PotatoRifle - Shoot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "cobshot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+
+	"CrosssBowShot":
+	{
+		"parameterList":
+		{
+			"size": 5, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "007fff",
+			"radius": 1.5,
+			"intensity": 0.01
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "PotatoRifle - Shoot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "cucumbershot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+
+
+
+	"flames": // something on fire
+	{
+		"maxInstances": 384,
+		"parameterList":
+		{
+			"color": "ffcc34",
+			"intensity": 0.6,
+			"Size": 0.0,
+			"Velocity": 0.0,
+			"radius": 10,
+			"Material": 0.0,
+			"RemainingInstances": 384
+		},
+		"parameterCurves":
+		{
+			"intensity":
+			{
+				"timeline":
+				[
+					{ "time": 0, "value": 0.3282362703572886 },
+					{ "time": 0.1, "value": 0.30854098570820626 },
+					{ "time": 0.2, "value": 0.5324710284636645 },
+					{ "time": 0.3, "value": 0.5936316217706927 },
+					{ "time": 0.4, "value": 0.4497842321658533 },
+					{ "time": 0.5, "value": 0.35839896288205103 },
+					{ "time": 0.6, "value": 0.48005758493111916 },
+					{ "time": 0.7, "value": 0.3973738580993651 },
+					{ "time": 0.8, "value": 0.38536007068917677 },
+					{ "time": 0.9, "value": 0.5981869666829192 },
+					{ "time": 1, "value": 0.3942925354689951 },
+					{ "time": 1.1, "value": 0.43291147131996566 },
+					{ "time": 1.2, "value": 0.5631191695940165 },
+					{ "time": 1.3, "value": 0.3574563233357645 },
+					{ "time": 1.4, "value": 0.5124839317302068 },
+					{ "time": 1.5, "value": 0.3809121868858297 },
+					{ "time": 1.6, "value": 0.40891258839570743 },
+					{ "time": 1.7, "value": 0.35942308809181867 },
+					{ "time": 1.8, "value": 0.4892865066815602 },
+					{ "time": 1.9, "value": 0.3550529924952921 },
+					{ "time": 2, "value": 0.5085319101238173 },
+					{ "time": 2.1, "value": 0.42925554170078495 },
+					{ "time": 2.2, "value": 0.554640157983374 },
+					{ "time": 2.3, "value": 0.527257095721143 },
+					{ "time": 2.4, "value": 0.39620692527043844 },
+					{ "time": 2.5, "value": 0.5576648832302543 },
+					{ "time": 2.6, "value": 0.5412053795725809 },
+					{ "time": 2.7, "value": 0.3620853158509876 },
+					{ "time": 2.8, "value": 0.3790577849236327 },
+					{ "time": 2.9, "value": 0.4428928472799823 },
+					{ "time": 3, "value": 0.5692445542753091 },
+					{ "time": 3.1, "value": 0.5994866858164654 },
+					{ "time": 3.2, "value": 0.3675353363369289 },
+					{ "time": 3.3, "value": 0.48859933441502174 },
+					{ "time": 3.4, "value": 0.4040814780529282 },
+					{ "time": 3.5, "value": 0.5085453989653097 },
+					{ "time": 3.6, "value": 0.4340030324641938 },
+					{ "time": 3.7, "value": 0.32882650830555865 },
+					{ "time": 3.8, "value": 0.32597688293804633 },
+					{ "time": 3.9, "value": 0.32058062136798937 },
+					{ "time": 4, "value": 0.45278587030926937 },
+					{ "time": 4.1, "value": 0.3290510923472377 },
+					{ "time": 4.2, "value": 0.5334194034732228 },
+					{ "time": 4.3, "value": 0.3603254705357019 },
+					{ "time": 4.4, "value": 0.5739201487100987 },
+					{ "time": 4.5, "value": 0.38725428236370707 },
+					{ "time": 4.6, "value": 0.4993460400904285 },
+					{ "time": 4.7, "value": 0.44306515227561644 },
+					{ "time": 4.8, "value": 0.30889759220424595 },
+					{ "time": 4.9, "value": 0.49778051696731407 },
+					{ "time": 5, "value": 0.3193717873990074 },
+					{ "time": 5.1, "value": 0.4447735065313292 },
+					{ "time": 5.2, "value": 0.346728132179564 },
+					{ "time": 5.3, "value": 0.4904636960126943 },
+					{ "time": 5.4, "value": 0.3443441585900178 },
+					{ "time": 5.5, "value": 0.43975992654314977 },
+					{ "time": 5.6, "value": 0.3285506220012499 },
+					{ "time": 5.7, "value": 0.49645260623623144 },
+					{ "time": 5.8, "value": 0.49505581691641165 },
+					{ "time": 5.9, "value": 0.4448431668334415 },
+					{ "time": 6, "value": 0.5133248493092112 },
+					{ "time": 6.1, "value": 0.5981758749612613 },
+					{ "time": 6.2, "value": 0.5314028035302859 },
+					{ "time": 6.3, "value": 0.3855960239163772 },
+					{ "time": 6.4, "value": 0.47855783913785044 },
+					{ "time": 6.5, "value": 0.5533334428228244 },
+					{ "time": 6.6, "value": 0.32576966663119644 },
+					{ "time": 6.7, "value": 0.3857482932420331 },
+					{ "time": 6.8, "value": 0.313720351113877 },
+					{ "time": 6.9, "value": 0.3977409680208008 },
+					{ "time": 7, "value": 0.48337405110933673 },
+					{ "time": 7.1, "value": 0.4426683620472356 },
+					{ "time": 7.2, "value": 0.3359153419874132 },
+					{ "time": 7.3, "value": 0.5321484133549836 },
+					{ "time": 7.4, "value": 0.5210424503893389 },
+					{ "time": 7.5, "value": 0.30388271252993976 },
+					{ "time": 7.6, "value": 0.5018896086997172 },
+					{ "time": 7.7, "value": 0.3266177129815631 },
+					{ "time": 7.8, "value": 0.3422957626133449 },
+					{ "time": 7.9, "value": 0.45660704853157796 },
+					{ "time": 8, "value": 0.5665700383447838 },
+					{ "time": 8.1, "value": 0.4249653725576225 },
+					{ "time": 8.2, "value": 0.5770619803120073 },
+					{ "time": 8.3, "value": 0.5700166750525473 },
+					{ "time": 8.4, "value": 0.43105804180981977 },
+					{ "time": 8.5, "value": 0.4642391677275332 },
+					{ "time": 8.6, "value": 0.379644361745954 },
+					{ "time": 8.7, "value": 0.579339739885876 },
+					{ "time": 8.8, "value": 0.3583732178960828 },
+					{ "time": 8.9, "value": 0.318263905789468 },
+					{ "time": 9, "value": 0.32037784943273967 },
+					{ "time": 9.1, "value": 0.4931916611682803 },
+					{ "time": 9.2, "value": 0.4201267249506495 },
+					{ "time": 9.3, "value": 0.503116136541076 },
+					{ "time": 9.4, "value": 0.3777630328270649 },
+					{ "time": 9.5, "value": 0.5161957167877186 },
+					{ "time": 9.6, "value": 0.31052827544135336 },
+					{ "time": 9.7, "value": 0.4290566018139789 },
+					{ "time": 9.8, "value": 0.40183628502911145 },
+					{ "time": 9.9, "value": 0.597833064239697 },
+					{ "time": 10, "value": 0.3697689206210662 },
+					{ "time": 10.1, "value": 0.5136071059877139 },
+					{ "time": 10.2, "value": 0.5614823926608036 },
+					{ "time": 10.3, "value": 0.35577074355937066 },
+					{ "time": 10.4, "value": 0.4106468094075882 },
+					{ "time": 10.5, "value": 0.4681675537066644 },
+					{ "time": 10.6, "value": 0.4506892467512468 },
+					{ "time": 10.7, "value": 0.5478301103473103 },
+					{ "time": 10.8, "value": 0.43920011143646265 },
+					{ "time": 10.9, "value": 0.44382770716394365 },
+					{ "time": 11, "value": 0.5728826534965918 },
+					{ "time": 11.1, "value": 0.41803933234854196 },
+					{ "time": 11.2, "value": 0.5979648285805309 },
+					{ "time": 11.3, "value": 0.5191662974399623 },
+					{ "time": 11.4, "value": 0.5126233592381788 },
+					{ "time": 11.5, "value": 0.5307152427750929 },
+					{ "time": 11.6, "value": 0.3631204011678874 },
+					{ "time": 11.7, "value": 0.39959346461487744 },
+					{ "time": 11.8, "value": 0.49240341763852236 },
+					{ "time": 11.9, "value": 0.39972517491581994 },
+					{ "time": 12, "value": 0.5215370518634068 },
+					{ "time": 12.1, "value": 0.5684852043946529 },
+					{ "time": 12.2, "value": 0.5919925924947091 },
+					{ "time": 12.3, "value": 0.4336432318404535 },
+					{ "time": 12.4, "value": 0.48954936008133954 },
+					{ "time": 12.5, "value": 0.440435609825651 },
+					{ "time": 12.6, "value": 0.49132047732233386 },
+					{ "time": 12.7, "value": 0.38461207561615846 },
+					{ "time": 12.8, "value": 0.44515003170409834 },
+					{ "time": 12.9, "value": 0.4712037787910557 },
+					{ "time": 13, "value": 0.3758786640352303 },
+					{ "time": 13.1, "value": 0.5543854712672525 },
+					{ "time": 13.2, "value": 0.53448923744784 },
+					{ "time": 13.3, "value": 0.4266945535196751 },
+					{ "time": 13.4, "value": 0.3282835179351332 },
+					{ "time": 13.5, "value": 0.32515273860650445 },
+					{ "time": 13.6, "value": 0.5971624739188672 },
+					{ "time": 13.7, "value": 0.5430527014594646 },
+					{ "time": 13.8, "value": 0.43900579446638566 },
+					{ "time": 13.9, "value": 0.39126525184975847 },
+					{ "time": 14, "value": 0.3955966302647637 },
+					{ "time": 14.1, "value": 0.44239656409715256 },
+					{ "time": 14.2, "value": 0.35312014822582666 },
+					{ "time": 14.3, "value": 0.364119082675739 },
+					{ "time": 14.4, "value": 0.37200287086739425 },
+					{ "time": 14.5, "value": 0.403089570701283 },
+					{ "time": 14.6, "value": 0.5013073523498444 },
+					{ "time": 14.7, "value": 0.33086443761206136 },
+					{ "time": 14.8, "value": 0.5067703048986164 },
+					{ "time": 14.9, "value": 0.3324642990354216 },
+					{ "time": 15, "value": 0 }
+
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "fire",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 15.0,
+				"delay": 0.05
+			}
+		]
+	},
+	"flame": //flame that comes out the flamethrower
+	{
+		"maxInstances": 384,
+		"parameterList":
+		{
+			"color": "ffcc34",
+			"intensity": 1.0,
+			"Size": 0.0,
+			"radius": 10,
+			"Velocity": 0.0,
+			"Material": 0.0,
+			"RemainingInstances": 384
+		},
+		"parameterCurves":
+		{
+			"intensity":
+			{
+				"timeline":
+				[
+					{ "time": 0, "value": 0.3282362703572886 },
+					{ "time": 0.1, "value": 0.30854098570820626 },
+					{ "time": 0.2, "value": 0.5324710284636645 },
+					{ "time": 0.3, "value": 0.5936316217706927 },
+					{ "time": 0.4, "value": 0.4497842321658533 },
+					{ "time": 0.5, "value": 0.35839896288205103 },
+					{ "time": 0.6, "value": 0.48005758493111916 },
+					{ "time": 0.7, "value": 0.3973738580993651 },
+					{ "time": 0.8, "value": 0.38536007068917677 },
+					{ "time": 0.9, "value": 0.5981869666829192 },
+					{ "time": 1, "value": 0.3942925354689951 },
+					{ "time": 1.1, "value": 0.43291147131996566 },
+					{ "time": 1.2, "value": 0.5631191695940165 },
+					{ "time": 1.3, "value": 0.3574563233357645 },
+					{ "time": 1.4, "value": 0.5124839317302068 },
+					{ "time": 1.5, "value": 0.3809121868858297 },
+					{ "time": 1.6, "value": 0.40891258839570743 },
+					{ "time": 1.7, "value": 0.35942308809181867 },
+					{ "time": 1.8, "value": 0.4892865066815602 },
+					{ "time": 1.9, "value": 0.3550529924952921 },
+					{ "time": 2, "value": 0.5085319101238173 },
+					{ "time": 2.1, "value": 0.42925554170078495 },
+					{ "time": 2.2, "value": 0.554640157983374 },
+					{ "time": 2.3, "value": 0.527257095721143 },
+					{ "time": 2.4, "value": 0.39620692527043844 },
+					{ "time": 2.5, "value": 0.5576648832302543 },
+					{ "time": 2.6, "value": 0.5412053795725809 },
+					{ "time": 2.7, "value": 0.3620853158509876 },
+					{ "time": 2.8, "value": 0.3790577849236327 },
+					{ "time": 2.9, "value": 0.4428928472799823 },
+					{ "time": 3, "value": 0.5692445542753091 },
+					{ "time": 3.1, "value": 0.5994866858164654 },
+					{ "time": 3.2, "value": 0.3675353363369289 },
+					{ "time": 3.3, "value": 0.48859933441502174 },
+					{ "time": 3.4, "value": 0.4040814780529282 },
+					{ "time": 3.5, "value": 0.5085453989653097 },
+					{ "time": 3.6, "value": 0.4340030324641938 },
+					{ "time": 3.7, "value": 0.32882650830555865 },
+					{ "time": 3.8, "value": 0.32597688293804633 },
+					{ "time": 3.9, "value": 0.32058062136798937 },
+					{ "time": 4, "value": 0.45278587030926937 },
+					{ "time": 4.1, "value": 0.3290510923472377 },
+					{ "time": 4.2, "value": 0.5334194034732228 },
+					{ "time": 4.3, "value": 0.3603254705357019 },
+					{ "time": 4.4, "value": 0.5739201487100987 },
+					{ "time": 4.5, "value": 0.38725428236370707 },
+					{ "time": 4.6, "value": 0.4993460400904285 },
+					{ "time": 4.7, "value": 0.44306515227561644 },
+					{ "time": 4.8, "value": 0.30889759220424595 },
+					{ "time": 4.9, "value": 0.49778051696731407 },
+					{ "time": 5, "value": 0.3193717873990074 },
+					{ "time": 5.1, "value": 0.4447735065313292 },
+					{ "time": 5.2, "value": 0.346728132179564 },
+					{ "time": 5.3, "value": 0.4904636960126943 },
+					{ "time": 5.4, "value": 0.3443441585900178 },
+					{ "time": 5.5, "value": 0.43975992654314977 },
+					{ "time": 5.6, "value": 0.3285506220012499 },
+					{ "time": 5.7, "value": 0.49645260623623144 },
+					{ "time": 5.8, "value": 0.49505581691641165 },
+					{ "time": 5.9, "value": 0.4448431668334415 },
+					{ "time": 6, "value": 0.5133248493092112 },
+					{ "time": 6.1, "value": 0.5981758749612613 },
+					{ "time": 6.2, "value": 0.5314028035302859 },
+					{ "time": 6.3, "value": 0.3855960239163772 },
+					{ "time": 6.4, "value": 0.47855783913785044 },
+					{ "time": 6.5, "value": 0.5533334428228244 },
+					{ "time": 6.6, "value": 0.32576966663119644 },
+					{ "time": 6.7, "value": 0.3857482932420331 },
+					{ "time": 6.8, "value": 0.313720351113877 },
+					{ "time": 6.9, "value": 0.3977409680208008 },
+					{ "time": 7, "value": 0.48337405110933673 },
+					{ "time": 7.1, "value": 0.4426683620472356 },
+					{ "time": 7.2, "value": 0.3359153419874132 },
+					{ "time": 7.3, "value": 0.5321484133549836 },
+					{ "time": 7.4, "value": 0.5210424503893389 },
+					{ "time": 7.5, "value": 0.30388271252993976 },
+					{ "time": 7.6, "value": 0.5018896086997172 },
+					{ "time": 7.7, "value": 0.3266177129815631 },
+					{ "time": 7.8, "value": 0.3422957626133449 },
+					{ "time": 7.9, "value": 0.45660704853157796 },
+					{ "time": 8, "value": 0.5665700383447838 },
+					{ "time": 8.1, "value": 0.4249653725576225 },
+					{ "time": 8.2, "value": 0.5770619803120073 },
+					{ "time": 8.3, "value": 0.5700166750525473 },
+					{ "time": 8.4, "value": 0.43105804180981977 },
+					{ "time": 8.5, "value": 0.4642391677275332 },
+					{ "time": 8.6, "value": 0.379644361745954 },
+					{ "time": 8.7, "value": 0.579339739885876 },
+					{ "time": 8.8, "value": 0.3583732178960828 },
+					{ "time": 8.9, "value": 0.318263905789468 },
+					{ "time": 9, "value": 0.32037784943273967 },
+					{ "time": 9.1, "value": 0.4931916611682803 },
+					{ "time": 9.2, "value": 0.4201267249506495 },
+					{ "time": 9.3, "value": 0.503116136541076 },
+					{ "time": 9.4, "value": 0.3777630328270649 },
+					{ "time": 9.5, "value": 0.5161957167877186 },
+					{ "time": 9.6, "value": 0.31052827544135336 },
+					{ "time": 9.7, "value": 0.4290566018139789 },
+					{ "time": 9.8, "value": 0.40183628502911145 },
+					{ "time": 9.9, "value": 0.597833064239697 },
+					{ "time": 10, "value": 0.3697689206210662 },
+					{ "time": 10.1, "value": 0.5136071059877139 },
+					{ "time": 10.2, "value": 0.5614823926608036 },
+					{ "time": 10.3, "value": 0.35577074355937066 },
+					{ "time": 10.4, "value": 0.4106468094075882 },
+					{ "time": 10.5, "value": 0.4681675537066644 },
+					{ "time": 10.6, "value": 0.4506892467512468 },
+					{ "time": 10.7, "value": 0.5478301103473103 },
+					{ "time": 10.8, "value": 0.43920011143646265 },
+					{ "time": 10.9, "value": 0.44382770716394365 },
+					{ "time": 11, "value": 0.5728826534965918 },
+					{ "time": 11.1, "value": 0.41803933234854196 },
+					{ "time": 11.2, "value": 0.5979648285805309 },
+					{ "time": 11.3, "value": 0.5191662974399623 },
+					{ "time": 11.4, "value": 0.5126233592381788 },
+					{ "time": 11.5, "value": 0.5307152427750929 },
+					{ "time": 11.6, "value": 0.3631204011678874 },
+					{ "time": 11.7, "value": 0.39959346461487744 },
+					{ "time": 11.8, "value": 0.49240341763852236 },
+					{ "time": 11.9, "value": 0.39972517491581994 },
+					{ "time": 12, "value": 0.5215370518634068 },
+					{ "time": 12.1, "value": 0.5684852043946529 },
+					{ "time": 12.2, "value": 0.5919925924947091 },
+					{ "time": 12.3, "value": 0.4336432318404535 },
+					{ "time": 12.4, "value": 0.48954936008133954 },
+					{ "time": 12.5, "value": 0.440435609825651 },
+					{ "time": 12.6, "value": 0.49132047732233386 },
+					{ "time": 12.7, "value": 0.38461207561615846 },
+					{ "time": 12.8, "value": 0.44515003170409834 },
+					{ "time": 12.9, "value": 0.4712037787910557 },
+					{ "time": 13, "value": 0.3758786640352303 },
+					{ "time": 13.1, "value": 0.5543854712672525 },
+					{ "time": 13.2, "value": 0.53448923744784 },
+					{ "time": 13.3, "value": 0.4266945535196751 },
+					{ "time": 13.4, "value": 0.3282835179351332 },
+					{ "time": 13.5, "value": 0.32515273860650445 },
+					{ "time": 13.6, "value": 0.5971624739188672 },
+					{ "time": 13.7, "value": 0.5430527014594646 },
+					{ "time": 13.8, "value": 0.43900579446638566 },
+					{ "time": 13.9, "value": 0.39126525184975847 },
+					{ "time": 14, "value": 0.3955966302647637 },
+					{ "time": 14.1, "value": 0.44239656409715256 },
+					{ "time": 14.2, "value": 0.35312014822582666 },
+					{ "time": 14.3, "value": 0.364119082675739 },
+					{ "time": 14.4, "value": 0.37200287086739425 },
+					{ "time": 14.5, "value": 0.403089570701283 },
+					{ "time": 14.6, "value": 0.5013073523498444 },
+					{ "time": 14.7, "value": 0.33086443761206136 },
+					{ "time": 14.8, "value": 0.5067703048986164 },
+					{ "time": 14.9, "value": 0.3324642990354216 },
+					{ "time": 15, "value": 0 }
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "flameshot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.8,
+				"delay": 0.0
+			}
+		]
+	},
+
+
+
+	"fireskull":
+	{
+		"maxInstances": 50,
+		"parameterList":
+		{
+			"color": "ffcc34",
+			"radius": 16.0,
+			"intensity": 2.0,
+			"Size": 0.0,
+			"Velocity": 0.0,
+			"Material": 0.0,
+			"RemainingInstances": 50
+		},
+		"parameterCurves":
+		{
+			"intensity":
+			{
+				"timeline":
+				[
+					{ "time": 0, "value": 1.98804726401232 },
+					{ "time": 0.1, "value": 1.5268852598102365 },
+					{ "time": 0.2, "value": 1.2150134246391695 },
+					{ "time": 0.3, "value": 1.7269347960676655 },
+					{ "time": 0.4, "value": 1.4990474010003076 },
+					{ "time": 0.5, "value": 1.7738747616673243 },
+					{ "time": 0.6, "value": 1.1826790451957983 },
+					{ "time": 0.7, "value": 1.8621220017365965 },
+					{ "time": 0.8, "value": 1.1663016723430124 },
+					{ "time": 0.9, "value": 1.4147268687232382 },
+					{ "time": 1, "value": 1.895420926215344 },
+					{ "time": 1.1, "value": 1.3356751014483765 },
+					{ "time": 1.2, "value": 1.1979068837245193 },
+					{ "time": 1.3, "value": 1.9759206046853457 },
+					{ "time": 1.4, "value": 1.76988971327636 },
+					{ "time": 1.5, "value": 1.8457998083339644 },
+					{ "time": 1.6, "value": 1.9399514333933947 },
+					{ "time": 1.7, "value": 1.3570718418237102 },
+					{ "time": 1.8, "value": 1.019689847834231 },
+					{ "time": 1.9, "value": 1.7329194490161692 },
+					{ "time": 2, "value": 1.8605076877641262 },
+					{ "time": 2.1, "value": 1.219008577517383 },
+					{ "time": 2.2, "value": 1.9865763922905115 },
+					{ "time": 2.3, "value": 1.1719954693155477 },
+					{ "time": 2.4, "value": 1.2346940100601378 },
+					{ "time": 2.5, "value": 1.2574391682567299 },
+					{ "time": 2.6, "value": 1.2133385146170028 },
+					{ "time": 2.7, "value": 1.5115744382770389 },
+					{ "time": 2.8, "value": 1.5761128329256877 },
+					{ "time": 2.9, "value": 1.2133639912237337 },
+					{ "time": 3, "value": 1.07463198006852 },
+					{ "time": 3.1, "value": 1.8721957189981724 },
+					{ "time": 3.2, "value": 1.046677711252943 },
+					{ "time": 3.3, "value": 1.446818667715357 },
+					{ "time": 3.4, "value": 1.8883029825861835 },
+					{ "time": 3.5, "value": 1.593172446644521 },
+					{ "time": 3.6, "value": 1.0042166332410283 },
+					{ "time": 3.7, "value": 1.5155726533302365 },
+					{ "time": 3.8, "value": 1.5145163535491097 },
+					{ "time": 3.9, "value": 1.451548047786123 },
+					{ "time": 4, "value": 1.3900069525419398 },
+					{ "time": 4.1, "value": 1.9322144973950999 },
+					{ "time": 4.2, "value": 1.5191361905916974 },
+					{ "time": 4.3, "value": 1.2329205460738095 },
+					{ "time": 4.4, "value": 1.7216238991406612 },
+					{ "time": 4.5, "value": 1.6501335135154034 },
+					{ "time": 4.6, "value": 1.72673793781954 },
+					{ "time": 4.7, "value": 1.501524400153902 },
+					{ "time": 4.8, "value": 1.9749233479243988 },
+					{ "time": 4.9, "value": 1.8270089209962679 },
+					{ "time": 5, "value": 1.6951501218474594 },
+					{ "time": 5.1, "value": 1.6912995102883748 },
+					{ "time": 5.2, "value": 1.708887067572802 },
+					{ "time": 5.3, "value": 1.2420715390729693 },
+					{ "time": 5.4, "value": 1.0230609750484676 },
+					{ "time": 5.5, "value": 1.6978606177600317 },
+					{ "time": 5.6, "value": 1.9041374043621253 },
+					{ "time": 5.7, "value": 1.719413937279011 },
+					{ "time": 5.8, "value": 1.6927039784193034 },
+					{ "time": 5.9, "value": 1.5246476894253107 },
+					{ "time": 6, "value": 1.1594915733676507 },
+					{ "time": 6.1, "value": 1.8690176273984067 },
+					{ "time": 6.2, "value": 1.9048208475857193 },
+					{ "time": 6.3, "value": 1.3859278292698718 },
+					{ "time": 6.4, "value": 1.165626593805381 },
+					{ "time": 6.5, "value": 1.2888383281776676 },
+					{ "time": 6.6, "value": 1.4327477586540613 },
+					{ "time": 6.7, "value": 1.8090600608618375 },
+					{ "time": 6.8, "value": 1.8765977022413605 },
+					{ "time": 6.9, "value": 1.6862990434918743 },
+					{ "time": 7, "value": 1.8601732393946804 },
+					{ "time": 7.1, "value": 1.140711200458997 },
+					{ "time": 7.2, "value": 1.1149595907181336 },
+					{ "time": 7.3, "value": 1.8867587953424525 },
+					{ "time": 7.4, "value": 1.7550123975696863 },
+					{ "time": 7.5, "value": 1.7248133587488292 },
+					{ "time": 7.6, "value": 1.7476681184763103 },
+					{ "time": 7.7, "value": 1.5576456149200435 },
+					{ "time": 7.8, "value": 1.080523698625351 },
+					{ "time": 7.9, "value": 1.3875332047876852 },
+					{ "time": 8, "value": 1.368556967493522 },
+					{ "time": 8.1, "value": 1.1995561157813597 },
+					{ "time": 8.2, "value": 1.69064275900656 },
+					{ "time": 8.3, "value": 1.3351465922372288 },
+					{ "time": 8.4, "value": 1.3472738908419175 },
+					{ "time": 8.5, "value": 1.1029604774029615 },
+					{ "time": 8.6, "value": 1.4661194335592744 },
+					{ "time": 8.7, "value": 1.01420822810306 },
+					{ "time": 8.8, "value": 1.9176078563132575 },
+					{ "time": 8.9, "value": 1.487009601995272 },
+					{ "time": 9, "value": 1.1938578343663728 },
+					{ "time": 9.1, "value": 1.3068454910611813 },
+					{ "time": 9.2, "value": 1.631982315273577 },
+					{ "time": 9.3, "value": 1.662186911592034 },
+					{ "time": 9.4, "value": 1.7939493336737458 },
+					{ "time": 9.5, "value": 1.5488714492704663 },
+					{ "time": 9.6, "value": 1.3288628523509252 },
+					{ "time": 9.7, "value": 1.6675698608209246 },
+					{ "time": 9.8, "value": 1.559818487104549 },
+					{ "time": 9.9, "value": 1.327098793763748 },
+					{ "time": 10, "value": 1.381416264375278 },
+					{ "time": 10.1, "value": 1.743709004293458 },
+					{ "time": 10.2, "value": 1.9401454871314112 },
+					{ "time": 10.3, "value": 1.4902910878747688 },
+					{ "time": 10.4, "value": 1.3869335756746002 },
+					{ "time": 10.5, "value": 1.3161552339534097 },
+					{ "time": 10.6, "value": 1.1728273919304646 },
+					{ "time": 10.7, "value": 1.722521051116296 },
+					{ "time": 10.8, "value": 1.0654668185864358 },
+					{ "time": 10.9, "value": 1.738866856407992 },
+					{ "time": 11, "value": 1.556793403026506 },
+					{ "time": 11.1, "value": 1.997485482339723 },
+					{ "time": 11.2, "value": 1.8448279622032828 },
+					{ "time": 11.3, "value": 1.8384013181866827 },
+					{ "time": 11.4, "value": 1.3297087358110076 },
+					{ "time": 11.5, "value": 1.3476300079402155 },
+					{ "time": 11.6, "value": 1.8429504582830336 },
+					{ "time": 11.7, "value": 1.343579873971181 },
+					{ "time": 11.8, "value": 1.700245225219504 },
+					{ "time": 11.9, "value": 1.9017887735783827 },
+					{ "time": 12, "value": 1.058574898338425 },
+					{ "time": 12.1, "value": 1.5743685274087105 },
+					{ "time": 12.2, "value": 1.2468899008677603 },
+					{ "time": 12.3, "value": 1.565290463794973 },
+					{ "time": 12.4, "value": 1.7965432843320617 },
+					{ "time": 12.5, "value": 1.9874150329067553 },
+					{ "time": 12.6, "value": 1.8970877764146465 },
+					{ "time": 12.7, "value": 1.1578071419228964 },
+					{ "time": 12.8, "value": 1.5307413641801473 },
+					{ "time": 12.9, "value": 1.4425876240084865 },
+					{ "time": 13, "value": 1.0817525013745222 },
+					{ "time": 13.1, "value": 1.372121357816185 },
+					{ "time": 13.2, "value": 1.518261823963076 },
+					{ "time": 13.3, "value": 1.9689612593902441 },
+					{ "time": 13.4, "value": 1.7419045901242765 },
+					{ "time": 13.5, "value": 1.299653233323398 },
+					{ "time": 13.6, "value": 1.0160959342786315 },
+					{ "time": 13.7, "value": 1.9655599307933622 },
+					{ "time": 13.8, "value": 1.9406849106497788 },
+					{ "time": 13.9, "value": 1.4214634216179995 },
+					{ "time": 14, "value": 1.194591309787012 },
+					{ "time": 14.1, "value": 1.690209505248975 },
+					{ "time": 14.2, "value": 1.732263958606691 },
+					{ "time": 14.3, "value": 1.3508047685963407 },
+					{ "time": 14.4, "value": 1.7484169160696026 },
+					{ "time": 14.5, "value": 1.8721076896284221 },
+					{ "time": 14.6, "value": 1.0574027374482942 },
+					{ "time": 14.7, "value": 1.6152759713273859 },
+					{ "time": 14.8, "value": 1.4991427722597026 },
+					{ "time": 14.9, "value": 1.0815784707769072 },
+					{ "time": 15, "value": 1.979387100168736 },
+					{ "time": 15.1, "value": 1.5206076318761157 },
+					{ "time": 15.2, "value": 1.5729990931562559 },
+					{ "time": 15.3, "value": 1.9516340230914255 },
+					{ "time": 15.4, "value": 1.2772942788288526 },
+					{ "time": 15.5, "value": 1.7241149403157516 },
+					{ "time": 15.6, "value": 1.9510971893379805 },
+					{ "time": 15.7, "value": 1.2177942992627508 },
+					{ "time": 15.8, "value": 1.2766476867360224 },
+					{ "time": 15.9, "value": 1.7267981653781184 },
+					{ "time": 16, "value": 1.919401224126882 },
+					{ "time": 16.1, "value": 1.6968622817096586 },
+					{ "time": 16.2, "value": 1.767727852934863 },
+					{ "time": 16.3, "value": 1.1430786899354937 },
+					{ "time": 16.4, "value": 1.186583943715646 },
+					{ "time": 16.5, "value": 1.6457369782648197 },
+					{ "time": 16.6, "value": 1.1034610586029194 },
+					{ "time": 16.7, "value": 1.6597217086091114 },
+					{ "time": 16.8, "value": 1.611983902873911 },
+					{ "time": 16.9, "value": 1.2320238823563716 },
+					{ "time": 17, "value": 1.8737048200902642 },
+					{ "time": 17.1, "value": 1.0123035172057164 },
+					{ "time": 17.2, "value": 1.05736780460132 },
+					{ "time": 17.3, "value": 1.9038839163798396 },
+					{ "time": 17.4, "value": 1.040860497200784 },
+					{ "time": 17.5, "value": 1.161260435415549 },
+					{ "time": 17.6, "value": 1.0277481042395562 },
+					{ "time": 17.7, "value": 1.5736354248324045 },
+					{ "time": 17.8, "value": 1.4447139470090526 },
+					{ "time": 17.9, "value": 1.3639196815924426 },
+					{ "time": 18, "value": 1.5658597551760163 },
+					{ "time": 18.1, "value": 1.050630590561174 },
+					{ "time": 18.2, "value": 1.9840719151054682 },
+					{ "time": 18.3, "value": 1.0729429602849547 },
+					{ "time": 18.4, "value": 1.4882824978513833 },
+					{ "time": 18.5, "value": 1.9300430422151629 },
+					{ "time": 18.6, "value": 1.2880214801050067 },
+					{ "time": 18.7, "value": 1.1237848228539478 },
+					{ "time": 18.8, "value": 1.8500948221210478 },
+					{ "time": 18.9, "value": 1.566157926619487 },
+					{ "time": 19, "value": 1.0038185339660552 },
+					{ "time": 19.1, "value": 1.0937295136376672 },
+					{ "time": 19.2, "value": 1.0622680188634839 },
+					{ "time": 19.3, "value": 1.584950285836525 },
+					{ "time": 19.4, "value": 1.7659117849751684 },
+					{ "time": 19.5, "value": 1.204316729511053 },
+					{ "time": 19.6, "value": 1.0598247792591757 },
+					{ "time": 19.7, "value": 1.9936138245856199 },
+					{ "time": 19.8, "value": 1.7266682658186785 },
+					{ "time": 19.9, "value": 1.7985934124924008 },
+					{ "time": 20, "value": 1.318402919063404 },
+					{ "time": 20.1, "value": 1.1074062937657125 },
+					{ "time": 20.2, "value": 1.3571873225262543 },
+					{ "time": 20.3, "value": 1.5796889529333276 },
+					{ "time": 20.4, "value": 1.5171555212415182 },
+					{ "time": 20.5, "value": 1.5690408524264297 },
+					{ "time": 20.6, "value": 1.2703046556331028 },
+					{ "time": 20.7, "value": 1.6337725004362418 },
+					{ "time": 20.8, "value": 1.428339147499307 },
+					{ "time": 20.9, "value": 1.7831711817793165 },
+					{ "time": 21, "value": 1.6921585023893038 },
+					{ "time": 21.1, "value": 1.8183894134659295 },
+					{ "time": 21.2, "value": 1.5208679271790841 },
+					{ "time": 21.3, "value": 1.1061323384913686 },
+					{ "time": 21.4, "value": 1.2927993770734079 },
+					{ "time": 21.5, "value": 1.6556123610203506 },
+					{ "time": 21.6, "value": 1.7843608132455056 },
+					{ "time": 21.7, "value": 1.9928218965340765 },
+					{ "time": 21.8, "value": 1.565459562529546 },
+					{ "time": 21.9, "value": 1.4135876606779354 },
+					{ "time": 22, "value": 1.6641479777851151 },
+					{ "time": 22.1, "value": 1.8440025335408345 },
+					{ "time": 22.2, "value": 1.849435309572578 },
+					{ "time": 22.3, "value": 1.2775221353928017 },
+					{ "time": 22.4, "value": 1.0774432015148105 },
+					{ "time": 22.5, "value": 1.4224533623814595 },
+					{ "time": 22.6, "value": 1.31028986548234 },
+					{ "time": 22.7, "value": 1.8533378865661572 },
+					{ "time": 22.8, "value": 1.6367944417157094 },
+					{ "time": 22.9, "value": 1.5395065236297754 },
+					{ "time": 23, "value": 1.9218496099368951 },
+					{ "time": 23.1, "value": 1.672384296685277 },
+					{ "time": 23.2, "value": 1.7541809091274858 },
+					{ "time": 23.3, "value": 1.341650039911112 },
+					{ "time": 23.4, "value": 1.5869237191480003 },
+					{ "time": 23.5, "value": 1.7008438690009315 },
+					{ "time": 23.6, "value": 1.7559463850090682 },
+					{ "time": 23.7, "value": 1.5351814622358542 },
+					{ "time": 23.8, "value": 1.8698431041505745 },
+					{ "time": 23.9, "value": 1.1819573220927975 },
+					{ "time": 24, "value": 1.9372047945398052 },
+					{ "time": 24.1, "value": 1.4103901057529464 },
+					{ "time": 24.2, "value": 1.4186761324686907 },
+					{ "time": 24.3, "value": 1.218939681675049 },
+					{ "time": 24.4, "value": 1.2899696203888709 },
+					{ "time": 24.5, "value": 1.42893709244776 },
+					{ "time": 24.6, "value": 1.554701162332035 },
+					{ "time": 24.7, "value": 1.7238739776112408 },
+					{ "time": 24.8, "value": 1.8862668847183717 },
+					{ "time": 24.9, "value": 1.2775792259879035 },
+					{ "time": 25, "value": 1.7939664610659627 },
+					{ "time": 25.1, "value": 1.098124511720212 },
+					{ "time": 25.2, "value": 1.1295651032607459 },
+					{ "time": 25.3, "value": 1.9728239842198712 },
+					{ "time": 25.4, "value": 1.8622858496979435 },
+					{ "time": 25.5, "value": 1.1580215878584763 },
+					{ "time": 25.6, "value": 1.8138217342348124 },
+					{ "time": 25.7, "value": 1.7207336514587899 },
+					{ "time": 25.8, "value": 1.738547547917122 },
+					{ "time": 25.9, "value": 1.5831081207931172 },
+					{ "time": 26, "value": 1.7857643129544256 },
+					{ "time": 26.1, "value": 1.4618655732217931 },
+					{ "time": 26.2, "value": 1.884868238878836 },
+					{ "time": 26.3, "value": 1.5794718998378896 },
+					{ "time": 26.4, "value": 1.0341574193366847 },
+					{ "time": 26.5, "value": 1.297622097106698 },
+					{ "time": 26.6, "value": 1.1121241024039037 },
+					{ "time": 26.7, "value": 1.6170682593309502 },
+					{ "time": 26.8, "value": 1.261240096335286 },
+					{ "time": 26.9, "value": 1.4317027564090914 },
+					{ "time": 27, "value": 1.1401268284400534 },
+					{ "time": 27.1, "value": 1.6510137257159125 },
+					{ "time": 27.2, "value": 1.213247981538534 },
+					{ "time": 27.3, "value": 1.6904576869742096 },
+					{ "time": 27.4, "value": 1.8315275223057053 },
+					{ "time": 27.5, "value": 1.9304933378473466 },
+					{ "time": 27.6, "value": 1.6842426738562513 },
+					{ "time": 27.7, "value": 1.47494646380764 },
+					{ "time": 27.8, "value": 1.477268614177309 },
+					{ "time": 27.9, "value": 1.927091252278499 },
+					{ "time": 28, "value": 1.4320660809272399 },
+					{ "time": 28.1, "value": 1.0960167089245174 },
+					{ "time": 28.2, "value": 1.99677426846936 },
+					{ "time": 28.3, "value": 1.8871041550492647 },
+					{ "time": 28.4, "value": 1.3918289532805324 },
+					{ "time": 28.5, "value": 1.3499394778302898 },
+					{ "time": 28.6, "value": 1.3113812074061264 },
+					{ "time": 28.7, "value": 1.55823968536733 },
+					{ "time": 28.8, "value": 1.0214009610429218 },
+					{ "time": 28.9, "value": 1.664040064395844 },
+					{ "time": 29, "value": 1.994710129157813 },
+					{ "time": 29.1, "value": 1.7757367585518136 },
+					{ "time": 29.2, "value": 1.2644991829387702 },
+					{ "time": 29.3, "value": 1.8397571611528265 },
+					{ "time": 29.4, "value": 1.209065658826295 },
+					{ "time": 29.5, "value": 1.4184795578775327 },
+					{ "time": 29.6, "value": 1.4039878316175443 },
+					{ "time": 29.7, "value": 1.0830780224224192 },
+					{ "time": 29.8, "value": 1.5041481342248237 },
+					{ "time": 29.9, "value": 1.2285540326762325 },
+					{ "time":30.0, "value":1.0 }
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "skullshot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 60.0,
+				"delay": 0.0
+			}
+		]
+	}
+
+}

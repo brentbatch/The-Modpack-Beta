@@ -1,0 +1,1331 @@
+{
+   "system" : {
+      "emitters" : [
+         {
+            "ASG_map" : "",
+            "alpha" : false,
+            "angle_delta" : 0.0,
+            "angle_max" : 45.0,
+            "angle_min" : 45.0,
+            "angle_val" : 45.0,
+            "billboard_origin" : "center",
+            "billboard_type" : "world",
+            "bounce_delta" : 0.25,
+            "bounce_max" : 0.750,
+            "bounce_min" : 0.50,
+            "bounce_val" : 0.50,
+            "box_depth" : 0.0,
+            "box_height" : 0.0,
+            "box_width" : 0.0,
+            "category" : "4 - Debri",
+            "circle_angle" : 0.0,
+            "collision" : "bounce",
+            "color" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "cone_angle" : 25.0,
+            "cone_radius" : 1.0,
+            "default_mesh_depth" : 1.0,
+            "default_mesh_height" : 1.0,
+            "default_mesh_width" : 1.0,
+            "default_particle_depth" : 1.0,
+            "default_particle_height" : 1.0,
+            "default_particle_width" : 1.0,
+            "delay" : 0.0,
+            "depth_delta" : 0.2000000029802322,
+            "depth_max" : 0.50,
+            "depth_min" : 0.1000000089406967,
+            "depth_val" : 0.3000000119209290,
+            "diffuse" : "Textures/PopCorn/popcorn_1.tga",
+            "direction" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 1.0
+            },
+            "direction_type" : "constant",
+            "duration" : 0.03999999910593033,
+            "editorColor" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "effects" : [],
+            "emission_mesh" : "",
+            "emission_mesh_scale" : {
+               "x" : 1.0,
+               "y" : 1.0,
+               "z" : 1.0
+            },
+            "emission_mode" : "burst",
+            "emission_rate" : 5000,
+            "force_vector" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : -20.0
+            },
+            "friction_delta" : 0.0,
+            "friction_max" : 0.0,
+            "friction_min" : 0.0,
+            "friction_val" : 0.0,
+            "glow" : false,
+            "glow_exposure_delta" : 0.0,
+            "glow_exposure_max" : 1.0,
+            "glow_exposure_min" : 1.0,
+            "glow_exposure_val" : 1.0,
+            "glow_strength" : 0.0,
+            "gradient" : {},
+            "guid" : 0,
+            "height_delta" : 0.05,
+            "height_max" : 0.4,
+            "height_min" : 0.25,
+            "height_val" : 0.35,
+            "hidden" : false,
+            "keep_local" : false,
+            "mesh" : "",
+            "mesh_diffuse" : "",
+            "name" : "PopCorn Debri 1",
+            "normal_map" : "",
+            "particle" : "billboard",
+            "position" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "radius" : 0.250,
+            "repeat_delay" : 0.0,
+            "rotation_axis" : {
+               "x" : 1.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "rotation_delta" : 10.0,
+            "rotation_max" : 180.0,
+            "rotation_min" : -180.0,
+            "rotation_speed_delta" : 1.0,
+            "rotation_speed_max" : 5.0,
+            "rotation_speed_min" : 0.0,
+            "rotation_speed_val" : 1.0,
+            "rotation_val" : 0.0,
+            "scene_blend" : "alpha_blend",
+            "shadows" : true,
+            "soft_particles_bias" : 1024,
+            "sort" : 0,
+            "sort_offset" : 0.0,
+            "sphere_radius" : 1.0,
+            "start_color" : "solid",
+            "sub" : null,
+            "sub_emit" : "death",
+            "surface" : false,
+            "texture_coords_columns" : 1,
+            "texture_coords_rows" : 1,
+            "time_to_live_delta" : 0.5,
+            "time_to_live_max" : 3.0,
+            "time_to_live_min" : 2.0,
+            "time_to_live_val" : 2.50,
+            "type" : "point",
+            "velocity_delta" : 2.5,
+            "velocity_max" : 15.0,
+            "velocity_min" : 5.0,
+            "velocity_val" : 10.0,
+            "visual_particle_quota" : 15,
+            "width_delta" : 0.05,
+            "width_max" : 0.4,
+            "width_min" : 0.25,
+            "width_val" : 0.35,
+            "wind_delta" : 0.0,
+            "wind_max" : 0.0,
+            "wind_min" : 0.0,
+            "wind_val" : 0.0
+         },
+         {
+            "ASG_map" : "",
+            "alpha" : false,
+            "angle_delta" : 0.0,
+            "angle_max" : 45.0,
+            "angle_min" : 45.0,
+            "angle_val" : 45.0,
+            "billboard_origin" : "center",
+            "billboard_type" : "world",
+            "bounce_delta" : 0.25,
+            "bounce_max" : 0.750,
+            "bounce_min" : 0.50,
+            "bounce_val" : 0.50,
+            "box_depth" : 0.0,
+            "box_height" : 0.0,
+            "box_width" : 0.0,
+            "category" : "4 - Debri",
+            "circle_angle" : 0.0,
+            "collision" : "bounce",
+            "color" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "cone_angle" : 25.0,
+            "cone_radius" : 1.0,
+            "default_mesh_depth" : 1.0,
+            "default_mesh_height" : 1.0,
+            "default_mesh_width" : 1.0,
+            "default_particle_depth" : 1.0,
+            "default_particle_height" : 1.0,
+            "default_particle_width" : 1.0,
+            "delay" : 0.0,
+            "depth_delta" : 0.2000000029802322,
+            "depth_max" : 0.50,
+            "depth_min" : 0.1000000089406967,
+            "depth_val" : 0.3000000119209290,
+            "diffuse" : "Textures/PopCorn/popcorn_2.tga",
+            "direction" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 1.0
+            },
+            "direction_type" : "constant",
+            "duration" : 0.03999999910593033,
+            "editorColor" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "effects" : [],
+            "emission_mesh" : "",
+            "emission_mesh_scale" : {
+               "x" : 1.0,
+               "y" : 1.0,
+               "z" : 1.0
+            },
+            "emission_mode" : "burst",
+            "emission_rate" : 5000,
+            "force_vector" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : -20.0
+            },
+            "friction_delta" : 0.0,
+            "friction_max" : 0.0,
+            "friction_min" : 0.0,
+            "friction_val" : 0.0,
+            "glow" : false,
+            "glow_exposure_delta" : 0.0,
+            "glow_exposure_max" : 1.0,
+            "glow_exposure_min" : 1.0,
+            "glow_exposure_val" : 1.0,
+            "glow_strength" : 0.0,
+            "gradient" : {},
+            "guid" : 0,
+            "height_delta" : 0.05,
+            "height_max" : 0.2,
+            "height_min" : 0.05,
+            "height_val" : 0.15,
+            "hidden" : false,
+            "keep_local" : false,
+            "mesh" : "",
+            "mesh_diffuse" : "",
+            "name" : "PopCorn Debri 2",
+            "normal_map" : "",
+            "particle" : "billboard",
+            "position" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "radius" : 0.250,
+            "repeat_delay" : 0.0,
+            "rotation_axis" : {
+               "x" : 1.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "rotation_delta" : 10.0,
+            "rotation_max" : 180.0,
+            "rotation_min" : -180.0,
+            "rotation_speed_delta" : 1.0,
+            "rotation_speed_max" : 5.0,
+            "rotation_speed_min" : 0.0,
+            "rotation_speed_val" : 1.0,
+            "rotation_val" : 0.0,
+            "scene_blend" : "alpha_blend",
+            "shadows" : true,
+            "soft_particles_bias" : 1024,
+            "sort" : 0,
+            "sort_offset" : 0.0,
+            "sphere_radius" : 1.0,
+            "start_color" : "solid",
+            "sub" : null,
+            "sub_emit" : "death",
+            "surface" : false,
+            "texture_coords_columns" : 1,
+            "texture_coords_rows" : 1,
+            "time_to_live_delta" : 0.5,
+            "time_to_live_max" : 3.0,
+            "time_to_live_min" : 2.0,
+            "time_to_live_val" : 2.50,
+            "type" : "point",
+            "velocity_delta" : 2.5,
+            "velocity_max" : 15.0,
+            "velocity_min" : 5.0,
+            "velocity_val" : 10.0,
+            "visual_particle_quota" : 15,
+            "width_delta" : 0.05,
+            "width_max" : 0.2,
+            "width_min" : 0.05,
+            "width_val" : 0.15,
+            "wind_delta" : 0.0,
+            "wind_max" : 0.0,
+            "wind_min" : 0.0,
+            "wind_val" : 0.0
+         },
+         {
+            "ASG_map" : "",
+            "alpha" : false,
+            "angle_delta" : 0.0,
+            "angle_max" : 45.0,
+            "angle_min" : 45.0,
+            "angle_val" : 45.0,
+            "billboard_origin" : "center",
+            "billboard_type" : "world",
+            "bounce_delta" : 0.25,
+            "bounce_max" : 0.750,
+            "bounce_min" : 0.50,
+            "bounce_val" : 0.50,
+            "box_depth" : 0.0,
+            "box_height" : 0.0,
+            "box_width" : 0.0,
+            "category" : "4 - Debri",
+            "circle_angle" : 0.0,
+            "collision" : "bounce",
+            "color" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "cone_angle" : 25.0,
+            "cone_radius" : 1.0,
+            "default_mesh_depth" : 1.0,
+            "default_mesh_height" : 1.0,
+            "default_mesh_width" : 1.0,
+            "default_particle_depth" : 1.0,
+            "default_particle_height" : 1.0,
+            "default_particle_width" : 1.0,
+            "delay" : 0.0,
+            "depth_delta" : 0.2000000029802322,
+            "depth_max" : 0.50,
+            "depth_min" : 0.1000000089406967,
+            "depth_val" : 0.3000000119209290,
+            "diffuse" : "Textures/PopCorn/popcorn_3.tga",
+            "direction" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 1.0
+            },
+            "direction_type" : "constant",
+            "duration" : 0.03999999910593033,
+            "editorColor" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "effects" : [],
+            "emission_mesh" : "",
+            "emission_mesh_scale" : {
+               "x" : 1.0,
+               "y" : 1.0,
+               "z" : 1.0
+            },
+            "emission_mode" : "burst",
+            "emission_rate" : 5000,
+            "force_vector" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : -20.0
+            },
+            "friction_delta" : 0.0,
+            "friction_max" : 0.0,
+            "friction_min" : 0.0,
+            "friction_val" : 0.0,
+            "glow" : false,
+            "glow_exposure_delta" : 0.0,
+            "glow_exposure_max" : 1.0,
+            "glow_exposure_min" : 1.0,
+            "glow_exposure_val" : 1.0,
+            "glow_strength" : 0.0,
+            "gradient" : {},
+            "guid" : 0,
+            "height_delta" : 0.05,
+            "height_max" : 0.2,
+            "height_min" : 0.05,
+            "height_val" : 0.15,
+            "hidden" : false,
+            "keep_local" : false,
+            "mesh" : "",
+            "mesh_diffuse" : "",
+            "name" : "PopCorn Debri 3",
+            "normal_map" : "",
+            "particle" : "billboard",
+            "position" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "radius" : 0.250,
+            "repeat_delay" : 0.0,
+            "rotation_axis" : {
+               "x" : 1.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "rotation_delta" : 10.0,
+            "rotation_max" : 180.0,
+            "rotation_min" : -180.0,
+            "rotation_speed_delta" : 1.0,
+            "rotation_speed_max" : 5.0,
+            "rotation_speed_min" : 0.0,
+            "rotation_speed_val" : 1.0,
+            "rotation_val" : 0.0,
+            "scene_blend" : "alpha_blend",
+            "shadows" : true,
+            "soft_particles_bias" : 1024,
+            "sort" : 0,
+            "sort_offset" : 0.0,
+            "sphere_radius" : 1.0,
+            "start_color" : "solid",
+            "sub" : null,
+            "sub_emit" : "death",
+            "surface" : false,
+            "texture_coords_columns" : 1,
+            "texture_coords_rows" : 1,
+            "time_to_live_delta" : 0.5,
+            "time_to_live_max" : 3.0,
+            "time_to_live_min" : 2.0,
+            "time_to_live_val" : 2.50,
+            "type" : "point",
+            "velocity_delta" : 2.5,
+            "velocity_max" : 15.0,
+            "velocity_min" : 5.0,
+            "velocity_val" : 10.0,
+            "visual_particle_quota" : 15,
+            "width_delta" : 0.05,
+            "width_max" : 0.2,
+            "width_min" : 0.05,
+            "width_val" : 0.15,
+            "wind_delta" : 0.0,
+            "wind_max" : 0.0,
+            "wind_min" : 0.0,
+            "wind_val" : 0.0
+         },
+         {
+            "ASG_map" : "",
+            "alpha" : false,
+            "angle_delta" : 0.0,
+            "angle_max" : 45.0,
+            "angle_min" : 45.0,
+            "angle_val" : 45.0,
+            "billboard_origin" : "center",
+            "billboard_type" : "world",
+            "bounce_delta" : 0.25,
+            "bounce_max" : 0.750,
+            "bounce_min" : 0.50,
+            "bounce_val" : 0.50,
+            "box_depth" : 0.0,
+            "box_height" : 0.0,
+            "box_width" : 0.0,
+            "category" : "4 - Debri",
+            "circle_angle" : 0.0,
+            "collision" : "bounce",
+            "color" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "cone_angle" : 25.0,
+            "cone_radius" : 1.0,
+            "default_mesh_depth" : 1.0,
+            "default_mesh_height" : 1.0,
+            "default_mesh_width" : 1.0,
+            "default_particle_depth" : 1.0,
+            "default_particle_height" : 1.0,
+            "default_particle_width" : 1.0,
+            "delay" : 0.0,
+            "depth_delta" : 0.2000000029802322,
+            "depth_max" : 0.50,
+            "depth_min" : 0.1000000089406967,
+            "depth_val" : 0.3000000119209290,
+            "diffuse" : "Textures/PopCorn/popcorn_4.tga",
+            "direction" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 1.0
+            },
+            "direction_type" : "constant",
+            "duration" : 0.03999999910593033,
+            "editorColor" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "effects" : [],
+            "emission_mesh" : "",
+            "emission_mesh_scale" : {
+               "x" : 1.0,
+               "y" : 1.0,
+               "z" : 1.0
+            },
+            "emission_mode" : "burst",
+            "emission_rate" : 5000,
+            "force_vector" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : -20.0
+            },
+            "friction_delta" : 0.0,
+            "friction_max" : 0.0,
+            "friction_min" : 0.0,
+            "friction_val" : 0.0,
+            "glow" : false,
+            "glow_exposure_delta" : 0.0,
+            "glow_exposure_max" : 1.0,
+            "glow_exposure_min" : 1.0,
+            "glow_exposure_val" : 1.0,
+            "glow_strength" : 0.0,
+            "gradient" : {},
+            "guid" : 0,
+            "height_delta" : 0.05,
+            "height_max" : 0.4,
+            "height_min" : 0.25,
+            "height_val" : 0.35,
+            "hidden" : false,
+            "keep_local" : false,
+            "mesh" : "",
+            "mesh_diffuse" : "",
+            "name" : "PopCorn Debri 4",
+            "normal_map" : "",
+            "particle" : "billboard",
+            "position" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "radius" : 0.250,
+            "repeat_delay" : 0.0,
+            "rotation_axis" : {
+               "x" : 1.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "rotation_delta" : 10.0,
+            "rotation_max" : 180.0,
+            "rotation_min" : -180.0,
+            "rotation_speed_delta" : 1.0,
+            "rotation_speed_max" : 5.0,
+            "rotation_speed_min" : 0.0,
+            "rotation_speed_val" : 1.0,
+            "rotation_val" : 0.0,
+            "scene_blend" : "alpha_blend",
+            "shadows" : true,
+            "soft_particles_bias" : 1024,
+            "sort" : 0,
+            "sort_offset" : 0.0,
+            "sphere_radius" : 1.0,
+            "start_color" : "solid",
+            "sub" : null,
+            "sub_emit" : "death",
+            "surface" : false,
+            "texture_coords_columns" : 1,
+            "texture_coords_rows" : 1,
+            "time_to_live_delta" : 0.5,
+            "time_to_live_max" : 3.0,
+            "time_to_live_min" : 2.0,
+            "time_to_live_val" : 2.50,
+            "type" : "point",
+            "velocity_delta" : 2.5,
+            "velocity_max" : 15.0,
+            "velocity_min" : 5.0,
+            "velocity_val" : 10.0,
+            "visual_particle_quota" : 15,
+            "width_delta" : 0.05,
+            "width_max" : 0.4,
+            "width_min" : 0.25,
+            "width_val" : 0.35,
+            "wind_delta" : 0.0,
+            "wind_max" : 0.0,
+            "wind_min" : 0.0,
+            "wind_val" : 0.0
+         },
+
+         {
+            "ASG_map" : "",
+            "alpha" : false,
+            "angle_delta" : 0.0,
+            "angle_max" : 0.0,
+            "angle_min" : 0.0,
+            "angle_val" : 0.0,
+            "billboard_origin" : "center",
+            "billboard_type" : "world",
+            "bounce_delta" : 0.0,
+            "bounce_max" : 0.50,
+            "bounce_min" : 0.50,
+            "bounce_val" : 0.50,
+            "box_depth" : 0.0,
+            "box_height" : 0.0,
+            "box_width" : 0.0,
+            "category" : "1 - Init Explo",
+            "circle_angle" : 0.0,
+            "collision" : "none",
+            "color" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "cone_angle" : 25.0,
+            "cone_radius" : 1.0,
+            "default_mesh_depth" : 1.0,
+            "default_mesh_height" : 1.0,
+            "default_mesh_width" : 1.0,
+            "default_particle_depth" : 0.0,
+            "default_particle_height" : 1.0,
+            "default_particle_width" : 1.0,
+            "delay" : 0.0,
+            "depth_delta" : 0.0,
+            "depth_max" : 0.0,
+            "depth_min" : 0.0,
+            "depth_val" : 0.0,
+            "diffuse" : "Textures/Flash/flash_circleflashanimated01.TGA",
+            "direction" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 1.0
+            },
+            "direction_type" : "shape",
+            "duration" : 0.05000000074505806,
+            "editorColor" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "effects" : [
+               {
+                  "control_point" : [
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 0.2901960909366608,
+                           "g" : 0.6941176652908325,
+                           "r" : 1.0
+                        },
+                        "time" : 0.0
+                     },
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 0.5176470875740051,
+                           "g" : 0.6078431606292725,
+                           "r" : 1.0
+                        },
+                        "time" : 0.7943661808967590
+                     },
+                     {
+                        "color" : {
+                           "a" : 0.0,
+                           "b" : 0.0,
+                           "g" : 0.0,
+                           "r" : 0.0
+                        },
+                        "time" : 1.0
+                     }
+                  ],
+                  "guid" : 4,
+                  "name" : "Color",
+                  "toggle" : true
+               },
+               {
+                  "axis" : "uniform-scale",
+                  "base_scale" : 0.0,
+                  "control_point" : [
+                     {
+                        "scale" : 0.0,
+                        "time" : 0.0
+                     },
+                     {
+                        "scale" : 0.3914474248886108,
+                        "time" : 0.3044554591178894
+                     },
+                     {
+                        "scale" : 1.151315927505493,
+                        "time" : 0.6460396051406860
+                     },
+                     {
+                        "scale" : 2.291118383407593,
+                        "time" : 0.8688119053840637
+                     },
+                     {
+                        "scale" : 3.335502624511719,
+                        "time" : 1.0
+                     }
+                  ],
+                  "guid" : 5,
+                  "max_scale" : 3.50,
+                  "name" : "Scale",
+                  "toggle" : true
+               },
+               {
+                  "animation" : "sheet",
+                  "end_texture_coords_range" : 8,
+                  "fps" : 30,
+                  "guid" : 6,
+                  "mode" : "over_life_time",
+                  "name" : "TextureAnimator",
+                  "repeat" : false,
+                  "start_texture_coords_range" : 0,
+                  "toggle" : true
+               }
+            ],
+            "emission_mesh" : "",
+            "emission_mesh_scale" : {
+               "x" : 1.0,
+               "y" : -1.0,
+               "z" : 1.0
+            },
+            "emission_mode" : "burst",
+            "emission_rate" : 1000,
+            "force_vector" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "friction_delta" : 0.0,
+            "friction_max" : 0.0,
+            "friction_min" : 0.0,
+            "friction_val" : 0.0,
+            "glow" : true,
+            "glow_exposure_delta" : 0.0,
+            "glow_exposure_max" : 22.0,
+            "glow_exposure_min" : 22.0,
+            "glow_exposure_val" : 22.0,
+            "glow_strength" : 1.0,
+            "gradient" : {
+               "control_point" : [
+                  {
+                     "color" : {
+                        "a" : 1.0,
+                        "b" : 0.6392157077789307,
+                        "g" : 0.6627451181411743,
+                        "r" : 1.0
+                     },
+                     "time" : 0.0
+                  },
+                  {
+                     "color" : {
+                        "a" : 1.0,
+                        "b" : 0.4588235318660736,
+                        "g" : 0.8313725590705872,
+                        "r" : 1.0
+                     },
+                     "time" : 1.0
+                  }
+               ]
+            },
+            "guid" : 3,
+            "height_delta" : 0.250,
+            "height_max" : 3.250,
+            "height_min" : 2.750,
+            "height_val" : 3.0,
+            "hidden" : false,
+            "inherit_velocity" : false,
+            "keep_local" : false,
+            "lifetime_loss" : 0.0,
+            "mesh" : "",
+            "mesh_diffuse" : "",
+            "name" : "Init_Fireball_01 new SPIKES",
+            "normal_map" : "",
+            "params" : 0,
+            "particle" : "billboard",
+            "position" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "radius" : 0.0,
+            "repeat_delay" : 0.0,
+            "rotation_axis" : {
+               "x" : 1.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "rotation_delta" : 360.0,
+            "rotation_max" : 360.0,
+            "rotation_min" : -360.0,
+            "rotation_speed_delta" : 0.0,
+            "rotation_speed_max" : 0.0,
+            "rotation_speed_min" : 0.0,
+            "rotation_speed_val" : 0.0,
+            "rotation_val" : 0.0,
+            "scene_blend" : "addative",
+            "shadows" : true,
+            "soft_particles_bias" : 256,
+            "sort" : 0,
+            "sort_offset" : 2.0,
+            "sphere_radius" : 0.1000000014901161,
+            "start_color" : "solid",
+            "sub" : null,
+            "sub_emit" : "death",
+            "surface" : false,
+            "texture_coords_columns" : 4,
+            "texture_coords_rows" : 2,
+            "time_to_live_delta" : 0.0,
+            "time_to_live_max" : 0.1500000059604645,
+            "time_to_live_min" : 0.1500000059604645,
+            "time_to_live_val" : 0.1500000059604645,
+            "type" : "point",
+            "velocity_delta" : 0.0,
+            "velocity_max" : 0.0,
+            "velocity_min" : 0.0,
+            "velocity_val" : 0.0,
+            "visual_particle_quota" : 1,
+            "width_delta" : 0.250,
+            "width_max" : 3.250,
+            "width_min" : 2.750,
+            "width_val" : 3.0,
+            "wind_delta" : 0.0,
+            "wind_max" : 0.0,
+            "wind_min" : 0.0,
+            "wind_val" : 0.0
+         },         
+         {
+            "ASG_map" : "",
+            "alpha" : false,
+            "angle_delta" : 0.0,
+            "angle_max" : 0.0,
+            "angle_min" : 0.0,
+            "angle_val" : 0.0,
+            "billboard_origin" : "center",
+            "billboard_type" : "world",
+            "bounce_delta" : 0.0,
+            "bounce_max" : 0.50,
+            "bounce_min" : 0.50,
+            "bounce_val" : 0.50,
+            "box_depth" : 0.0,
+            "box_height" : 0.0,
+            "box_width" : 0.0,
+            "category" : "1 - Init Explo",
+            "circle_angle" : 0.0,
+            "collision" : "none",
+            "color" : {
+               "a" : 1.0,
+               "b" : 0.2156862765550613,
+               "g" : 0.3647058904170990,
+               "r" : 0.8431372642517090
+            },
+            "cone_angle" : 25.0,
+            "cone_radius" : 1.0,
+            "default_mesh_depth" : 1.0,
+            "default_mesh_height" : 1.0,
+            "default_mesh_width" : 1.0,
+            "default_particle_depth" : 0.0,
+            "default_particle_height" : 1.200000047683716,
+            "default_particle_width" : 1.200000047683716,
+            "delay" : 0.05000000074505806,
+            "depth_delta" : 0.0,
+            "depth_max" : 0.0,
+            "depth_min" : 0.0,
+            "depth_val" : 0.0,
+            "diffuse" : "Textures/Shockwave/shockwave_shockwave01.TGA",
+            "direction" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 1.0
+            },
+            "direction_type" : "constant",
+            "duration" : 0.05000000074505806,
+            "editorColor" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "effects" : [
+               {
+                  "control_point" : [
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 0.0,
+                           "g" : 0.0,
+                           "r" : 0.0
+                        },
+                        "time" : 0.0
+                     },
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 1.0,
+                           "g" : 1.0,
+                           "r" : 1.0
+                        },
+                        "time" : 0.1566666662693024
+                     },
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 1.0,
+                           "g" : 1.0,
+                           "r" : 1.0
+                        },
+                        "time" : 0.8579999804496765
+                     },
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 0.0,
+                           "g" : 0.0,
+                           "r" : 0.0
+                        },
+                        "time" : 1.0
+                     }
+                  ],
+                  "guid" : 60,
+                  "name" : "Color",
+                  "toggle" : true
+               },
+               {
+                  "axis" : "uniform-scale",
+                  "base_scale" : 0.1580000072717667,
+                  "control_point" : [
+                     {
+                        "scale" : 0.2939999997615814,
+                        "time" : 0.0
+                     },
+                     {
+                        "scale" : 1.264000058174133,
+                        "time" : 0.7480000257492065
+                     },
+                     {
+                        "scale" : 1.307999968528748,
+                        "time" : 1.0
+                     }
+                  ],
+                  "guid" : 61,
+                  "max_scale" : 2.0,
+                  "name" : "Scale",
+                  "toggle" : true
+               },
+               {
+                  "animation" : "sheet",
+                  "end_texture_coords_range" : 1,
+                  "fps" : 30,
+                  "guid" : 62,
+                  "mode" : "over_life_time",
+                  "name" : "TextureAnimator",
+                  "repeat" : true,
+                  "start_texture_coords_range" : 0,
+                  "toggle" : true
+               },
+               {
+                  "control_point" : [
+                     {
+                        "scale" : 0.50,
+                        "time" : 0.0
+                     },
+                     {
+                        "scale" : 1.0,
+                        "time" : 1.0
+                     }
+                  ],
+                  "fade" : 0.0,
+                  "guid" : 63,
+                  "length" : 1.0,
+                  "name" : "Cutoff",
+                  "toggle" : true
+               }
+            ],
+            "emission_mesh" : "",
+            "emission_mesh_scale" : {
+               "x" : 1.0,
+               "y" : -1.0,
+               "z" : 1.0
+            },
+            "emission_mode" : "burst",
+            "emission_rate" : 1000,
+            "force_vector" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "friction_delta" : 0.0,
+            "friction_max" : 0.0,
+            "friction_min" : 0.0,
+            "friction_val" : 0.0,
+            "glow" : true,
+            "glow_exposure_delta" : 0.0,
+            "glow_exposure_max" : 1.0,
+            "glow_exposure_min" : 1.0,
+            "glow_exposure_val" : 1.0,
+            "glow_strength" : 1.0,
+            "gradient" : {
+               "control_point" : [
+                  {
+                     "color" : {
+                        "a" : 1.0,
+                        "b" : 0.6392157077789307,
+                        "g" : 0.6627451181411743,
+                        "r" : 1.0
+                     },
+                     "time" : 0.0
+                  },
+                  {
+                     "color" : {
+                        "a" : 1.0,
+                        "b" : 0.4588235318660736,
+                        "g" : 0.8313725590705872,
+                        "r" : 1.0
+                     },
+                     "time" : 1.0
+                  }
+               ]
+            },
+            "guid" : 59,
+            "height_delta" : 0.0,
+            "height_max" : 7.0,
+            "height_min" : 7.0,
+            "height_val" : 7.0,
+            "hidden" : false,
+            "inherit_velocity" : false,
+            "keep_local" : false,
+            "lifetime_loss" : 0.0,
+            "mesh" : "",
+            "mesh_diffuse" : "",
+            "name" : "Shockwave01",
+            "normal_map" : "",
+            "params" : 0,
+            "particle" : "billboard",
+            "position" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "radius" : 0.0,
+            "repeat_delay" : 0.0,
+            "rotation_axis" : {
+               "x" : 1.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "rotation_delta" : 180.0,
+            "rotation_max" : 270.0,
+            "rotation_min" : -90.0,
+            "rotation_speed_delta" : 0.0,
+            "rotation_speed_max" : 0.0,
+            "rotation_speed_min" : 0.0,
+            "rotation_speed_val" : 0.0,
+            "rotation_val" : 90.0,
+            "scene_blend" : "addative",
+            "shadows" : true,
+            "soft_particles_bias" : 256,
+            "sort" : 0,
+            "sort_offset" : 2.0,
+            "sphere_radius" : 1.0,
+            "start_color" : "solid",
+            "sub" : null,
+            "sub_emit" : "death",
+            "surface" : false,
+            "texture_coords_columns" : 1,
+            "texture_coords_rows" : 1,
+            "time_to_live_delta" : 0.0,
+            "time_to_live_max" : 0.2000000029802322,
+            "time_to_live_min" : 0.2000000029802322,
+            "time_to_live_val" : 0.2000000029802322,
+            "type" : "point",
+            "velocity_delta" : 0.0,
+            "velocity_max" : 0.0,
+            "velocity_min" : 0.0,
+            "velocity_val" : 0.0,
+            "visual_particle_quota" : 2,
+            "width_delta" : 0.0,
+            "width_max" : 7.0,
+            "width_min" : 7.0,
+            "width_val" : 7.0,
+            "wind_delta" : 0.0,
+            "wind_max" : 0.0,
+            "wind_min" : 0.0,
+            "wind_val" : 0.0
+         },
+         {
+            "ASG_map" : "",
+            "alpha" : false,
+            "angle_delta" : 0.0,
+            "angle_max" : 0.0,
+            "angle_min" : 0.0,
+            "angle_val" : 0.0,
+            "billboard_origin" : "center",
+            "billboard_type" : "world",
+            "bounce_delta" : 0.0,
+            "bounce_max" : 0.50,
+            "bounce_min" : 0.50,
+            "bounce_val" : 0.50,
+            "box_depth" : 0.0,
+            "box_height" : 0.0,
+            "box_width" : 0.0,
+            "category" : "1 - Init Explo",
+            "circle_angle" : 0.0,
+            "collision" : "none",
+            "color" : {
+               "a" : 1.0,
+               "b" : 0.722656250,
+               "g" : 0.722656250,
+               "r" : 0.722656250
+            },
+            "cone_angle" : 25.0,
+            "cone_radius" : 1.0,
+            "default_mesh_depth" : 1.0,
+            "default_mesh_height" : 1.0,
+            "default_mesh_width" : 1.0,
+            "default_particle_depth" : 0.0,
+            "default_particle_height" : 1.0,
+            "default_particle_width" : 1.0,
+            "delay" : 0.1500000059604645,
+            "depth_delta" : 0.0,
+            "depth_max" : 0.0,
+            "depth_min" : 0.0,
+            "depth_val" : 0.0,
+            "diffuse" : "Textures/Shockwave/Shockwave_smokeshockwave02.tga",
+            "direction" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 1.0
+            },
+            "direction_type" : "constant",
+            "duration" : 0.05000000074505806,
+            "editorColor" : {
+               "a" : 1.0,
+               "b" : 1.0,
+               "g" : 1.0,
+               "r" : 1.0
+            },
+            "effects" : [
+               {
+                  "control_point" : [
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 0.0,
+                           "g" : 0.0,
+                           "r" : 0.0
+                        },
+                        "time" : 0.0
+                     },
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 0.29003906250,
+                           "g" : 0.3076629638671875,
+                           "r" : 0.343750
+                        },
+                        "time" : 0.1802816838026047
+                     },
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 0.2862745225429535,
+                           "g" : 0.3058823645114899,
+                           "r" : 0.3411764800548554
+                        },
+                        "time" : 0.8225352168083191
+                     },
+                     {
+                        "color" : {
+                           "a" : 1.0,
+                           "b" : 0.0,
+                           "g" : 0.0,
+                           "r" : 0.0
+                        },
+                        "time" : 1.0
+                     }
+                  ],
+                  "guid" : 65,
+                  "name" : "Color",
+                  "toggle" : true
+               },
+               {
+                  "axis" : "uniform-scale",
+                  "base_scale" : 0.1580000072717667,
+                  "control_point" : [
+                     {
+                        "scale" : 0.5154933929443359,
+                        "time" : 0.0
+                     },
+                     {
+                        "scale" : 0.9214605689048767,
+                        "time" : 0.3935643434524536
+                     },
+                     {
+                        "scale" : 1.097177863121033,
+                        "time" : 0.6311880946159363
+                     },
+                     {
+                        "scale" : 1.307999968528748,
+                        "time" : 1.0
+                     }
+                  ],
+                  "guid" : 66,
+                  "max_scale" : 2.0,
+                  "name" : "Scale",
+                  "toggle" : true
+               },
+               {
+                  "animation" : "sheet",
+                  "end_texture_coords_range" : 1,
+                  "fps" : 30,
+                  "guid" : 67,
+                  "mode" : "over_life_time",
+                  "name" : "TextureAnimator",
+                  "repeat" : true,
+                  "start_texture_coords_range" : 0,
+                  "toggle" : true
+               },
+               {
+                  "control_point" : [
+                     {
+                        "scale" : 0.50,
+                        "time" : 0.0
+                     },
+                     {
+                        "scale" : 1.0,
+                        "time" : 1.0
+                     }
+                  ],
+                  "fade" : 0.3000000119209290,
+                  "guid" : 68,
+                  "length" : 1.0,
+                  "name" : "Cutoff",
+                  "toggle" : true
+               }
+            ],
+            "emission_mesh" : "",
+            "emission_mesh_scale" : {
+               "x" : 1.0,
+               "y" : -1.0,
+               "z" : 1.0
+            },
+            "emission_mode" : "burst",
+            "emission_rate" : 1000,
+            "force_vector" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "friction_delta" : 0.0,
+            "friction_max" : 0.0,
+            "friction_min" : 0.0,
+            "friction_val" : 0.0,
+            "glow" : false,
+            "glow_exposure_delta" : 0.0,
+            "glow_exposure_max" : 1.0,
+            "glow_exposure_min" : 1.0,
+            "glow_exposure_val" : 1.0,
+            "glow_strength" : 1.0,
+            "gradient" : {
+               "control_point" : [
+                  {
+                     "color" : {
+                        "a" : 1.0,
+                        "b" : 0.6392157077789307,
+                        "g" : 0.6627451181411743,
+                        "r" : 1.0
+                     },
+                     "time" : 0.0
+                  },
+                  {
+                     "color" : {
+                        "a" : 1.0,
+                        "b" : 0.4588235318660736,
+                        "g" : 0.8313725590705872,
+                        "r" : 1.0
+                     },
+                     "time" : 1.0
+                  }
+               ]
+            },
+            "guid" : 64,
+            "height_delta" : 0.0,
+            "height_max" : 8.50,
+            "height_min" : 8.50,
+            "height_val" : 8.50,
+            "hidden" : false,
+            "inherit_velocity" : false,
+            "keep_local" : false,
+            "lifetime_loss" : 0.0,
+            "mesh" : "",
+            "mesh_diffuse" : "",
+            "name" : "Shockwave02 AB ",
+            "normal_map" : "",
+            "params" : 0,
+            "particle" : "billboard",
+            "position" : {
+               "x" : 0.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "radius" : 0.0,
+            "repeat_delay" : 0.0,
+            "rotation_axis" : {
+               "x" : 1.0,
+               "y" : 0.0,
+               "z" : 0.0
+            },
+            "rotation_delta" : 180.0,
+            "rotation_max" : 270.0,
+            "rotation_min" : -90.0,
+            "rotation_speed_delta" : 0.0,
+            "rotation_speed_max" : 0.0,
+            "rotation_speed_min" : 0.0,
+            "rotation_speed_val" : 0.0,
+            "rotation_val" : 90.0,
+            "scene_blend" : "alpha_blend",
+            "shadows" : false,
+            "soft_particles_bias" : 256,
+            "sort" : 0,
+            "sort_offset" : 3.0,
+            "sphere_radius" : 1.0,
+            "start_color" : "solid",
+            "sub" : null,
+            "sub_emit" : "death",
+            "surface" : false,
+            "texture_coords_columns" : 1,
+            "texture_coords_rows" : 1,
+            "time_to_live_delta" : 0.0,
+            "time_to_live_max" : 0.6499999761581421,
+            "time_to_live_min" : 0.6499999761581421,
+            "time_to_live_val" : 0.6499999761581421,
+            "type" : "point",
+            "velocity_delta" : 0.0,
+            "velocity_max" : 0.0,
+            "velocity_min" : 0.0,
+            "velocity_val" : 0.0,
+            "visual_particle_quota" : 1,
+            "width_delta" : 0.0,
+            "width_max" : 8.50,
+            "width_min" : 8.50,
+            "width_val" : 8.50,
+            "wind_delta" : 0.0,
+            "wind_max" : 0.0,
+            "wind_min" : 0.0,
+            "wind_val" : 0.0
+         }
+      ],
+      "scale" : 1.0,
+      "scale_time" : 1.0,
+      "scale_velocity" : 1.0,
+      "system_type" : "stream"
+   }
+}
