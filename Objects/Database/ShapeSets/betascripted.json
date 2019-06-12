@@ -58,7 +58,9 @@
                         ],
                         "mesh": "$MOD_DATA/Objects/Mesh/windfan_v1_test7.fbx",
                         "includes": [ "POSITION", "UV0", "NORMAL", "TANGENT", "BLEND_INDICES", "BLEND_WEIGHTS" ],
-                        "custom": {"skeleton": {"anim0": "Fan" } }
+                        "animationList" : [
+                            { "name" : "Fan", "file": "$MOD_DATA/Objects/Mesh/windfan_v1_test7.fbx" }
+                        ]
                     }
                 ]
             },
@@ -107,7 +109,9 @@
                         ],
                         "mesh": "$MOD_DATA/Objects/Mesh/BigSquareFan.fbx",
                         "includes": [ "POSITION", "UV0", "NORMAL", "TANGENT", "BLEND_INDICES", "BLEND_WEIGHTS" ],
-                        "custom": {"skeleton": {"anim0": "AnimY" } }
+                        "animationList" : [
+                            { "name" : "AnimY", "file": "$MOD_DATA/Objects/Mesh/BigSquareFan.fbx" }
+                        ]
                     }
                 ]
             },
