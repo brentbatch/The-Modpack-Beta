@@ -5,7 +5,7 @@
             "billboard_origin" : "center",
             "billboard_type" : "world",
             "category" : "w revered col",
-            "collision" : "die",
+            "collision" : "none",
             "color" : {
                "a" : 0.25,
                "b" : 1.0,
