@@ -1,6 +1,92 @@
 {
    "partList" : [
 
+        {
+            "uuid": "285e6b5d-f13c-49c5-99bd-9b6a377f8357",//conveyor
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/conveyor_dif.png",
+                                    "$MOD_DATA/Objects/Textures/conveyor_asg.png",
+                                    "$MOD_DATA/Objects/Textures/conveyor_nor.png"
+                                ],
+                                "material": "UVAnimDifAsgNor",
+                                "custom":
+                                {
+                                    "uv0": { "u": 0.01, "v": 0.01 }
+                                }
+                            },
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/conveyor_dif.png",
+                                    "$MOD_DATA/Objects/Textures/conveyor_asg.png",
+                                    "$MOD_DATA/Objects/Textures/conveyor_nor.png"
+                                ],
+                                "material": "DifAsgNor"
+                            }
+                        ],
+                        "mesh": "$MOD_DATA/Objects/Mesh/conveyor_segment.obj"
+                    }
+                ]
+            },
+            "rotationSet": "PropYZ",
+            "color": "df7f00",
+            "box": { "x": 2, "y": 1, "z": 4 },
+            "density": 100.0,
+            "physicsMaterial": "Default",
+            "scripted" : 
+            {
+                "filename": "$MOD_DATA/Scripts/conveyor.lua",
+                "classname": "conveyor"
+            },
+            "sticky": "-X-Z+X+Z"
+        },
+        {
+            "uuid": "285e6b5d-f13c-49c5-99bd-9b6a377f8356",//conveyor end piece
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/conveyor_dif.png",
+                                    "$MOD_DATA/Objects/Textures/conveyor_asg.png",
+                                    "$MOD_DATA/Objects/Textures/conveyor_nor.png"
+                                ],
+                                "material": "UVAnimDifAsgNor",
+                                "custom":
+                                {
+                                    "uv0": { "u": 0.01, "v": 0.01 }
+                                }
+                            },
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/conveyor_dif.png",
+                                    "$MOD_DATA/Objects/Textures/conveyor_asg.png",
+                                    "$MOD_DATA/Objects/Textures/conveyor_nor.png"
+                                ],
+                                "material": "DifAsgNor"
+                            }
+                        ],
+                        "mesh": "$MOD_DATA/Objects/Mesh/conveyor_end.obj"
+                    }
+                ]
+            },
+            "rotationSet": "PropYZ",
+            "color": "df7f00",
+            "box": { "x": 1, "y": 1, "z": 4 },
+            "density": 100.0,
+            "physicsMaterial": "Default",
+            "scripted" : 
+            {
+                "filename": "$MOD_DATA/Scripts/conveyor.lua",
+                "classname": "conveyorend"
+            },
+            "sticky": "-X-Z+X+Z"
+        },
 
    		{
 			"uuid": "7394eac5-72b1-4cb5-af18-d4bc5230314b",
@@ -127,6 +213,258 @@
             "density": 1250,
             "sticky": "-X+X-Y+Y"
         },
+
+
+
+
+
+        {
+            "uuid": "1e7ddd7d-6d69-432b-bace-9710ff6a5bf8",
+            "renderable": {"lodList": [{
+            "subMeshList": [
+                {"textureList": [
+                        "$MOD_DATA/Objects/Textures/obj_small_pipe_set_dif.tga",
+                        "$MOD_DATA/Objects/Textures/obj_small_pipe_set_asg.tga",
+                        "$MOD_DATA/Objects/Textures/obj_small_pipe_set_nor.tga"],
+                "material": "DifAsgNor"}
+            ],
+            "mesh": "$MOD_DATA/Objects/Mesh/ladder3x6.dae"
+            }]},
+            "scripted" : {
+                "filename": "$MOD_DATA/Scripts/ladders.lua",
+                "classname": "ladder" },
+            "rotationSet": "PropZ",
+            "color": "7a7a7a",
+            "density": 250.0,
+            "physicsMaterial": "Metal",
+            "sticky": "-Z+Z",
+            "hull": { "x": 3, "y": 1, "z": 6,
+                "margin": 0, "pointList": [
+                    { "x": -0.83, "y": -0.50, "z": -1.00 },
+                    { "x": 0.83, "y": -0.50, "z": -1.00 },
+                    { "x": 0.83, "y": -0.50, "z": 1.00 },
+                    { "x": -0.83, "y": -0.50, "z": 1.00 },
+                    { "x": -0.83, "y": 0.50, "z": -1.00 },
+                    { "x": 0.83, "y": 0.50, "z": -1.00 },
+                    { "x": -0.83, "y": 0.50, "z": 1.00 },
+                    { "x": 0.83, "y": 0.50, "z": 1.00 }]
+            },
+            "previewRotation": [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+        },
+
+
+
+        {
+            "uuid": "298ca3c8-3241-458f-994f-bd81f2c0ff3e",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/decor/obj_decor_screws_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/decor/obj_decor_screws_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/decor/obj_decor_screws_nor.tga"
+                                ],
+                                "material": "3PoseAnimDifAsgNor"
+                            }
+                        ],
+                        "mesh": "$MOD_DATA/Objects/Mesh/SmallBomb_off.fbx",
+                        "pose0": "$MOD_DATA/Objects/Mesh/SmallBomb_on1.fbx",
+                        "pose1": "$MOD_DATA/Objects/Mesh/SmallBomb_on2.fbx",
+                        "pose2": "$MOD_DATA/Objects/Mesh/SmallBomb_on3.fbx"
+                    }
+                ]
+            },
+            "rotationSet": "PropY",
+            "simpleInteractive": { 
+                "sustainedAudio": "",
+                "animationTime": 1
+            },
+            "color": "df7f00",
+            "hull": { "x": 1, "y": 1, "z": 1, "margin": 0.5, "pointList": [ { "x": 0.0, "y": 0.0, "z": 0.0 } ] },
+            "physicsMaterial": "Metal",
+            "density": 1250,
+            "sticky": "-X+X-Y+Y-Z+Z"
+        },
+        {
+            "uuid": "304f4a46-8796-420c-8eaa-8408990e7b1a",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/decor/obj_decor_screws_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/decor/obj_decor_screws_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/decor/obj_decor_screws_nor.tga"
+                                ],
+                                "material": "3PoseAnimDifAsgNor"
+                            }
+                        ],
+                        "mesh": "$MOD_DATA/Objects/Mesh/BigBomb_off.fbx",
+                        "pose0": "$MOD_DATA/Objects/Mesh/BigBomb_on1.fbx",
+                        "pose1": "$MOD_DATA/Objects/Mesh/BigBomb_on2.fbx",
+                        "pose2": "$MOD_DATA/Objects/Mesh/BigBomb_on3.fbx"
+                    }
+                ]
+            },
+            "rotationSet": "PropY",
+            "simpleInteractive": { 
+                "sustainedAudio": "",
+                "animationTime": 1
+            },
+            "color": "df7f00",
+            "hull": { "x": 3, "y": 3, "z": 3, "margin": 1.5, "pointList": [ { "x": 0.0, "y": 0.0, "z": 0.0 } ] },
+            "physicsMaterial": "Metal",
+            "density": 1250,
+            "sticky": "-X+X-Y+Y-Z+Z"
+        },
+        {
+            "uuid": "88ed5ad6-84e3-4450-a104-7f9f1e5b4d02",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/UniTex2_dif.png",
+                                    "$MOD_DATA/Objects/Textures/UniTex_asg.png",
+                                    "$GAME_DATA/Textures/nonor_nor.png"
+                                    /*"$GAME_DATA/Objects/Textures/interactive/obj_interactive_propanetank_large_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/interactive/obj_interactive_propanetank_large_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/interactive/obj_interactive_propanetank_large_nor.tga"*/
+                                ],
+                                "material": "DifAsgNor"
+                            }
+                        ],
+                        "mesh": "$MOD_DATA/Objects/Mesh/Nuke.obj"//fbx
+                    }
+                ]
+            },
+            "scripted" : 
+            {
+                "filename": "$MOD_DATA/Scripts/Nuke.lua",
+                "classname": "Nuke"/*,
+                "data": { "destructionLevel": 5, "destructionRadius": 100.0, "impulseRadius": 200.0, "impulseMagnitude": 1000.0, "effectExplosion": "Nuke - Explosion", "effectActivate": "Nuke - Activate" }*/
+            },
+            "qualityLevel": 0,
+            "rotationSet": "PropYZ",
+            "color": "064023",
+            "hull": {
+                "x": 3, "y": 3, "z": 6, //"margin": 3.5,
+                "pointList": [
+
+                    { "x": -0.73508422, "y": 0.73508396, "z": 0.14096415 },
+                    { "x": -0.96043377, "y": 0.39782453, "z": 0.14096415 },
+                    { "x": -0.96043377, "y": -0.39782454, "z": 0.14096415 },
+                    { "x": -0.73508422, "y": -0.73508397, "z": 0.14096415 },
+                    { "x": -0.39782468, "y": -0.96043344, "z": 0.14096415 },
+                    { "x": 0.39782467, "y": -0.96043344, "z": 0.14096415 },
+                    { "x": 0.73508421, "y": -0.73508397, "z": 0.14096415 },
+                    { "x": 0.96043375, "y": -0.39782523, "z": 0.14096415 },
+                    { "x": 0.96043375, "y": 0.39782453, "z": 0.14096415 },
+                    { "x": 0.73508421, "y": 0.73508396, "z": 0.14096415 },
+                    { "x": 0.39782467, "y": 0.96043342, "z": 0.14096415 },
+                    { "x": -0.39782537, "y": 0.96043342, "z": 0.14096415 },
+                    { "x": -0.82968134, "y": 0.34366521, "z": 0.56468096 },
+                    { "x": -0.63501067, "y": 0.63501044, "z": 0.56468096 },
+                    { "x": -0.82968134, "y": -0.34366522, "z": 0.56468096 },
+                    { "x": -0.63501067, "y": -0.63501045, "z": 0.56468096 },
+                    { "x": -0.34366534, "y": -0.82968105, "z": 0.56468096 },
+                    { "x": 0.34366533, "y": -0.82968105, "z": 0.56468096 },
+                    { "x": 0.63501066, "y": -0.63501045, "z": 0.56468096 },
+                    { "x": 0.82968132, "y": -0.34366522, "z": 0.56468096 },
+                    { "x": 0.82968199, "y": 0.34366521, "z": 0.56468096 },
+                    { "x": 0.63501066, "y": 0.63501044, "z": 0.56468096 },
+                    { "x": 0.34366533, "y": 0.82968104, "z": 0.56468096 },
+                    { "x": -0.34366601, "y": 0.82968104, "z": 0.56468096 },
+                    { "x": -0.17183334, "y": 0.86386103, "z": 0.56468096 },
+                    { "x": -0.19891269, "y": 0.99999930, "z": 0.14096415 },
+                    { "x": 0.17183199, "y": 0.86386103, "z": 0.56468096 },
+                    { "x": 0.19891198, "y": 0.99999999, "z": 0.14096415 },
+                    { "x": 0.86386132, "y": 0.17183260, "z": 0.56468096 },
+                    { "x": 1.00000034, "y": 0.19891192, "z": 0.14096415 },
+                    { "x": 0.86386132, "y": -0.17183261, "z": 0.56468096 },
+                    { "x": 1.00000034, "y": -0.19891262, "z": 0.14096415 },
+                    { "x": 0.17183266, "y": -0.86386104, "z": 0.56468096 },
+                    { "x": 0.19891268, "y": -0.99999931, "z": 0.14096415 },
+                    { "x": -0.17183267, "y": -0.86386104, "z": 0.56468096 },
+                    { "x": -0.19891200, "y": -1.00000001, "z": 0.14096415 },
+                    { "x": -0.86386134, "y": -0.17183261, "z": 0.56468096 },
+                    { "x": -0.99999966, "y": -0.19891193, "z": 0.14096415 },
+                    { "x": -0.86386134, "y": 0.17183260, "z": 0.56468096 },
+                    { "x": -0.99999966, "y": 0.19891261, "z": 0.14096415 },
+                    { "x": -0.92387934, "y": 0.38268319, "z": -0.99954946 },
+                    { "x": -0.70710667, "y": 0.70710641, "z": -0.99954946 },
+                    { "x": -0.38268401, "y": 0.92387900, "z": -0.99954946 },
+                    { "x": -0.19134201, "y": 0.96193899, "z": -0.99954946 },
+                    { "x": 0.19134133, "y": 0.96193966, "z": -0.99954946 },
+                    { "x": 0.38268333, "y": 0.92387900, "z": -0.99954946 },
+                    { "x": 0.70710666, "y": 0.70710641, "z": -0.99954946 },
+                    { "x": 0.92387932, "y": 0.38268319, "z": -0.99954946 },
+                    { "x": 0.96193999, "y": 0.19134126, "z": -0.99954946 },
+                    { "x": 0.96193999, "y": -0.19134194, "z": -0.99954946 },
+                    { "x": 0.92387932, "y": -0.38268387, "z": -0.99954946 },
+                    { "x": 0.70710666, "y": -0.70710643, "z": -0.99954946 },
+                    { "x": 0.38268333, "y": -0.92387902, "z": -0.99954946 },
+                    { "x": 0.19134199, "y": -0.96193900, "z": -0.99954946 },
+                    { "x": -0.19134134, "y": -0.96193967, "z": -0.99954946 },
+                    { "x": -0.38268334, "y": -0.92387902, "z": -0.99954946 },
+                    { "x": -0.70710667, "y": -0.70710643, "z": -0.99954946 },
+                    { "x": -0.92387934, "y": -0.38268321, "z": -0.99954946 },
+                    { "x": -0.96193934, "y": -0.19134127, "z": -0.99954946 },
+                    { "x": -0.96193934, "y": 0.19134193, "z": -0.99954946 },
+                    { "x": -0.42545717, "y": 0.42545699, "z": 0.87482063 },
+                    { "x": -0.55588652, "y": 0.23025569, "z": 0.87482063 },
+                    { "x": -0.57878712, "y": 0.11512784, "z": 0.87482063 },
+                    { "x": -0.57878712, "y": -0.11512785, "z": 0.87482063 },
+                    { "x": -0.55588652, "y": -0.23025570, "z": 0.87482063 },
+                    { "x": -0.42545717, "y": -0.42545700, "z": 0.87482063 },
+                    { "x": -0.23025580, "y": -0.55588631, "z": 0.87482063 },
+                    { "x": -0.11512792, "y": -0.57878690, "z": 0.87482063 },
+                    { "x": 0.11512786, "y": -0.57878690, "z": 0.87482063 },
+                    { "x": 0.23025574, "y": -0.55588631, "z": 0.87482063 },
+                    { "x": 0.42545712, "y": -0.42545700, "z": 0.87482063 },
+                    { "x": 0.55588646, "y": -0.23025570, "z": 0.87482063 },
+                    { "x": 0.57878706, "y": -0.11512785, "z": 0.87482063 },
+                    { "x": 0.57878706, "y": 0.11512784, "z": 0.87482063 },
+                    { "x": 0.55588691, "y": 0.23025569, "z": 0.87482063 },
+                    { "x": 0.42545712, "y": 0.42545699, "z": 0.87482063 },
+                    { "x": 0.23025574, "y": 0.55588629, "z": 0.87482063 },
+                    { "x": 0.11512741, "y": 0.57878688, "z": 0.87482063 },
+                    { "x": -0.11512836, "y": 0.57878688, "z": 0.87482063 },
+                    { "x": -0.23025625, "y": 0.55588629, "z": 0.87482063 },
+                    { "x": -0.16167371, "y": 0.16167365, "z": 1.00045054 },
+                    { "x": -0.21123686, "y": 0.00000000, "z": 1.00045054 },
+                    { "x": -0.21993908, "y": 0.00000000, "z": 1.00045054 },
+                    { "x": -0.21993908, "y": 0.00000000, "z": 1.00045054 },
+                    { "x": -0.21123686, "y": 0.00000000, "z": 1.00045054 },
+                    { "x": -0.16167371, "y": -0.16167367, "z": 1.00045054 },
+                    { "x": 0.00000000, "y": -0.21123680, "z": 1.00045054 },
+                    { "x": 0.00000000, "y": -0.21993903, "z": 1.00045054 },
+                    { "x": 0.00000000, "y": -0.21993903, "z": 1.00045054 },
+                    { "x": 0.00000000, "y": -0.21123680, "z": 1.00045054 },
+                    { "x": 0.16167373, "y": -0.16167367, "z": 1.00045054 },
+                    { "x": 0.21123688, "y": 0.00000000, "z": 1.00045054 },
+                    { "x": 0.21993911, "y": 0.00000000, "z": 1.00045054 },
+                    { "x": 0.21993911, "y": 0.00000000, "z": 1.00045054 },
+                    { "x": 0.21123705, "y": 0.00000000, "z": 1.00045054 },
+                    { "x": 0.16167373, "y": 0.16167365, "z": 1.00045054 },
+                    { "x": 0.00000000, "y": 0.21123679, "z": 1.00045054 },
+                    { "x": 0.00000000, "y": 0.21993901, "z": 1.00045054 },
+                    { "x": 0.00000000, "y": 0.21993901, "z": 1.00045054 },
+                    { "x": 0.00000000, "y": 0.21123679, "z": 1.00045054 }
+
+                ]
+            },
+            "density": 1250.0,
+            "physicsMaterial": "Metal",
+            "previewRotation": [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+        },
+
+
+
 
 
 		{
@@ -348,6 +686,41 @@
             "sticky": "-X+X-Y+Y-Z+Z",
             "qualityLevel": 4
         },
+
+        {
+            "uuid": "b45b8362-041d-4216-9eb4-e4c1208e30a4",
+            "renderable": {
+                "lodList": [ 
+                     {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/UniTex2_dif.png",
+                                    "$MOD_DATA/Objects/Textures/UniTex_asg.png"
+                                ],
+                                "material": "DifAsg"
+                            }
+                        ],
+                        "mesh": "$MOD_DATA/Objects/Mesh/MissileLauncher.obj"
+                    }
+                ]
+            },
+            "scripted" : 
+            {
+                "filename": "$MOD_DATA/Scripts/launcher.lua",
+                "classname": "rocket"
+            },
+            "color": "df7f00",
+//          "cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
+            "box": { "x": 3, "y": 1, "z": 1 },
+            "density": 1250.0,
+            "physicsMaterial": "Metal",
+            "sticky": "-Z+Z-Y+Y-X+X",           
+            "rotationSet": "PropYX"
+        },
+
+
+
 		{
             "uuid": "d71aa6e8-5dd5-4a51-8090-a904273b4f66",
             "renderable": {
@@ -1308,6 +1681,42 @@
 
 
 
+,
+{
+            "uuid": "8e66e827-2b3d-4378-850f-c982f64f2a2a",
+            "renderable": {
+                "lodList": [{
+                        "subMeshList": [{
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/rope_dif.png",
+                                    "$MOD_DATA/Objects/Textures/rope_asg.png",
+                                    "$GAME_DATA/Textures/nonor_nor.png"
+                                ],
+                                "material": "3PoseAnimDifAsgNor"
+                            }
+                        ],
+                        "mesh": "$MOD_DATA/Objects/Mesh/rope.obj",
+                        "pose0": "$MOD_DATA/Objects/Mesh/rope_x.obj",
+                        "pose1": "$MOD_DATA/Objects/Mesh/rope_y.obj",
+                        "pose2": "$MOD_DATA/Objects/Mesh/rope_z.obj"
+                    }
+                ]
+            },
+            "scripted": {
+                "filename": "$MOD_DATA/Scripts/Rope.lua",
+                "classname": "Hitwo_Rope"
+            },
+            "color": "e08001",
+            "box": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "density": 500.0,
+            "physicsMaterial": "Plastic",
+            "sticky": "-Z",
+            "rotationSet": "PropZ"
+        }
 
 
    ]

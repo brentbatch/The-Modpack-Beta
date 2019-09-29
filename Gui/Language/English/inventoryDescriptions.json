@@ -653,4 +653,13 @@
 
 
 
+,
+	"8e66e827-2b3d-4378-850f-c982f64f2a2a":
+	{
+		"title": "Rope",
+		"description": "White - seek for a target\nLight gray - break the rope\nLight yellow - reel the rope in\nYellow - reel the rope out\nAny other color - analog input. You can connect a seat, but i recommend to use any mod with analog stuff. \"X's scripted objects\" for example.\nCheck the description in the workshop for a video tutorial."
+	}
+
+
+
 }

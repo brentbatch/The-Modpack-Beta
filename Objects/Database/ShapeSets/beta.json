@@ -505,6 +505,52 @@
 			}
 		},
 		{
+			"uuid": "6af9a297-0336-4887-836f-2334cc2f0065",
+			"renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlight_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlight_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlight_nor.tga"
+                                ],
+                                "material": "PoseAnimDifAsgNor"
+                            },
+							{
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightbeam_dif.tga",
+                                    "",
+                                    ""
+                                ],
+                                "material": "PoseAnimLightCone"
+                            },
+							{
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/lights/obj_light_headlightflare_dif.tga",
+                                    "",
+                                    ""
+                                ],
+                                "material": "PoseAnimLightFlare"
+                            }
+                        ],
+                        "mesh": "$GAME_DATA/Objects/Mesh/lights/obj_light_headlight_off.fbx",
+						"pose0": "$GAME_DATA/Objects/Mesh/lights/obj_light_headlight_on.fbx"
+                    }
+                ]
+            },
+			"rotationSet": "PropZY",
+			"color": "eeeeee",
+			"cylinder": { "diameter": 1, "depth": 1, "margin": 0.25, "axis": "Z" },
+			"density": 250.0,
+			"physicsMaterial": "Metal",
+			"spotlight": {
+				"effect": "ModNegativeLight"
+			}
+		},
+
+		{
 			"uuid": "a5a1c430-7d1c-4330-8a58-f267e20883b7",
 			"renderable": {
                 "lodList": [
@@ -919,6 +965,85 @@
 			"button": { },
 			"qualityLevel": 0
 		},
+
+
+		{
+			"uuid": "677b04b6-02d9-438e-aae0-8a4985d33a5d",
+			"renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/watertestb_subsurface_dif.png",
+                                    "$GAME_DATA/Textures/transparent.tga",
+                                    "$GAME_DATA/Textures/nonor_nor.png"
+                                ],
+                                "material": "Glass"
+                            },
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Textures/transparent.tga",
+                                    "$MOD_DATA/Objects/Textures/watertest_asg.png",
+                                    "$GAME_DATA/Textures/nonor_nor.png"
+                                ],
+                                "material": "Glass"
+                            }
+                        ],
+			//"mesh": "$MOD_DATA/Objects/Mesh/mjm_WaterWorldwide.mesh"
+			"mesh": "$MOD_DATA/Objects/Mesh/water_world_testb.obj"
+                    }
+                ]
+            },
+			"rotationSet": "StaticY",
+			"color": "0f355b",
+			"box": { "x": 1, "y": 1, "z": 1 },
+			"physicsMaterial": "Plastic",
+//			"prop": true,
+			"button": { },
+			"qualityLevel": 0
+		},
+
+/////////////////////////////////////////
+		{
+			"uuid": "dad52976-ee58-4a6e-9969-be41ebdf67f7",
+			"renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Textures/transparent.tga",
+                                    "$MOD_DATA/Objects/Textures/watertest_asg.png",
+                                    "$MOD_DATA/Objects/Textures/water_normal.png"
+                                ],
+                                "material": "Glass"
+                            },
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Textures/transparent.tga",
+                                    "$MOD_DATA/Objects/Textures/watertest_asg.png",
+                                    "$MOD_DATA/Objects/Textures/water_underside_normal.png"
+                                ],
+                                "material": "Glass"
+                            }
+                        ],
+			//"mesh": "$MOD_DATA/Objects/Mesh/mjm_WaterWorldwide.mesh"
+			"mesh": "$MOD_DATA/Objects/Mesh/water_world.obj"
+                    }
+                ]
+            },
+			"rotationSet": "StaticY",
+			"color": "0f355b",
+			"box": { "x": 1, "y": 1, "z": 1 },
+			"physicsMaterial": "Plastic",
+//			"prop": true,
+			"button": { },
+			"qualityLevel": 0
+		},
+
+
+
 		{
 			"uuid": "766e7479-7162-4ed5-99f7-d63268ab8b4e",
 			"renderable": {
@@ -1003,6 +1128,129 @@
 			},
 			"density": 4000,
 			"physicsMaterial": "Plastic"
+		},
+
+////////////////////////////////////////
+
+		{
+			"uuid": "601ea94a-6fb8-4951-9bc0-43776ed7906b",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/UniTex_dif.png",
+                           "$MOD_DATA/Objects/Textures/UniTex_asg.png"
+								],
+								"material": "DifAsg"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/TieRod2x1.obj"
+					}
+				]
+			},
+			"rotationSet": "PropZ",
+			"color": "df7f00",
+			"hull": {
+				"x": 2, "y": 1, "z": 1, "margin": 0.2,
+				"pointList": [
+					{ "x": -0.5, "y": 0, "z": -1 },
+					{ "x": 0.5, "y": 0, "z": -1 }
+				]
+			},
+			"physicsMaterial": "Metal",
+			"sticky": "-Z"
+		},
+		{
+			"uuid": "9fb367fe-d379-4ee1-8f46-dc1d6fe178fa",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/UniTex_dif.png",
+                           "$MOD_DATA/Objects/Textures/UniTex_asg.png"
+								],
+								"material": "DifAsg"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/TieRod3x1.obj"
+					}
+				]
+			},
+			"rotationSet": "PropZ",
+			"color": "df7f00",
+			"hull": {
+				"x": 3, "y": 1, "z": 1, "margin": 0.2,
+				"pointList": [
+					{ "x": -0.66, "y": 0, "z": -1 },
+					{ "x": 0.66, "y": 0, "z": -1 }
+				]
+			},
+			"physicsMaterial": "Metal",
+			"sticky": "-Z"
+		},
+		{
+			"uuid": "6d720061-7ccb-436e-b392-fc16a1c83479",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/UniTex_dif.png",
+                           "$MOD_DATA/Objects/Textures/UniTex_asg.png"
+								],
+								"material": "DifAsg"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/TieRod3x2.obj"
+					}
+				]
+			},
+			"rotationSet": "PropZ",
+			"color": "df7f00",
+			"hull": {
+				"x": 3, "y": 2, "z": 1, "margin": 0.2,
+				"pointList": [
+					{ "x": -0.66, "y": 0.5, "z": -1 },
+					{ "x": 0.66, "y": -0.5, "z": -1 }
+				]
+			},
+			"physicsMaterial": "Metal",
+			"sticky": "-Z"
+		},
+		{
+			"uuid": "de2cb2fc-4973-4a92-97dd-5a7a101fccc5",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/UniTex_dif.png",
+                           "$MOD_DATA/Objects/Textures/UniTex_asg.png"
+								],
+								"material": "DifAsg"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/TieRod3x2Fliped.obj"
+					}
+				]
+			},
+			"rotationSet": "PropZ",
+			"color": "df7f00",
+			"hull": {
+				"x": 3, "y": 2, "z": 1, "margin": 0.2,
+				"pointList": [
+					{ "x": -0.66, "y": -0.5, "z": -1 },
+					{ "x": 0.66, "y": 0.5, "z": -1 }
+				]
+			},
+			"physicsMaterial": "Metal",
+			"sticky": "-Z"
 		},
 
 ////////////////////////////////////////
