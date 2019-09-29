@@ -1704,7 +1704,7 @@
             },
             "scripted": {
                 "filename": "$MOD_DATA/Scripts/Rope.lua",
-                "classname": "Hitwo_Rope"
+                "classname": "Rope"
             },
             "color": "e08001",
             "box": {
