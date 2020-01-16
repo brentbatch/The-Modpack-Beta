@@ -58,7 +58,7 @@
 			"color": "eeeeee",
 			"coneAngle": 25.0,
 			"coneFade": 0.5,
-			"luminance": 100
+			"luminance": 10
 		},
 		"effectList":
 		[
