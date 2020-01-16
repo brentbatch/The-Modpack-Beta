@@ -372,7 +372,12 @@
 		"title": "Small Flame Thrower",
 		"description": "\"Not A Flame Thrower\"\n\n\n#ffff00!WARNING!\n#ffffffFire physics is new and highly experimental! Too much fire may cause performance problems! (try turning off Dynamic Lights for better performance with fire)"
 	},
-
+	
+	"023076ec-b333-448e-ae8f-c0caa58d2187":
+	{
+		"title": "campfire",
+		"description": "Step on this for a warm and fuzzy fealing inside.\n\n\n#ffff00!WARNING!\n#ffffffFire physics is new and highly experimental! Too much fire may cause performance problems! (try turning off Dynamic Lights for better performance with fire)"
+	},
 
 
 

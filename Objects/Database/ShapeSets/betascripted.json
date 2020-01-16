@@ -103,7 +103,7 @@
 								"material": "DifAsg"
 							}
 						], 
-								"mesh": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_battery.mesh"
+						"mesh": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_battery.mesh"
 					}
 				]
 			},
@@ -220,19 +220,27 @@
 
 		{
 			"uuid": "1e7ddd7d-6d69-432b-bace-9710ff6a5bf8",
-			"renderable": {"lodList": [{
-			"subMeshList": [
-				{"textureList": [
-						"$MOD_DATA/Objects/Textures/obj_small_pipe_set_dif.tga",
-						"$MOD_DATA/Objects/Textures/obj_small_pipe_set_asg.tga",
-						"$MOD_DATA/Objects/Textures/obj_small_pipe_set_nor.tga"],
-				"material": "DifAsgNor"}
-			],
-			"mesh": "$MOD_DATA/Objects/Mesh/ladder3x6.dae"
-			}]},
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/obj_small_pipe_set_dif.tga",
+									"$MOD_DATA/Objects/Textures/obj_small_pipe_set_asg.tga",
+									"$MOD_DATA/Objects/Textures/obj_small_pipe_set_nor.tga"
+								],
+								"material": "DifAsgNor"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/ladder3x6.dae"
+					}
+				]
+			},
 			"scripted" : {
 				"filename": "$MOD_DATA/Scripts/ladders.lua",
-				"classname": "ladder" },
+				"classname": "ladder" 
+			},
 			"rotationSet": "PropZ",
 			"color": "7a7a7a",
 			"density": 250.0,
@@ -603,7 +611,6 @@
 			"rotationSet": "PropY"
 		},
 
-
 		{
 			"uuid": "3e874085-3444-4e37-8a7f-d5af52bbca8e",
 			"renderable": {
@@ -682,6 +689,51 @@
 			"density": 250,
 			"color": "df7f00",
 			"box": { "x": 3, "y": 1, "z": 1 },
+			"physicsMaterial": "Metal",
+			"sticky": "-X+X-Y+Y-Z+Z",
+			"qualityLevel": 4
+		},
+		{
+			"uuid": "023076ec-b333-448e-ae8f-c0caa58d2187",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+                                    "$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_dif.tga",
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_asg.tga",
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_nor.tga"
+								],
+								"material": "PoseAnimDifAsgNor"
+							},
+                            {
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_dif.tga",
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_asg.tga",
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_nor.tga"
+                                ],
+                                "material": "UVAnimDifAsgNor",
+                                "custom":
+                                {
+                                    "uv0": { "u": 0.16666667, "v": 0.1645 }
+                                }
+                            }
+                        ],
+						"mesh": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_logicgate_off.fbx",
+						"pose0": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_logicgate_on.fbx"
+					}
+				]
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/campfire.lua",
+				"classname": "campfire"
+			},
+			"rotationSet": "PropY",
+			"density": 250,
+			"color": "df7f00",
+			"box": { "x": 3, "y": 2, "z": 3 },
 			"physicsMaterial": "Metal",
 			"sticky": "-X+X-Y+Y-Z+Z",
 			"qualityLevel": 4
@@ -818,7 +870,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/soccer_v3c.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/soccer_v3c.mesh"
 					}
 				]
 			},
@@ -851,7 +903,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/prolatespheroid.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/prolatespheroid.mesh"
 					}
 				]
 			},
@@ -899,7 +951,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/basketball_v2c.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/basketball_v2c.mesh"
 					}
 				]
 			},
@@ -932,7 +984,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/baseball_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/baseball_v1a.mesh"
 					}
 				]
 			},
@@ -965,7 +1017,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
 					}
 				]
 			},
@@ -998,7 +1050,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
 					}
 				]
 			},
@@ -1031,7 +1083,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
 					}
 				]
 			},
@@ -1064,7 +1116,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/volleyball_v2b.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/volleyball_v2b.mesh"
 					}
 				]
 			},
@@ -1097,7 +1149,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/bowling_v1a_sharp.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/bowling_v1a_sharp.mesh"
 					}
 				]
 			},
@@ -1130,7 +1182,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/BowlingPin_V3.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/BowlingPin_V3.mesh"
 					}
 				]
 			},
@@ -1165,7 +1217,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_cue_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_cue_v1a.mesh"
 					}
 				]
 			},
@@ -1191,14 +1243,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_1_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_1_v1a.mesh"
 					}
 				]
 			},
@@ -1224,14 +1276,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_2_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_2_v1a.mesh"
 					}
 				]
 			},
@@ -1257,14 +1309,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_3_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_3_v1a.mesh"
 					}
 				]
 			},
@@ -1290,14 +1342,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_4_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_4_v1a.mesh"
 					}
 				]
 			},
@@ -1323,14 +1375,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_5_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_5_v1a.mesh"
 					}
 				]
 			},
@@ -1356,14 +1408,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_6_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_6_v1a.mesh"
 					}
 				]
 			},
@@ -1389,14 +1441,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_7_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_7_v1a.mesh"
 					}
 				]
 			},
@@ -1422,14 +1474,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_8_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_8_v1a.mesh"
 					}
 				]
 			},
@@ -1455,14 +1507,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_9_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_9_v1a.mesh"
 					}
 				]
 			},
@@ -1495,7 +1547,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_10_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_10_v1a.mesh"
 					}
 				]
 			},
@@ -1528,7 +1580,7 @@
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_11_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_11_v1a.mesh"
 					}
 				]
 			},
@@ -1554,14 +1606,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_12_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_12_v1a.mesh"
 					}
 				]
 			},
@@ -1587,14 +1639,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_13_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_13_v1a.mesh"
 					}
 				]
 			},
@@ -1620,14 +1672,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_14_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_14_v1a.mesh"
 					}
 				]
 			},
@@ -1653,14 +1705,14 @@
 						"subMeshList": [
 							{
 								"textureList": [
-												"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
+									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
 									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-												"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/default_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-			"mesh": "$MOD_DATA/Objects/Mesh/billiard_15_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/billiard_15_v1a.mesh"
 					}
 				]
 			},
@@ -1681,8 +1733,8 @@
 
 
 
-,
-{
+		,
+		{
 			"uuid": "8e66e827-2b3d-4378-850f-c982f64f2a2a",
 			"renderable": {
 				"lodList": [{
