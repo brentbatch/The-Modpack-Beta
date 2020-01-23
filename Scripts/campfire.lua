@@ -62,8 +62,19 @@ end
 
 function campfire.server_onFixedUpdate( self, dt )
 	local parent = self.interactable:getSingleParent()
-	if parent and parent.active then
+	if parent then
+		if parent.active then
+			self:server_tryFire()
+		end
+		self.ON = false -- logic parent has control now
+		
+	elseif self.ON then
+		self.starttime = self.starttime or os.time()
 		self:server_tryFire()
+	end
+	if self.starttime and os.time() ~= self.time then
+		print(os.time()-self.starttime)
+		self.time = os.time()
 	end
 	
 	for k, fire in pairs(self.fires) do
@@ -79,14 +90,17 @@ function campfire.server_onFixedUpdate( self, dt )
 	server_fireSpread(self, dt) -- calc fireSpread and spawn fires
 end
 
-
+function campfire.server_onProjectile(self, ...)
+	self.ON = not self.ON
+	self:server_sendState()	
+end
 
 function campfire.server_tryFire( self ) -- self.shape.at is the side flame is on
 	-- bullet: (sync send, async/sync behaviour, spread is sync)
 	local foundobjects = {}
 	local shape = self.shape
 	for _, offset in pairs({sm.vec3.new(0,0,0),(self.shape.right+self.shape.up)*0.25,(self.shape.right-self.shape.up)*0.25,(-self.shape.right+self.shape.up)*0.25,-(self.shape.right+self.shape.up)*0.25}) do
-		local hit, result = sm.physics.raycast(self.shape.worldPosition + offset, self.shape.worldPosition + offset + self.shape.at*4)--16 blocks up
+		local hit, result = sm.physics.raycast(self.shape.worldPosition + offset, self.shape.worldPosition + offset + sm.vec3.new(0,0,4))--16 blocks up
 		if hit then
 			if result.type == "character" then
 				server_createfire(self, nil , result, true, false)
@@ -119,21 +133,31 @@ function campfire.server_tryFire( self ) -- self.shape.at is the side flame is o
 	end
 end
 
+function campfire.server_sendState(self, newstate)
+	if newstate ~= nil then self.ON = newstate end
+	self.network:sendToClients('client_newState', self.ON)
+end
+
 -- Client
 
 function campfire.client_onCreate( self )
-	self:client_init()
-end
-function campfire.client_onRefresh(self)
-	--self:client_init()
-end
-function campfire.client_init(self)
 	self.fires = {}
 	self.shooteffect = sm.effect.createEffect("flames", self.interactable)
 	self.shooteffect:setOffsetRotation( sm.vec3.getRotation(sm.vec3.new( 0, 1, 0 ),sm.vec3.new( 0, 0, 1 )))
 	self.shooteffect:setOffsetPosition( sm.vec3.new( 0, 0.25, 0 ))
+	self.network:sendToServer('server_sendState')
+end
+function campfire.client_onRefresh(self)
+	--self:client_onCreate()
 end
 
+function campfire.client_newState(self, newstate)
+	self.client_ON = newstate
+end
+
+function campfire.client_onInteract(self)
+	self.network:sendToServer('server_sendState', not self.client_ON)
+end
 
 function campfire.client_onFixedUpdate( self, dt )
 	firebehaviour(self, dt)
@@ -143,6 +167,16 @@ function campfire.client_onUpdate( self, deltaTime ) -- animation of shooting fl
 	local parent = self.interactable:getSingleParent()
 	if parent then
 		if parent:isActive() then
+			if not self.shooteffect:isPlaying() then
+				self.shooteffect:start()
+			end
+		else
+			if self.shooteffect:isPlaying() then
+				self.shooteffect:stop()
+			end
+		end
+	else
+		if self.client_ON then
 			if not self.shooteffect:isPlaying() then
 				self.shooteffect:start()
 			end
@@ -267,6 +301,14 @@ function server_fireSpread(self, dt) -- server, spawn more fires
 						if math.random(1,flamedata.odds_shape) ~= 1 then -- odds of spreading fire
 							local hit, result =  sm.physics.raycast( fire.pos - sm.noise.gunSpread(sm.vec3.new(0,0,flamedata.firespread_offset_shape),360), 
 												fire.pos + sm.noise.gunSpread(sm.vec3.new(0,0,flamedata.firespread_radius_shape),360) )
+												
+							if not hit and math.random(1,200) == 1 then -- spread to floor above:
+								hit, result = sm.physics.raycast( fire.pos - sm.noise.gunSpread(sm.vec3.new(0,0,flamedata.firespread_offset_shape),360), 
+												fire.pos + sm.noise.gunSpread(sm.vec3.new(0,0,4),3) )
+								if hit then
+									hit = math.random(1,math.ceil(sm.util.clamp(16*result.fraction, 1, 16))) == 1
+								end
+							end
 							if hit then
 								server_createfire(self, fire, result, false, false)
 							end
@@ -307,8 +349,7 @@ function server_fireSpread(self, dt) -- server, spawn more fires
 				end
 				
 			else
-			
-	if size > flamedata.maxfires then return 0 end
+				if size > flamedata.maxfires then return 0 end
 				if math.random(1,flamedata.odds_other) ~= 1 then -- odds of spreading fire
 					local hit, result = sm.physics.raycast( fire.pos + sm.noise.gunSpread(sm.vec3.new(0,0,flamedata.firespread_offset_ground),360), 
 										fire.pos + sm.noise.gunSpread(sm.vec3.new(0,0,flamedata.firespread_radius_ground),360) )
