@@ -668,6 +668,11 @@
 	{
 		"title": "Rope",
 		"description": "Logic Input:\nWhite: Attach Rope\nBlack: Detatch Rope\nLight Yellow: Shorten Rope\nYellow: Lengthen Rope\n\nNumber Input:\nNegative to reduce length\nPositive to increase length\n(custom speed values)"
+	},
+	"f18e0a6f-e4ad-4d6c-8d7c-6a67dc8b349b":
+	{
+		"title": "Dice",
+		"description": "useless thingy"
 	}
 
 

@@ -1823,6 +1823,41 @@
 			"physicsMaterial": "Metal",
 			"sticky": "-X+X-Y+Y-Z+Z",
 			"qualityLevel": 4
+		},
+		{
+			"uuid": "f18e0a6f-e4ad-4d6c-8d7c-6a67dc8b349b",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/dice_dif.png",
+									"$MOD_DATA/Objects/Textures/dice_asg.png",
+									"$MOD_DATA/Objects/Textures/dice_nor.png"
+								],
+								"material": "3PoseAnimDifAsgNor"
+							}
+                        ],
+						"mesh": "$MOD_DATA/Objects/Mesh/fuzzy_dice_2.obj",
+						"pose0": "$MOD_DATA/Objects/Mesh/fuzzy_dice_1.obj", //--
+						"pose1": "$MOD_DATA/Objects/Mesh/fuzzy_dice_3.obj", // -+
+						"pose2": "$MOD_DATA/Objects/Mesh/fuzzy_dice_0.obj" // ++
+					}
+				]
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/dice.lua",
+				"classname": "dice"
+			},
+			"rotationSet": "PropY",
+			"density": 250,
+			"color": "df7f00",
+			"box": { "x": 1, "y": 2, "z": 1 },
+			"physicsMaterial": "Metal",
+			"sticky": "-X+X-Y+Y-Z+Z",
+			"qualityLevel": 4
 		}
 
 
