@@ -68,7 +68,7 @@ function bigcannon.server_tryFire( self )
 			
 			local mass = 50
 			local impulse = dir * -fireForce * mass
-			sm.physics.applyImpulse( self.shape, impulse )
+			sm.physics.applyImpulse( self.shape, impulse, true )
 		end
 	end
 end

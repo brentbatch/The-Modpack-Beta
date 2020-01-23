@@ -61,16 +61,13 @@ function grenades.server_tryFire( self )
 			
 			
 			
-			local dir = sm.noise.gunSpread( self.shape.up, 1 ) * math.random( self.minForce, self.maxForce ) 
-			local extra = dir*dir:dot(self.shape.velocity)*1.5
-			if extra:dot(dir) > 0 then dir = dir+ extra end
+			local dir = sm.noise.gunSpread( self.shape.up, 1 ) * math.random( self.minForce, self.maxForce ) + self.shape.velocity
 			self.network:sendToClients( "client_onShoot",  {dir = dir, gravity = sm.physics.getGravity()/10, livetime = grenades.livetime * (1 + (math.random()-0.5)/10 )})
 			
 			
-			local dir = sm.vec3.new( 0.0, 0.0, 1.0 )
 			local mass = 50
-			local impulse = dir * -dir:normalize() * mass
-			sm.physics.applyImpulse( self.shape, impulse )
+			local impulse = dir * -mass
+			sm.physics.applyImpulse( self.shape, impulse, true )
 		end
 	end
 end
