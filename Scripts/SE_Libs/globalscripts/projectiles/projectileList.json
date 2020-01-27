@@ -1,0 +1,11 @@
+{
+	"orange_projectile": { // the name by which this kind of fire will be summoned
+		"script": "orange_projectile.lua", // file name
+		"class": "orange_projectile" //class name, ** has to be unique in the whole mod!!
+	},
+	"fire_projectile": { // the name by which this kind of fire will be summoned
+		"script": "fire_projectile.lua", // file name
+		"class": "fire_projectile" //class name, ** has to be unique in the whole mod!!
+	}
+
+}

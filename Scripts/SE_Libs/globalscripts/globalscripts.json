@@ -1,0 +1,14 @@
+{
+	"debug": { // "debug" is the name used to create a scriptinstance of this script
+		"script": "test.lua", // the filename
+		"class": "test" // the class, **has to be unique in the whole mod!**
+	},
+	"projectile": {
+		"script": "projectile.lua",
+		"class": "projectile"
+	},
+	"portedFire": {
+		"script": "portedFire.lua",
+		"class": "portedFire"
+	}
+}

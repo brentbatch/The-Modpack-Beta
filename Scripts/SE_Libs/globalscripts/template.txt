@@ -1,0 +1,36 @@
+template = class()
+template.defaultValue = 123
+
+function template.server_onCreate(self, ...)
+
+	self.network:sendToClients("client_callback", {'client_callback',123})
+end
+
+function template.server_onFixedUpdate(self,dt)
+
+
+end
+
+
+function template.server_callback(self, data)
+
+end
+
+function template.client_callback(self, data)
+
+end
+
+
+function template.client_onCreate(self, ...)
+
+	self.network:sendToServer("server_callback", {'server_callback',123})
+end
+
+function template.client_onFixedUpdate(self,dt)
+
+
+end
+
+function template.onDestroy(self) -- happens on client side
+
+end
