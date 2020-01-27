@@ -7,7 +7,7 @@ if flamethrower and not sm.isDev then -- increases performance for non '-dev' us
 end 
 
 
-flamethrower = class( nil )
+flamethrower = class( globalscript )
 flamethrower.maxParentCount = 1
 flamethrower.maxChildCount = 0
 flamethrower.connectionInput = sm.interactable.connectionType.logic
@@ -58,7 +58,7 @@ function flamethrower.server_tryFire( self )
 			-- fire (sync send, async behaviour)
 			local hit, result =  sm.physics.raycast( self.shape.worldPosition, self.shape.worldPosition - self.shape.right*1.5 )
 			
-			PortedFire.server_spawnFire(
+			portedFire.server_spawnFire(
 				self.shape.worldPosition - self.shape.right/4, 
 				dir,
 				result
@@ -70,7 +70,7 @@ end
 -- Client
 
 function flamethrower.client_onCreate( self )
-	PortedFire.client_init(self, flamethrower)
+	self:client_attachScript("portedFire")
 	self.boltValue = 0.0
 	self.shooteffect = sm.effect.createEffect("flame", self.interactable)
 	self.shooteffect:setOffsetRotation(  sm.vec3.getRotation(sm.vec3.new( 1, 0, 0 ),sm.vec3.new( 0, 0, 1 )))
