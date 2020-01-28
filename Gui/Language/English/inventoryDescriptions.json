@@ -373,7 +373,7 @@
 		"description": "\"Not A Flame Thrower\"\n\n\n#ffff00!WARNING!\n#ffffffFire physics is new and highly experimental! Too much fire may cause performance problems! (try turning off Dynamic Lights for better performance with fire)"
 	},
 	
-	"023076ec-b333-448e-ae8f-c0caa58d2187":
+	"82e504c3-4317-4953-8c70-e594f7397b23":
 	{
 		"title": "campfire",
 		"description": "Step on this for a warm and fuzzy fealing inside.\n\n\n#ffff00!WARNING!\n#ffffffFire physics is new and highly experimental! Too much fire may cause performance problems! (try turning off Dynamic Lights for better performance with fire)"
@@ -382,6 +382,11 @@
 	{
 		"title": "piñata",
 		"description": "HIT ME"
+	},
+	"13404ca3-4a15-47c8-8650-5b0b68d1d79a":
+	{
+		"title": "lavaball",
+		"description": "dats hot, oooh das hot"
 	},
 
 
