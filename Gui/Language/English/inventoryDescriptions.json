@@ -362,6 +362,11 @@
 		"title": "Spud Gun Barrel",
 		"description": "Auto-reload"
 	},
+	"180135ca-6eb8-4a5d-bc34-94917fb82386":
+	{
+		"title": "sticky grenade launcher",
+		"description": "white num ammo, black num detonation time (ticks after stick), logic shoot, black logic manual detonation"
+	},
 	"3e874085-3444-4e37-8a7f-d5af52bbca8e":
 	{
 		"title": "Large Flame Thrower",

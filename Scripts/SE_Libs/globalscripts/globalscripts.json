@@ -10,5 +10,9 @@
 	"portedFire": {
 		"script": "portedFire.lua",
 		"class": "portedFire"
+	},
+	"stickyBomb": {
+		"script": "stickyBombs.lua",
+		"class": "stickyBomb"
 	}
 }

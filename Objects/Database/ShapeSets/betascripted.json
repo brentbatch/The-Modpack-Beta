@@ -610,6 +610,68 @@
 			"sticky": "-Z+Z-Y+Y-X+X",			
 			"rotationSet": "PropY"
 		},
+		{
+			"uuid": "b45b8362-041d-4216-9eb4-e4c1208e30a4",
+			"renderable": {
+				"lodList": [ 
+					 {
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/UniTex2_dif.png",
+									"$MOD_DATA/Objects/Textures/UniTex_asg.png"
+								],
+								"material": "DifAsg"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/MissileLauncher.obj"
+					}
+				]
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/launcher.lua",
+				"classname": "rocket"
+			},
+			"color": "df7f00",
+//			"cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
+			"box": { "x": 3, "y": 1, "z": 1 },
+			"density": 1250.0,
+			"physicsMaterial": "Metal",
+			"sticky": "-Z+Z-Y+Y-X+X",			
+			"rotationSet": "PropYX"
+		},
+		{
+			"uuid": "180135ca-6eb8-4a5d-bc34-94917fb82386",
+			"renderable": {
+				"lodList": [ 
+					 {
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/UniTex2_dif.png",
+									"$MOD_DATA/Objects/Textures/UniTex_asg.png"
+								],
+								"material": "DifAsg"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/MissileLauncher.obj"
+					}
+				]
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/stickyGrenade.lua",
+				"classname": "stickyGrenade"
+			},
+			"color": "df7f00",
+//			"cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
+			"box": { "x": 3, "y": 1, "z": 1 },
+			"density": 1250.0,
+			"physicsMaterial": "Metal",
+			"sticky": "-Z+Z-Y+Y-X+X",			
+			"rotationSet": "PropYX"
+		},
 
 		{
 			"uuid": "3e874085-3444-4e37-8a7f-d5af52bbca8e",
@@ -777,37 +839,6 @@
 			"density": 30,
 			"restitution": 1.5,
 			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "b45b8362-041d-4216-9eb4-e4c1208e30a4",
-			"renderable": {
-				"lodList": [ 
-					 {
-						"subMeshList": [
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/UniTex2_dif.png",
-									"$MOD_DATA/Objects/Textures/UniTex_asg.png"
-								],
-								"material": "DifAsg"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/MissileLauncher.obj"
-					}
-				]
-			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/launcher.lua",
-				"classname": "rocket"
-			},
-			"color": "df7f00",
-//			"cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
-			"box": { "x": 3, "y": 1, "z": 1 },
-			"density": 1250.0,
-			"physicsMaterial": "Metal",
-			"sticky": "-Z+Z-Y+Y-X+X",			
-			"rotationSet": "PropYX"
 		},
 
 
