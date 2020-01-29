@@ -800,19 +800,18 @@
 	},
 
 
-
-	"flames": // something on fire
+	"flameslight": // something on fire, + light
 	{
-		"maxInstances": 384,
+		"maxInstances": 1000,
 		"parameterList":
 		{
 			"color": "ffcc34",
 			"intensity": 0.6,
 			"Size": 0.0,
-			"Velocity": 0.0,
-			"radius": 10,
+			"Velocity": 5.0,
+			"radius": 6,
 			"Material": 0.0,
-			"RemainingInstances": 384
+			"RemainingInstances": 1000
 		},
 		"parameterCurves":
 		{
@@ -978,12 +977,6 @@
 		"effectList":
 		[
 			{
-				"type": "particle",
-				"name": "fire",
-				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
-				"delay": 0.0
-			},
-			{
 				"type": "pointLight",
 				"name": "",
 				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
@@ -993,8 +986,38 @@
 					"radius",
 					"intensity"
 				],
-				"duration": 15.0,
+				//"duration": 15.0,
 				"delay": 0.05
+			},
+			{
+				"type": "particle",
+				"name": "fire",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+
+	"flames": // something on fire, no light
+	{
+		"maxInstances": 384,
+		"parameterList":
+		{
+			"color": "ffcc34",
+			"intensity": 0.6,
+			"Size": 0.0,
+			"Velocity": 0.0,
+			"radius": 10,
+			"Material": 0.0,
+			"RemainingInstances": 384
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "fire",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
 			}
 		]
 	},
