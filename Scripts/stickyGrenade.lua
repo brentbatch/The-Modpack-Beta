@@ -7,15 +7,16 @@ end
 
 
 stickyGrenade = class( globalscript )
-stickyGrenade.maxParentCount = 1
-stickyGrenade.maxChildCount = 0
+stickyGrenade.maxParentCount = -1
+stickyGrenade.maxChildCount = 1
 stickyGrenade.connectionInput = sm.interactable.connectionType.logic
-stickyGrenade.connectionOutput = sm.interactable.connectionType.none
+stickyGrenade.connectionOutput = sm.interactable.connectionType.power -- outputs bombs out there
 stickyGrenade.colorNormal = sm.color.new( 0x009999ff  )
 stickyGrenade.colorHighlight = sm.color.new( 0x11B2B2ff  )
 stickyGrenade.poseWeightCount = 1
 
 function stickyGrenade.client_onRefresh(self)
+	sm.isDev = true
 	self:client_onCreate()
 end
 function stickyGrenade.client_onCreate(self)
@@ -24,13 +25,38 @@ end
 
 
 function stickyGrenade.server_onFixedUpdate(self, dt)
-	local parent = self.interactable:getSingleParent()
-	local active = parent and parent.active
+	local parents = self.interactable:getParents()
+	local active = false
+	local timeToDetonate = 10
+	local capacity = 5
+	
+	
+	for k, v in pairs(parents) do
+		local color = tostring(v:getShape().color)
+		
+		if v:getType() == "scripted" and tostring(v:getShape():getShapeUuid()) ~= "6f2dd83e-bc0d-43f3-8ba5-d5209eb03d07" --[[tickbutton]] then
+			-- number
+			if color == "eeeeeeff" then -- white: capacity
+				capacity = math.floor(v.power) -- not using getValue here cuz won't be a big number
+			elseif color == "222222ff" then -- black: detonation timeToDetonate
+				timeToDetonate = v.power -- negative will insta detonate, pretty useless but i'll allow it.
+			end
+		elseif v.active then
+			-- active logic 
+			if color == "222222ff" then -- black
+				stickyBomb.server_clearBombs(self.shape.id) -- explosive clear by default, add param 'false' for non explosive clear
+				self.timeout = 1
+				break -- break the for loop
+			else
+				active = true
+			end
+		end
+	end
 	
 	if active and not self.timeout then
 		active = false
-		self.timeout = 20
-		stickyBomb.server_spawnBomb(self.shape.worldPosition, -self.shape.right*50, 10)
+		self.timeout = 1
+		stickyBomb.server_spawnBomb(self.shape.id, self.shape.worldPosition, -self.shape.right*50, timeToDetonate, capacity)
 	end
 	
 	if self.timeout then -- lazy way to generate timeout
@@ -40,3 +66,45 @@ function stickyGrenade.server_onFixedUpdate(self, dt)
 		end
 	end
 end
+
+function stickyGrenade.client_onInteract(self)
+
+	local hit, result = sm.physics.raycast( self.shape.worldPosition, self.shape.worldPosition -self.shape.right)
+	if hit and result.type == "character" then
+		if not self.effect then
+			self.effect = sm.effect.createEffect("CannonShot")
+			self.effect:start()
+		end
+		self.target = result:getCharacter()
+		local direction = self.target.direction
+		direction.z = 0
+		direction = direction:normalize()
+		local angle = math.atan2(direction.x, direction.y)
+		
+		
+		local localpoint = (result.pointWorld - self.target.worldPosition)
+		self.localpoint = sm.vec3.rotateZ(localpoint, angle)
+		
+		local position = localpoint  + self.target.worldPosition
+		self.effect:setPosition(position)
+		
+	end
+
+end
+
+
+function stickyGrenade.client_onFixedUpdate(self, dt)
+	if self.effect and self.target and self.localpoint then
+		local direction = self.target.direction   direction.z = 0   direction = direction:normalize()
+		local position = sm.vec3.rotateZ(self.localpoint, -math.atan2(direction.x, direction.y)) + self.target.worldPosition
+		local velocity = (position - (self.oldpos or position))/dt
+		
+		self.effect:setVelocity(velocity)
+		if math.random(10) == 1 then self.effect:setPosition(position) end
+		self.oldpos = position
+	end
+end
+
+
+
+
