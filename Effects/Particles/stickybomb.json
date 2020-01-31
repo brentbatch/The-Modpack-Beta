@@ -12,9 +12,9 @@
 			"guid" : 0,
 			"hidden" : false,
 			"keep_local" : true,
-			"mesh" : "Mesh/melon.obj",
-			"mesh_diffuse" : "Textures/orange_dif.tga",
-			"name" : "orange shot 1",
+			"mesh" : "Mesh/stickybomb_a.obj",
+			"mesh_diffuse" : "Textures/stickybomb_dif.tga",
+			"name" : "stickybomb",
 			"particle" : "mesh",
 			"rotation_axis" : {
 			   "x" : 1.0,
@@ -42,9 +42,9 @@
 			"guid" : 0,
 			"hidden" : false,
 			"keep_local" : true,
-			"mesh" : "Mesh/melon.obj",
-			"mesh_diffuse" : "Textures/orange_dif.tga",
-			"name" : "orange shot 1",
+			"mesh" : "Mesh/stickybomb_a.obj",
+			"mesh_diffuse" : "Textures/stickybomb_dif.tga",
+			"name" : "stickybomb",
 			"particle" : "mesh",
 			"rotation_axis" : {
 			   "x" : 1.0,
@@ -64,7 +64,7 @@
 		 }
       ],
       "scale" : 1,
-      "scale_time" : 4,
+      "scale_time" : 1,
       "scale_velocity" : 0.0,
       "system_type" : "stream"
    }

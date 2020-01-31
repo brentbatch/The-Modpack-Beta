@@ -659,6 +659,34 @@
 		]
 	},
 
+	"StickyBomb":
+	{
+		"parameterList":
+		{
+			"Size": 0.0, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "007fff",
+			"radius": 1.5,
+			"intensity": 0.01
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "PotatoRifle - Shoot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "stickybomb",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+
 	"CannonAudio":
 	{
 		"effectList":
@@ -1565,6 +1593,57 @@
 				"delay": 0.0
 			}
 		]
+	},
+
+
+
+	"Pinata - ExplosionSmall":
+	{
+		"parameterList":
+		{
+			"size": 0.0,
+			"color": "eeffff",
+			"radius": 16.0,
+			"intensity": 2.0
+		},
+		"parameterCurves":
+		{
+			"radius":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":0.0 },
+					{ "time":0.1, "value":15.0 },
+					{ "time":0.6, "value":0.0 }
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "pinataCandy",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			}
+		]
 	}
+
+
+
 
 }
