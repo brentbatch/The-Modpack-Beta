@@ -91,19 +91,22 @@ function stickyBomb.server_onFixedUpdate(self, dt)
 					local position = result.pointWorld + result.normalWorld/8
 					local velocity = sm.vec3.new(0,0,0)
 					local pointLocal;
+					local normalLocal;
 					if type == "body" then
 						target = result:getShape()
 						velocity = target.velocity
 						pointLocal = target:transformPoint(result.pointWorld + result.normalWorld/16)
+						normalLocal = result.normalLocal
 					end
 					if type == "character" then 
 						target = result:getCharacter()
 						velocity = target.velocity
 						local direction = target.direction   direction.z = 0   direction = direction:normalize()
 						pointLocal = sm.vec3.rotateZ((result.pointWorld - target.worldPosition), math.atan2(direction.x, direction.y))
+						normalLocal = result.normalLocal
 					end
 					
-					self.network:sendToClients("client_setBombTarget", {shapeId, id, type, position, velocity, target, pointLocal, bomb.detonationTime, bomb.grav})
+					self.network:sendToClients("client_setBombTarget", {shapeId, id, type, position, velocity, target, pointLocal, normalLocal, bomb.detonationTime, bomb.grav})
 				end
 			end
 		end
@@ -129,7 +132,7 @@ function stickyBomb.client_onCreate(self, ...)
 end
 
 function stickyBomb.client_setBombTarget(self, data)
-	local shapeId, id, type, position, velocity, target, pointLocal, detonationTime, gravity = unpack(data)
+	local shapeId, id, type, position, velocity, target, pointLocal, normalLocal, detonationTime, gravity = unpack(data)
 	local bombs = self.ammo[shapeId]
 	if not bombs then self.ammo[shapeId] = {} end
 	local bomb = self.ammo[shapeId][id]
@@ -144,6 +147,7 @@ function stickyBomb.client_setBombTarget(self, data)
 	bomb.effect:setVelocity( velocity)
 	bomb.target = target
 	bomb.pointLocal = pointLocal
+	bomb.normalLocal = normalLocal
 end
 
 function stickyBomb.client_killBombs(self, data)
@@ -168,6 +172,7 @@ function stickyBomb.client_onFixedUpdate(self,dt)
 					if sm.exists(bomb.target) then
 						bomb.velocity = bomb.target.velocity
 						bomb.position = bomb.target.worldPosition + bomb.target.worldRotation * bomb.pointLocal
+						bomb.effect:setRotation( bomb.target.worldRotation * sm.vec3.getRotation(sm.vec3.new(0,0,1), bomb.normalLocal))
 					else
 						bomb.type, bomb.target = nil, nil -- drops bomb
 					end
@@ -177,7 +182,20 @@ function stickyBomb.client_onFixedUpdate(self,dt)
 						--bomb.position = bomb.target.worldPosition + bomb.target.velocity * dt
 						
 						local direction = bomb.target.direction   direction.z = 0   direction = direction:normalize()
-						bomb.position = sm.vec3.rotateZ(bomb.pointLocal, -math.atan2(direction.x, direction.y)) + bomb.target.worldPosition
+						
+						local angleDirection = math.atan2(direction.x, direction.y)
+						
+						local rotatedNormal = sm.vec3.rotateZ(bomb.normalLocal, -angleDirection)
+						
+						local angleNormal = math.atan2(rotatedNormal.x, rotatedNormal.y)
+						
+						local normalRotatedToY = sm.vec3.rotateZ(rotatedNormal, angleNormal)
+						
+						local rot = sm.vec3.getRotation(-normalRotatedToY, rotatedNormal)* sm.quat.lookRotation(normalRotatedToY, sm.vec3.new( 0,0,-1 )) * sm.vec3.getRotation(sm.vec3.new( 0,1,0 ), sm.vec3.new( 1,0,0 )) 
+		
+						bomb.effect:setRotation( rot )
+						
+						bomb.position = sm.vec3.rotateZ(bomb.pointLocal, -angleDirection) + bomb.target.worldPosition
 						bomb.velocity = (bomb.position - (bomb.oldpos or bomb.position))/dt
 						bomb.oldpos = bomb.position
 					else
