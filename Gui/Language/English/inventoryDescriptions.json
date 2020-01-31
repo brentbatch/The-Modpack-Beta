@@ -21,6 +21,36 @@
 		"title": "Fuse Block",
 		"description": "A very flammable block, designed to be used as a fuse line with fire physics. Do not use this block for building, as a lot of fire physics may cause performance problems."
 	},
+	"43c35277-b862-4786-8c5d-b1bd6b549d79":
+	{
+		"title": "Clear Ice Block",
+		"description": "Very low friction and fragile"
+	},
+	"0b7b629e-907e-422c-b060-28c0211a6373":
+	{
+		"title": "Lava Rocks",
+		"description": "Careful! It's still hot!"
+	},
+	"1d6d5f84-38f0-4689-9f57-f9bdbf7f3aa5":
+	{
+		"title": "Flubber",
+		"description": "Very bouncy material! (bounces off the ground, other bouncy things, and itself)"
+	},
+	"1d6d5f84-38f0-4689-9f57-f9bdbf7f3aa4":
+	{
+		"title": "Flubber\nNo Friction",
+		"description": "Very bouncy material! Very slippery! (bounces off the ground, other bouncy things, and itself)"
+	},
+	"f0cba95b-2dc4-4492-8fd9-36546a4cb5ab":
+	{
+		"title": "Destructible Super Heavy Block",
+		"description": "This is ridiculously heavy weight (1 million density), but can be destroyed by a spudgun or hammer, and definitely an explosion. This is another way you can lighten your load!"
+	},
+	"2e7e6095-38f0-4689-9f57-f9bdbf7f3aa5":
+	{
+		"title": "Laminated Wood",
+		"description": "Recently polished and a little slippery"
+	},
 
 
 
@@ -97,7 +127,7 @@
 	"6af9a297-0333-4887-836f-2334cc2f0065":
 	{
 		"title": "Searchlight ",
-		"description": "\n\n#ff0000Currently Not Working with full intensity"
+		"description": ""
 	},
 	"6af9a297-0334-4887-836f-2334cc2f0065":
 	{
@@ -333,6 +363,22 @@
 		"description": "A magical wish orb found on the planet Namek. Collect all 7 to summon the dragon."
 	},
 
+	"2cf4321b-50a9-483f-87ff-412c49697138":
+	{
+		"title": "Flubber Ball 0F",
+		"description": "A Flubber ball, with zero friction! Watch out!"
+	},
+	"2cf4201b-50a9-420f-87ff-420c49696969":
+	{
+		"title": "Flubber Ball",
+		"description": "A Flubber ball! Careful when playing indoors!"
+	},
+	"26942069-50a9-420f-87ff-420c49696969":
+	{
+		"title": "Friction Ball",
+		"description": "A ball of friction! This will grip on everything! No Slipping!"
+	},
+
 
 
 
@@ -362,11 +408,6 @@
 		"title": "Spud Gun Barrel",
 		"description": "Auto-reload"
 	},
-	"180135ca-6eb8-4a5d-bc34-94917fb82386":
-	{
-		"title": "sticky grenade launcher",
-		"description": "white num ammo, black num detonation time (ticks after stick), logic shoot, black logic manual detonation"
-	},
 	"3e874085-3444-4e37-8a7f-d5af52bbca8e":
 	{
 		"title": "Large Flame Thrower",
@@ -377,23 +418,12 @@
 		"title": "Small Flame Thrower",
 		"description": "\"Not A Flame Thrower\"\n\n\n#ffff00!WARNING!\n#ffffffFire physics is new and highly experimental! Too much fire may cause performance problems! (try turning off Dynamic Lights for better performance with fire)"
 	},
-	
-	"82e504c3-4317-4953-8c70-e594f7397b23":
-	{
-		"title": "campfire",
-		"description": "Step on this for a warm and fuzzy fealing inside.\n\n\n#ffff00!WARNING!\n#ffffffFire physics is new and highly experimental! Too much fire may cause performance problems! (try turning off Dynamic Lights for better performance with fire)"
-	},
-	"d34c88b9-f4ce-4db7-9c55-58b64f048213":
-	{
-		"title": "piñata",
-		"description": "HIT ME"
-	},
-	"13404ca3-4a15-47c8-8650-5b0b68d1d79a":
-	{
-		"title": "lavaball",
-		"description": "dats hot, oooh das hot"
-	},
 
+	"180135ca-6eb8-4a5d-bc34-94917fb82386":
+	{
+		"title": "Sticky Bomb Launcher",
+		"description": "This grenade launcher fires bombs that stick to whatever surface they contact.\n\nNumber Inputs:\nWhite: ammunition\nBlack: Detonation timer (ticks)\n\nLogic Inputs:\nAny Color: Shoot\nBlack: Manual Detonation of all live bombs"
+	},
 
 
 
@@ -492,7 +522,16 @@
 		"title": "Halloween Skull Launcher",
 		"description": "Spooky Scary Skull homing missles!\n\nPriority targetting in front\n\nWill avoid terrain, but destroy creations"
 	},
-
+	"82e504c3-4317-4953-8c70-e594f7397b23":
+	{
+		"title": "Campfire",
+		"description": "Step on this for a warm and fuzzy feeling inside.\n\nPress E to activate\nConnect logic to activate\nShoot spud to activate\n\n\n#ffff00!WARNING!\n#ffffffFire physics is new and highly experimental! Too much fire may cause performance problems! (try turning off Dynamic Lights for better performance with fire)"
+	},
+	"32065033-ce30-4f1e-8c30-4c340611bb06":
+	{
+		"title": "Piñata",
+		"description": "HIT ME"
+	},
 
 
 	//wheels
@@ -520,6 +559,21 @@
 	{
 		"title": "Gigantic Wheel",
 		"description": "A ridiculously gigantic wheel.\n\n\n\nBecause reasons."
+	},
+	"f852f383-2b6c-4db6-8e30-95257f72b6dd":
+	{
+		"title": "Flubber Wheel",
+		"description": "This will make one bouncy ride!"
+	},
+	"c67934b1-52db-48a6-b191-347cb33d0bc7":
+	{
+		"title": "Flubber Wheel 0F",
+		"description": "No friction for this kind of flubber\n\nWhat are you doing with this wheel?"
+	},
+	"65f90284-b4c2-42b6-80c5-8b2657af3450":
+	{
+		"title": "Drift Wheels",
+		"description": "20% Friction of normal wheels"
 	},
 
 
@@ -565,6 +619,16 @@
 	{
 		"title": "Nuclear Bomb",
 		"description": "Use caution when transporting"
+	},
+	"8e66e827-2b3d-4378-850f-c982f64f2a2a":
+	{
+		"title": "Rope",
+		"description": "Logic Input:\nWhite: Attach Rope\nBlack: Detatch Rope\nLight Yellow: Shorten Rope\nYellow: Lengthen Rope\n\nNumber Input:\nNegative to reduce length\nPositive to increase length\n(custom speed values)"
+	},
+	"13404ca3-4a15-47c8-8650-5b0b68d1d79a":
+	{
+		"title": "Lavaball",
+		"description": "Awww haw haw! Dats hot! Daz hot!"
 	},
 
 
@@ -673,12 +737,6 @@
 
 
 
-,
-	"8e66e827-2b3d-4378-850f-c982f64f2a2a":
-	{
-		"title": "Rope",
-		"description": "Logic Input:\nWhite: Attach Rope\nBlack: Detatch Rope\nLight Yellow: Shorten Rope\nYellow: Lengthen Rope\n\nNumber Input:\nNegative to reduce length\nPositive to increase length\n(custom speed values)"
-	}
 
 
 
