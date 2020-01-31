@@ -18,7 +18,7 @@
 			"asg": "$MOD_DATA/Objects/Textures/blk_insulation01_asg.png",
 			"nor": "$MOD_DATA/Objects/Textures/blk_insulation01_nor.png",
 			"color": "debe5d",
-         	"density": 250.0,
+			"density": 250.0,
 			"tiling": 4,
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 1
@@ -34,7 +34,7 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 3
    		},
-		{
+		{ // fuse block
 			"uuid": "0987b4fe-18fb-4c85-9238-026f204d00e8",
 			"dif": "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_dif.tga",
 			"asg": "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_asg.tga",
@@ -44,8 +44,81 @@
 			"tiling": 8,
 			"physicsMaterial": "Wood",
 			"qualityLevel": 1
+		},
+		{
+			"uuid": "0b7b629e-907e-422c-b060-28c0211a6373",
+			"dif": "$MOD_DATA/Objects/Textures/blk_lavarocks_dif.png",
+			"asg": "$MOD_DATA/Objects/Textures/blk_lavarocks_asg.png",
+			"nor": "$MOD_DATA/Objects/Textures/blk_lavarocks_norD.png",
+			//"ao": "$MOD_DATA/Objects/Textures/blk_lavarocks_ao.png",
+			"color": "000000", //"560202",
+			"density": 1250.0,
+			"tiling": 8,
+			"physicsMaterial": "Rock",
+			"qualityLevel": 4
+		},
+		{ // ice transparent
+			"uuid": "43c35277-b862-4786-8c5d-b1bd6b549d79",
+			"dif": "$GAME_DATA/Textures/transparent.tga",
+			"asg": "$GAME_DATA/Objects/Textures/Blocks/blk_glass_asg.tga",
+			"nor": "$GAME_DATA/Textures/nonor_nor.png",
+			"color": "e4f8ff",
+			"density": 250.0,
+			"tiling": 8,
+			"physicsMaterial": "Glass",
+			"qualityLevel": 1,
+			"friction": 0.000001,
+			"glass": true
+		},
+		{ // flubber block -1f
+			"uuid": "1d6d5f84-38f0-4689-9f57-f9bdbf7f3aa5",
+			"dif": "$GAME_DATA/Textures/transparent.tga",
+			"asg": "$MOD_DATA/Objects/Textures/teflon_asg.png",
+			"nor": "$GAME_DATA/Textures/nonor_nor.png",
+			"color": "00ff00",
+			"density": 500.0,
+			"tiling": 2,
+			"physicsMaterial": "Plastic",
+			"qualityLevel": 0,
+			"friction": -1,
+			"restitution": 2
+		},
+		{ // flubber block 0f
+			"uuid": "1d6d5f84-38f0-4689-9f57-f9bdbf7f3aa4",
+			"dif": "$GAME_DATA/Textures/transparent.tga",
+			"asg": "$MOD_DATA/Objects/Textures/teflon_asg.png",
+			"nor": "$GAME_DATA/Textures/nonor_nor.png",
+			"color": "ff00ff",
+			"density": 500.0,
+			"tiling": 2,
+			"physicsMaterial": "Plastic",
+			"qualityLevel": 0,
+			"friction": 0,
+			"restitution": 3
+		},
+		{
+			"uuid": "f0cba95b-2dc4-4492-8fd9-36546a4cb5ab", //destructible ridiculously heavy
+			"dif": "$GAME_DATA/Objects/Textures/Blocks/blk_cardboard_dif.tga",
+			"asg": "$GAME_DATA/Objects/Textures/Blocks/blk_cardboard_asg.tga",
+			"nor": "$GAME_DATA/Objects/Textures/Blocks/blk_cardboard_nor.tga",
+			"color": "000000",
+			"tiling": 16,
+			"density": 1000000,
+			"physicsMaterial": "Cardboard",
+			"qualityLevel": 1
+		},
+		{ //laminate wood //
+			"uuid": "2e7e6095-38f0-4689-9f57-f9bdbf7f3aa5",
+			"dif": "$MOD_DATA/Objects/Textures/laminate_dif.png",
+			"asg": "$MOD_DATA/Objects/Textures/laminate_asg.png",
+			"nor": "$GAME_DATA/Textures/nonor_nor.png",
+			"color": "df7f00",
+			"density": 250.0,
+			"tiling": 16,
+			"physicsMaterial": "Wood",
+			"qualityLevel": 2,
+			"friction": 0.5
 		}
-   		
 
 	]
 }

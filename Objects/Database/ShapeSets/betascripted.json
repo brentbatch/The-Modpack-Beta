@@ -14,10 +14,7 @@
 									"$MOD_DATA/Objects/Textures/conveyor_nor.png"
 								],
 								"material": "UVAnimDifAsgNor",
-								"custom":
-								{
-									"uv0": { "u": 0.01, "v": 0.01 }
-								}
+								"custom": { "uv0": { "u": 0.01, "v": 0.01 } }
 							},
 							{
 								"textureList": [
@@ -37,12 +34,9 @@
 			"box": { "x": 2, "y": 1, "z": 4 },
 			"density": 100.0,
 			"physicsMaterial": "Default",
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/conveyor.lua",
-				"classname": "conveyor"
-			},
-			"sticky": "-X-Z+X+Z"
+			"scripted" : { "filename": "$MOD_DATA/Scripts/conveyor.lua", "classname": "conveyor" },
+			"sticky": "-X-Z+X+Z",
+			"friction": 0.4
 		},
 		{
 			"uuid": "285e6b5d-f13c-49c5-99bd-9b6a377f8356",//conveyor end piece
@@ -57,10 +51,7 @@
 									"$MOD_DATA/Objects/Textures/conveyor_nor.png"
 								],
 								"material": "UVAnimDifAsgNor",
-								"custom":
-								{
-									"uv0": { "u": 0.01, "v": 0.01 }
-								}
+								"custom": { "uv0": { "u": 0.01, "v": 0.01 } }
 							},
 							{
 								"textureList": [
@@ -80,12 +71,9 @@
 			"box": { "x": 1, "y": 1, "z": 4 },
 			"density": 100.0,
 			"physicsMaterial": "Default",
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/conveyor.lua",
-				"classname": "conveyorend"
-			},
-			"sticky": "-X-Z+X+Z"
+			"scripted" : { "filename": "$MOD_DATA/Scripts/conveyor.lua", "classname": "conveyor" },
+			"sticky": "-X-Z+X+Z",
+			"friction": 0.4
 		},
 
 		{
@@ -107,11 +95,7 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/battery.lua",
-				"classname": "battery"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/battery.lua", "classname": "battery" },
 			"rotationSet": "PropY",
 			"color": "df7f00",
 			"box": { "x": 1, "y": 1, "z": 1 },
@@ -144,17 +128,11 @@
 						],
 						"mesh": "$MOD_DATA/Objects/Mesh/windfan_v1_test7.fbx",
 						"includes": [ "POSITION", "UV0", "NORMAL", "TANGENT", "BLEND_INDICES", "BLEND_WEIGHTS" ],
-						"animationList" : [
-							{ "name" : "Fan", "file": "$MOD_DATA/Objects/Mesh/windfan_v1_test7.fbx" }
-						]
+						"animationList" : [ { "name" : "Fan", "file": "$MOD_DATA/Objects/Mesh/windfan_v1_test7.fbx" } ]
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/windfan.lua",
-				"classname": "fan"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/windfan.lua", "classname": "fan" },
 			"rotationSet": "PropY",
 			"color": "df7f00",
 			"box": { "x": 7, "y": 7, "z": 1 },
@@ -195,17 +173,11 @@
 						],
 						"mesh": "$MOD_DATA/Objects/Mesh/BigSquareFan.fbx",
 						"includes": [ "POSITION", "UV0", "NORMAL", "TANGENT", "BLEND_INDICES", "BLEND_WEIGHTS" ],
-						"animationList" : [
-							{ "name" : "AnimY", "file": "$MOD_DATA/Objects/Mesh/BigSquareFan.fbx" }
-						]
+						"animationList" : [ { "name" : "AnimY", "file": "$MOD_DATA/Objects/Mesh/BigSquareFan.fbx" } ]
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/windfan.lua",
-				"classname": "squarefan"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/windfan.lua", "classname": "squarefan" },
 			"rotationSet": "PropY",
 			"color": "df7f00",
 			"box": { "x": 7, "y": 7, "z": 1 },
@@ -220,27 +192,17 @@
 
 		{
 			"uuid": "1e7ddd7d-6d69-432b-bace-9710ff6a5bf8",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/obj_small_pipe_set_dif.tga",
-									"$MOD_DATA/Objects/Textures/obj_small_pipe_set_asg.tga",
-									"$MOD_DATA/Objects/Textures/obj_small_pipe_set_nor.tga"
-								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/ladder3x6.dae"
-					}
-				]
-			},
-			"scripted" : {
-				"filename": "$MOD_DATA/Scripts/ladders.lua",
-				"classname": "ladder" 
-			},
+			"renderable": {"lodList": [{
+			"subMeshList": [
+				{"textureList": [
+						"$MOD_DATA/Objects/Textures/obj_small_pipe_set_dif.tga",
+						"$MOD_DATA/Objects/Textures/obj_small_pipe_set_asg.tga",
+						"$MOD_DATA/Objects/Textures/obj_small_pipe_set_nor.tga"],
+				"material": "DifAsgNor"}
+			],
+			"mesh": "$MOD_DATA/Objects/Mesh/ladder3x6.dae"
+			}]},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/ladders.lua", "classname": "ladder" },
 			"rotationSet": "PropZ",
 			"color": "7a7a7a",
 			"density": 250.0,
@@ -285,10 +247,7 @@
 				]
 			},
 			"rotationSet": "PropY",
-			"simpleInteractive": { 
-				"sustainedAudio": "",
-				"animationTime": 1
-			},
+			"simpleInteractive": { "sustainedAudio": "", "animationTime": 1 },
 			"color": "df7f00",
 			"hull": { "x": 1, "y": 1, "z": 1, "margin": 0.5, "pointList": [ { "x": 0.0, "y": 0.0, "z": 0.0 } ] },
 			"physicsMaterial": "Metal",
@@ -318,10 +277,7 @@
 				]
 			},
 			"rotationSet": "PropY",
-			"simpleInteractive": { 
-				"sustainedAudio": "",
-				"animationTime": 1
-			},
+			"simpleInteractive": { "sustainedAudio": "", "animationTime": 1 },
 			"color": "df7f00",
 			"hull": { "x": 3, "y": 3, "z": 3, "margin": 1.5, "pointList": [ { "x": 0.0, "y": 0.0, "z": 0.0 } ] },
 			"physicsMaterial": "Metal",
@@ -350,11 +306,8 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/Nuke.lua",
-				"classname": "Nuke"/*,
-				"data": { "destructionLevel": 5, "destructionRadius": 100.0, "impulseRadius": 200.0, "impulseMagnitude": 1000.0, "effectExplosion": "Nuke - Explosion", "effectActivate": "Nuke - Activate" }*/
+			"scripted" : { "filename": "$MOD_DATA/Scripts/Nuke.lua", "classname": "Nuke"
+			/*,	"data": { "destructionLevel": 5, "destructionRadius": 100.0, "impulseRadius": 200.0, "impulseMagnitude": 1000.0, "effectExplosion": "Nuke - Explosion", "effectActivate": "Nuke - Activate" } */
 			},
 			"qualityLevel": 0,
 			"rotationSet": "PropYZ",
@@ -362,7 +315,6 @@
 			"hull": {
 				"x": 3, "y": 3, "z": 6, //"margin": 3.5,
 				"pointList": [
-
 					{ "x": -0.73508422, "y": 0.73508396, "z": 0.14096415 },
 					{ "x": -0.96043377, "y": 0.39782453, "z": 0.14096415 },
 					{ "x": -0.96043377, "y": -0.39782454, "z": 0.14096415 },
@@ -463,7 +415,6 @@
 					{ "x": 0.00000000, "y": 0.21993901, "z": 1.00045054 },
 					{ "x": 0.00000000, "y": 0.21993901, "z": 1.00045054 },
 					{ "x": 0.00000000, "y": 0.21123679, "z": 1.00045054 }
-
 				]
 			},
 			"density": 1250.0,
@@ -495,11 +446,7 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/launcher.lua",
-				"classname": "grenades"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/launcher.lua", "classname": "grenades" },
 			"color": "df7f00",
 			"box": { "x": 1, "y": 2, "z": 4 },
 			"density": 1250.0,
@@ -527,11 +474,7 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/cannon.lua",
-				"classname": "cannon"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/cannon.lua", "classname": "cannon" },
 			"color": "df7f00",
 			"cylinder": { "diameter": 1, "depth": 4, "margin": 0.1, "axis": "Z" },
 			"density": 1250.0,
@@ -557,11 +500,7 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/bigcannon.lua",
-				"classname": "bigcannon"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/bigcannon.lua", "classname": "bigcannon" },
 			"color": "df7f00",
 //			"cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
 			"box": { "x": 3, "y": 2, "z": 8 },
@@ -578,9 +517,9 @@
 						"subMeshList": [
 							{
 								"textureList": [
-									"$GAME_DATA/Terrain/Textures/Foliage/env_foliage_cucumberplant_dif.tga",
-									"$GAME_DATA/Terrain/Textures/Foliage/env_foliage_cucumberplant_asg.tga",
-									"$GAME_DATA/Terrain/Textures/Foliage/env_foliage_cucumberplant_nor.tga"
+									"$MOD_DATA/Effects/Particles/Textures/env_foliage_cucumberplant_dif.tga",
+									"$MOD_DATA/Effects/Particles/Textures/env_foliage_cucumberplant_asg.tga",
+									"$MOD_DATA/Effects/Particles/Textures/env_foliage_cucumberplant_nor.tga"
 								],
 								"material": "PoseAnimDifAsgNor"
 							},
@@ -598,11 +537,7 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/crossbow.lua",
-				"classname": "cucumbercrosssbow"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/crossbow.lua", "classname": "cucumbercrosssbow" },
 			"color": "df7f00",
 			"box": { "x": 1, "y": 1, "z": 4 },
 			"density": 1250.0,
@@ -610,6 +545,75 @@
 			"sticky": "-Z+Z-Y+Y-X+X",			
 			"rotationSet": "PropY"
 		},
+
+
+		{
+			"uuid": "3e874085-3444-4e37-8a7f-d5af52bbca8e",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/UniTex_dif.png",
+									"$MOD_DATA/Objects/Textures/UniTex_asg.png",
+									"$GAME_DATA/Textures/nonor_nor.png"
+								],
+								"material": "PoseAnimDifAsgNor"
+							},
+							{
+								"textureList": [ "$MOD_DATA/Objects/Textures/obj_light_blueheadlightflare_dif.png", "", "" ],
+								"material": "PoseAnimLightFlare"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/FlameThrowerBig.obj",
+						"pose0": "$MOD_DATA/Objects/Mesh/FlameThrowerBig_on.obj"
+					}
+				]
+			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/flamethrower.lua", "classname": "flamethrower" },
+			"rotationSet": "PropY",
+			"density": 250,
+			"color": "df7f00",
+			"box": { "x": 5, "y": 2, "z": 2 },
+			"physicsMaterial": "Metal",
+			"sticky": "-X+X-Y+Y-Z+Z",
+			"qualityLevel": 4
+		},
+		{
+			"uuid": "afa66ea2-8541-44dd-8595-63427ea95d6a",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [ "$MOD_DATA/Objects/Textures/obj_light_blueheadlightflare_dif.png", "", "" ],
+								"material": "PoseAnimLightFlare"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/UniTex2_dif.png",
+									"$MOD_DATA/Objects/Textures/UniTex_asg.png",
+									"$GAME_DATA/Textures/nonor_nor.png"
+								],
+								"material": "PoseAnimDifAsgNor"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/FlameThrower.obj",
+						"pose0": "$MOD_DATA/Objects/Mesh/FlameThrower_on.obj"
+					}
+				]
+			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/flamethrower.lua", "classname": "biglighter" },
+			"rotationSet": "PropY",
+			"density": 250,
+			"color": "df7f00",
+			"box": { "x": 3, "y": 1, "z": 1 },
+			"physicsMaterial": "Metal",
+			"sticky": "-X+X-Y+Y-Z+Z",
+			"qualityLevel": 4
+		},
+
 		{
 			"uuid": "b45b8362-041d-4216-9eb4-e4c1208e30a4",
 			"renderable": {
@@ -628,11 +632,7 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/launcher.lua",
-				"classname": "rocket"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/launcher.lua", "classname": "rocket" },
 			"color": "df7f00",
 //			"cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
 			"box": { "x": 3, "y": 1, "z": 1 },
@@ -659,11 +659,7 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/stickyGrenade.lua",
-				"classname": "stickyGrenade"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/stickyGrenade.lua", "classname": "stickyGrenade" },
 			"color": "df7f00",
 //			"cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
 			"box": { "x": 3, "y": 1, "z": 1 },
@@ -671,174 +667,6 @@
 			"physicsMaterial": "Metal",
 			"sticky": "-Z+Z-Y+Y-X+X",			
 			"rotationSet": "PropYX"
-		},
-
-		{
-			"uuid": "3e874085-3444-4e37-8a7f-d5af52bbca8e",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/UniTex_dif.png",
-									"$MOD_DATA/Objects/Textures/UniTex_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
-								],
-								"material": "PoseAnimDifAsgNor"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/obj_light_blueheadlightflare_dif.png",
-									"",
-									""
-								],
-								"material": "PoseAnimLightFlare"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/FlameThrowerBig.obj",
-						"pose0": "$MOD_DATA/Objects/Mesh/FlameThrowerBig_on.obj"
-					}
-				]
-			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/flamethrower.lua",
-				"classname": "flamethrower"
-			},
-			"rotationSet": "PropY",
-			"density": 250,
-			"color": "df7f00",
-			"box": { "x": 5, "y": 2, "z": 2 },
-			"physicsMaterial": "Metal",
-			"sticky": "-X+X-Y+Y-Z+Z",
-			"qualityLevel": 4
-		},
-		{
-			"uuid": "afa66ea2-8541-44dd-8595-63427ea95d6a",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/obj_light_blueheadlightflare_dif.png",
-									"",
-									""
-								],
-								"material": "PoseAnimLightFlare"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/UniTex2_dif.png",
-									"$MOD_DATA/Objects/Textures/UniTex_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
-								],
-								"material": "PoseAnimDifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/FlameThrower.obj",
-						"pose0": "$MOD_DATA/Objects/Mesh/FlameThrower_on.obj"
-					}
-				]
-			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/flamethrower.lua",
-				"classname": "biglighter"
-			},
-			"rotationSet": "PropY",
-			"density": 250,
-			"color": "df7f00",
-			"box": { "x": 3, "y": 1, "z": 1 },
-			"physicsMaterial": "Metal",
-			"sticky": "-X+X-Y+Y-Z+Z",
-			"qualityLevel": 4
-		},
-		{
-			"uuid": "82e504c3-4317-4953-8c70-e594f7397b23",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
-							{
-								"textureList": [
-                                    "$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_dif.tga",
-									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_asg.tga",
-									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_nor.tga"
-								],
-								"material": "PoseAnimDifAsgNor"
-							},
-                            {
-                                "textureList": [
-                                    "$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_dif.tga",
-									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_asg.tga",
-									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_nor.tga"
-                                ],
-                                "material": "UVAnimDifAsgNor",
-                                "custom":
-                                {
-                                    "uv0": { "u": 0.16666667, "v": 0.1645 }
-                                }
-                            }
-                        ],
-						"mesh": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_logicgate_off.fbx",
-						"pose0": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_logicgate_on.fbx"
-					}
-				]
-			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/campfire.lua",
-				"classname": "campfire"
-			},
-			"rotationSet": "PropY",
-			"density": 250,
-			"color": "df7f00",
-			"box": { "x": 5, "y": 2, "z": 5 },
-			"physicsMaterial": "Metal",
-			"sticky": "-X+X-Y+Y-Z+Z",
-			"qualityLevel": 4
-		},
-
-		{
-			"uuid": "13404ca3-4a15-47c8-8650-5b0b68d1d79a", // lavaball
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
-							{
-								"textureList": [
-									"$GAME_DATA/Objects/Textures/decor/obj_decor_sign01_dif.tga",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
-								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/soccer_v3c.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "df7f00",
-			"hull": {
-				"x": 2,
-				"y": 2,
-				"z": 2,
-				"margin": 1.0,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/lavaball.lua",
-				"classname": "lavaball"
-			},
-			"density": 30,
-			"restitution": 1.5,
-			"physicsMaterial": "Plastic"
 		},
 
 
@@ -870,940 +698,494 @@
 					}
 				]
 			},
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/skull.lua",
-				"classname": "skull"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/skull.lua", "classname": "skull" },
 			"rotationSet": "PropSkullEmitter",
 			"density": 250,
 			"color": "df7f00",
 			"hull": { "x": 3, "y": 3, "z": 3, "margin": 1.5, "pointList": [ { "x": 0, "y": 0, "z": 0 } ] },
 			"physicsMaterial": "Metal",
 			"sticky": "-X+Y-Y+Z-Z",
-			"qualityLevel": 2
+			"qualityLevel": 2,
+			"friction": 0
 		},
+// new stuff
 
-
-
-		/// BALLS
 		{
-			"uuid": "484066e4-1176-4472-877d-bffe9b0c522d",
+			"uuid": "82e504c3-4317-4953-8c70-e594f7397b23",
 			"renderable": {
 				"lodList": [
 					{
 						"subMeshList": [
 							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_nor.png"
+								"textureList": [ // top log
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_dif2.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_asg.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/beachball_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "FFFFFF",
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/bouncyball.lua",
-				"classname": "ball"
-			},
-			"hull": {
-				"x": 5,
-				"y": 5,
-				"z": 5,
-				"margin": 2.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 10,
-			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "f8ff9f84-9594-4794-b4de-f445faadcac9",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+							},
+							{
+								"textureList": [ // top log small
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_dif2.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_asg.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_nor.png"
+								],
+								"material": "DifAsgNor"
+							},
 							{
 								"textureList": [
-									"$GAME_DATA/Objects/Textures/decor/obj_decor_sign01_dif.tga",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_giantpine_dif2.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_giantpine_asg.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_giantpine_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/soccer_v3c.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "FF0000",
-			"hull": {
-				"x": 2,
-				"y": 2,
-				"z": 2,
-				"margin": 1.0,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 10,
-			"physicsMaterial": "Plastic"
-		},
-		{
-		"uuid": "699280a8-5fcb-4a97-b4da-e723a6cb2e2d",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+							},
 							{
 								"textureList": [
-									"$GAME_DATA/Objects/Textures/decor/obj_decor_sign01_dif.tga",
-										"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_dif2.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_asg.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/prolatespheroid.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "654321",
-			"hull": { 
-				"x": 1, "y": 2, "z": 1,
-				"margin": 0.4,
-				"pointList": [
-					{ "x":	0.25000000, "y":	0.0, "z": 0.13346330 },
-					{ "x":	0.17677670, "y": -0.17677670, "z": 0.13346330 },
-					{ "x":	0.0, "y": -0.25000000, "z": 0.13346330 },
-					{ "x": -0.17677670, "y": -0.17677670, "z": 0.13346330 },
-					{ "x": -0.25000000, "y":	0.0, "z": 0.13346330 },
-					{ "x": -0.17677670, "y":	0.17677670, "z": 0.13346330 },
-					{ "x":	0.0, "y":	0.25000000, "z": 0.13346330 },
-					{ "x":	0.17677670, "y":	0.17677670, "z": 0.13346330 },
-					{ "x":	0.0, "y":	0.0, "z": 1.5 },
-					{ "x":	0.25000000, "y":	0.0, "z": -0.13346282 },
-					{ "x":	0.17677670, "y":	0.17677670, "z": -0.13346282 },
-					{ "x":	0.0, "y":	0.25000000, "z": -0.13346282 },
-					{ "x": -0.17677670, "y":	0.17677670, "z": -0.13346282 },
-					{ "x": -0.25000000, "y":	0.0, "z": -0.13346282 },
-					{ "x": -0.17677670, "y": -0.17677670, "z": -0.13346282 },
-					{ "x":	0.0, "y": -0.25000000, "z": -0.13346282 },
-					{ "x":	0.17677670, "y": -0.17677670, "z": -0.13346282 },
-					{ "x":	0.0, "y":	0.0, "z": -1.5 }
-				]
-			},
-			"density": 50,
-			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "262f9d5b-42da-4cc6-bc10-57d52e67f5fd",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_nor.png"
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_dif2.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_asg.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/basketball_v2c.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "b95b01",
-			"hull": {
-				"x": 2,
-				"y": 2,
-				"z": 2,
-				"margin": 1.0,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 5,
-			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "b17184d8-8dfa-4b86-8d04-38dcc7564caa",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_nor.png"
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_dif2.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_asg.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/baseball_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 15,
-			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "375da746-8364-4bea-a1fa-d6ee6f08cf10",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+							},
 							{
 								"textureList": [
-										"$MOD_DATA/Objects/Textures/default_dif.png",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_dif2.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_asg.png",
+									"$MOD_DATA/Objects/Textures/Forest/env_forest_pine_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "555555",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.25,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 500,
-			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "54d32938-83f8-4d1d-ad0c-b636bf5001eb",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+							},///////////////////////////////
 							{
 								"textureList": [
-										"$MOD_DATA/Objects/Textures/default_dif.png",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/campfire_rocks_dif.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock01_asg.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock08_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "aaaaaa",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.25,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 100,
-			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "7873465e-ff81-4da9-b2d5-4c4ead24fc1c",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+							},
 							{
 								"textureList": [
-										"$MOD_DATA/Objects/Textures/default_dif.png",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/campfire_rocks_dif.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock01_asg.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock07_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/golfball_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "FFFFFF",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.25,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 25,
-			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "1d0ff740-36f7-4ce2-8665-a84dafc9470e",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+							},
 							{
 								"textureList": [
-									"$GAME_DATA/Objects/Textures/decor/obj_decor_sign01_dif.tga",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/campfire_rocks_dif.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock01_asg.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock06_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/volleyball_v2b.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "FFFFFF",
-			"hull": {
-				"x": 2,
-				"y": 2,
-				"z": 2,
-				"margin": 1.0,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 5,
-			"physicsMaterial": "Plastic"
-		},
-		{
-			"uuid": "eac6fc35-4316-4f99-9a65-b78201fec9f2",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
-							{
+							},
+							{ // rock 5
 								"textureList": [
-										"$MOD_DATA/Objects/Textures/default_dif.png",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
+									"$MOD_DATA/Objects/Textures/campfire_rocks_dif.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock01_asg.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock05_nor.png"
 								],
 								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/bowling_v1a_sharp.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "000000",
-			"hull": {
-				"x": 2,
-				"y": 2,
-				"z": 2,
-				"margin": 1.0,
-				"pointList": [
-				{ "x": 0, "y": 0.0, "z": 0 }
-				]
-			},
-			"density": 25,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "fab1db4a-abac-4579-8ac6-94d5df29642d",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
-							{
+							},
+							{ // rock 4 
 								"textureList": [
-									"$GAME_DATA/Objects/Textures/decor/obj_decor_sign01_dif.tga",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
+									"$MOD_DATA/Objects/Textures/campfire_rocks_dif.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock01_asg.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock04_nor.png"
+								],
+								"material": "DifAsgNor"
+							},
+							{ // rock 2 second last (floor)
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/campfire_rocks_dif.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_bigrock01_asg.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock02_nor.png"
+								],
+								"material": "DifAsgNor"
+							},
+							{ // rock 1 last item
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/campfire_rocks_dif.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_bigrock01_asg.png",
+									"$MOD_DATA/Objects/Textures/Rocks/env_rocks_rock01_nor.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-						"mesh": "$MOD_DATA/Objects/Mesh/BowlingPin_V3.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/campfire_v3.obj"
 					}
 				]
 			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/campfire.lua", "classname": "campfire" },
 			"rotationSet": "PropY",
+			"density": 1250,
+			"color": "804620", // rocks 6e7569	  // trunks 804620
+			"hull": { "x": 5, "y": 2, "z": 5, //"margin": 0.3,
+				"pointList": [
+					{ "x": -0.60964131, "y": 0.90484942, "z": 0.29480497 },
+					{ "x": 0.52895674, "y": 0.21388348, "z": 0.41131370 },
+					{ "x": 0.55829912, "y": -0.29503290, "z": 0.84779768 },
+					{ "x": -0.031043257, "y": 0.27835429, "z": 0.78808645 },
+					{ "x": -0.80432474, "y": -0.22164571, "z": 0.83748840 },
+					{ "x": -0.95492279, "y": -0.021645710, "z": 0.024206917 },
+					{ "x": -0.64432474, "y": 0.27835429, "z": -0.70907457 },
+					{ "x": 0.20895674, "y": 0.17835429, "z": -0.80367262 },
+					{ "x": 0.63261093, "y": -0.45535413, "z": -0.62341714 },
+					{ "x": 0.88895674, "y": -1.00000000, "z": 0.18420692 },
+					{ "x": 0.67606352, "y": -1.00000000, "z": 0.73131370 },
+					{ "x": 0.24895674, "y": -1.00000000, "z": 0.94420692 },
+					{ "x": -0.73815004, "y": -1.00000000, "z": 0.89131370 },
+					{ "x": -1.27104326, "y": -1.00000000, "z": 0.024206917 },
+					{ "x": -0.73815004, "y": -0.60000000, "z": -0.76289986 },
+					{ "x": -0.27104326, "y": -1.00000000, "z": -0.93579308 },
+					{ "x": 0.15606352, "y": -1.00000000, "z": -0.96289986 },
+					{ "x": -0.35104326, "y": 1.01000000, "z": 0.024206917 },
+					{ "x": 0.56251013, "y": -1.00000000, "z": -0.62934647 },
+					{ "x": 0.91753725, "y": -0.22164571, "z": 0.23084766 }
+				]
+			},
+			"physicsMaterial": "Rock",
 			"sticky": "-Y",
-			"color": "FF0000",
-			"hull": {
-				"x": 1,
-				"y": 4,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 1.0, "z": 0 },
-				{ "x": 0, "y": -0.25, "z": 0 }
-				]
-			},
-			"density": 50,
-			"physicsMaterial": "Wood"
+			"prop": true, // only upright / on ground? I forget what this does, but this prevents it from being placed on blocks and vehicles (intended)
+			"qualityLevel": 5
 		},
+
+
 		{
-			"uuid": "2cf4121b-50a9-483f-87ff-402c49697028", 
+			"uuid": "32065033-ce30-4f1e-8c30-4c340611bb06",
 			"renderable": {
 				"lodList": [
 					{
 						"subMeshList": [
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_cue_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "90735215-bb1e-48c4-84bf-85e84e30980a", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_1_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "a43fbc2f-ad82-44da-bfd1-31485393cbd9", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_2_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "4d695672-0863-41b2-b344-6feab2e87f07", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_3_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "2fbca281-6c67-4f44-9983-6ebc06ab8af0",
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_4_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "f0a0e19b-e0e9-459a-9036-2f1a7ef34590", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_5_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "7d9ba651-0c9d-44cd-8a2b-b237981d5776", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_6_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "8d7a5114-9d4b-454c-b54e-66afd9c41bbf", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/8_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_7_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "e8c15a4e-9548-4447-8949-cc4b950a3111", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_8_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "a5c66792-ae35-4fde-83e8-2bcec027723c", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/10_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_9_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "ff9cba73-09af-4a46-a232-36815c3ad037", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/11_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_10_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "e559b658-eac3-4cc1-bada-0241d545f641", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/12_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_11_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "b1850c9c-887a-4150-9d2f-188fdedea403", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/13_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_12_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "a47efb3b-111a-4396-a8ba-ddbc0cf23465", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/14_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_13_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "0ca3a832-d3b4-4d33-acd7-d4fa9b49d621", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/15_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
-							}
-						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_14_v1a.mesh"
-					}
-				]
-			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		},
-		{
-			"uuid": "af407bc3-fb85-49a4-9d3b-0ce6421927a0", 
-			"renderable": {
-				"lodList": [
-					{
-						"subMeshList": [
+								"material" : "DifAsg"
+							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_dif.png",
-									"$MOD_DATA/Objects/Textures/mod_decor_arrowsign_asg.png",
-									"$MOD_DATA/Objects/Textures/default_nor.png"
+									"$MOD_DATA/Objects/Textures/pinata/16_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
 								],
-								"material": "DifAsgNor"
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/17_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/18_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/1_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/2_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/3_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/4_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/5_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/6_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/7_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/8_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/10_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/11_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/12_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/13_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/14_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/15_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/16_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/17_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/18_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/13_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
+							},
+							{
+								"textureList": [
+									"$MOD_DATA/Objects/Textures/pinata/14_albedo.jpg",
+									"$GAME_DATA/Textures/transparent.tga",
+									""
+								],
+								"material" : "DifAsg"
 							}
+
 						],
-						"mesh": "$MOD_DATA/Objects/Mesh/billiard_15_v1a.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/Pinata_test01.obj"
 					}
 				]
 			},
-			"rotationSet": "PropFull",
-			"color": "f7f2d4",
-			"hull": {
-				"x": 1,
-				"y": 1,
-				"z": 1,
-				"margin": 0.5,
-				"pointList": [
-				{ "x": 0, "y": 0, "z": 0 }
-				]
-			},
-			"density": 250,
-			"physicsMaterial": "Rock"
-		}
+			"scripted" : { "filename": "$MOD_DATA/Scripts/pinata.lua", "classname": "pinata" },
+			"rotationSet": "PropY",
+			"color": "00ff00",
+			"box": { "x": 4, "y": 8, "z": 2 },
+			"density": 250.0,
+			"physicsMaterial": "Plastic"
+		},
 
 
 
-		,
 		{
 			"uuid": "8e66e827-2b3d-4378-850f-c982f64f2a2a",
 			"renderable": {
@@ -1833,66 +1215,47 @@
 					}
 				]
 			},
-			"scripted": {
-				"filename": "$MOD_DATA/Scripts/Rope.lua",
-				"classname": "Rope"
-			},
+			"scripted": { "filename": "$MOD_DATA/Scripts/Rope.lua", "classname": "Rope" },
 			"color": "222222",
-			"box": {
-				"x": 1,
-				"y": 1,
-				"z": 1
-			},
+			"box": { "x": 1, "y": 1, "z": 1 },
 			"density": 500.0,
 			"physicsMaterial": "Metal",
 			"sticky": "-Z",
 			"rotationSet": "PropZ"
 		},
-		
+
+
 		{
-			"uuid": "d34c88b9-f4ce-4db7-9c55-58b64f048213",
+			"uuid": "13404ca3-4a15-47c8-8650-5b0b68d1d79a", // lavaball
 			"renderable": {
 				"lodList": [
 					{
 						"subMeshList": [
 							{
 								"textureList": [
-                                    "$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_dif.tga",
-									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_asg.tga",
-									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_nor.tga"
+									"$GAME_DATA/Objects/Textures/decor/obj_decor_sign01_dif.tga",
+									"$MOD_DATA/Objects/Textures/default_asg.png",
+									"$GAME_DATA/Textures/nonor_nor.png"
 								],
-								"material": "PoseAnimDifAsgNor"
-							},
-                            {
-                                "textureList": [
-                                    "$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_dif.tga",
-									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_asg.tga",
-									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_logicgate_nor.tga"
-                                ],
-                                "material": "UVAnimDifAsgNor",
-                                "custom":
-                                {
-                                    "uv0": { "u": 0.16666667, "v": 0.1645 }
-                                }
-                            }
-                        ],
-						"mesh": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_logicgate_off.fbx",
-						"pose0": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_logicgate_on.fbx"
+								"material": "DifAsgNor"
+							}
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/soccer_v3c.mesh"
 					}
 				]
 			},
+			"rotationSet": "PropFull",
+			"color": "882200",
+			"sphere": { "diameter": 3 },
+			"density": 500,
 			"scripted" : 
 			{
-				"filename": "$MOD_DATA/Scripts/pinata.lua",
-				"classname": "pinata"
+				"filename": "$MOD_DATA/Scripts/lavaball.lua",
+				"classname": "lavaball"
 			},
-			"rotationSet": "PropY",
-			"density": 250,
-			"color": "df7f00",
-			"box": { "x": 3, "y": 2, "z": 3 },
-			"physicsMaterial": "Metal",
-			"sticky": "-X+X-Y+Y-Z+Z",
-			"qualityLevel": 4
+			"physicsMaterial": "Rock",
+			"friction": -1 // high friction -1 ? low friction 0? 
+			,"restitution": 2 // bounce around and settle
 		}
 
 
