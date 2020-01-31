@@ -67,7 +67,7 @@ function cannon.server_tryFire( self )
 			self.network:sendToClients( "client_onShoot", {dir = dir*fireForce, gravity = sm.physics.getGravity()})
 			
 			local mass = 50
-			local impulse = dir * -fireForce * mass
+			local impulse =  -dir * fireForce * mass
 			sm.physics.applyImpulse( self.shape, impulse, true )
 		end
 	end

@@ -56,7 +56,7 @@ function ShipCannon.server_tryFire( self )
 			
 			self.network:sendToClients( "client_onShoot" )
 			local mass = sm.projectile.getProjectileMass( "melon" )
-			local impulse = dir * -fireForce * mass * 0.1
+			local impulse =  sm.vec3.new(0,0,-1) * fireForce * mass * 0.1
 			sm.physics.applyImpulse( self.shape, impulse )
 		end
 	end
@@ -148,7 +148,7 @@ function CrossBow.server_tryFire( self )
 						
 			self.network:sendToClients( "client_onShoot" )
 			local mass = sm.projectile.getProjectileMass( "potato" )
-			local impulse = dir * -fireForce * mass * 0.8
+			local impulse =  sm.vec3.new(0,0,-1) * fireForce * mass * 0.8
 			
 			sm.physics.applyImpulse( self.shape, impulse )
 			
@@ -242,7 +242,7 @@ function Launcher.server_tryFire( self )
 						
 			self.network:sendToClients( "client_onShoot" )
 			local mass = sm.projectile.getProjectileMass( "potato" )
-			local impulse = dir * -fireForce * mass * 0.8
+			local impulse =  sm.vec3.new(0,0,-1) * fireForce * mass * 0.8
 			
 			sm.physics.applyImpulse( self.shape, impulse )
 			
@@ -336,7 +336,7 @@ function Barrel1.server_tryFire( self )
 						
 			self.network:sendToClients( "client_onShoot" )
 			local mass = sm.projectile.getProjectileMass( "potato" )
-			local impulse = dir * -fireForce * mass * 0.8
+			local impulse =  sm.vec3.new(0,0,-1) * fireForce * mass * 0.8
 			
 			sm.physics.applyImpulse( self.shape, impulse )
 			
@@ -431,7 +431,7 @@ function Barrel2.server_tryFire( self )
 						
 			self.network:sendToClients( "client_onShoot" )
 			local mass = sm.projectile.getProjectileMass( "potato" )
-			local impulse = dir * -fireForce * mass * 0.8
+			local impulse =  sm.vec3.new(0,0,-1) * fireForce * mass * 0.8
 			
 			sm.physics.applyImpulse( self.shape, impulse )
 			
@@ -525,7 +525,7 @@ function BarrelFlat.server_tryFire( self )
 						
 			self.network:sendToClients( "client_onShoot" )
 			local mass = sm.projectile.getProjectileMass( "potato" )
-			local impulse = dir * -fireForce * mass * 0.8
+			local impulse =  sm.vec3.new(0,0,-1) * fireForce * mass * 0.8
 			
 			sm.physics.applyImpulse( self.shape, impulse )
 			
