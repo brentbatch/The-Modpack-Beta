@@ -31,6 +31,7 @@ sm.__SE_Version = sm.__SE_Version or {}
 
 dofile "SE_Libs/Debugger.lua"
 
+dofile "SE_Libs/random.lua"
 dofile "SE_Libs/jsonReader.lua"
 --dofile "SE_Libs/body.lua"
 --dofile "SE_Libs/color.lua"
