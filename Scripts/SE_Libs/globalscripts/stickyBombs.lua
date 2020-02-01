@@ -36,8 +36,8 @@ end
 
 function stickyBomb.server_onFixedUpdate(self, dt)
 	--print('stickyBomb.server_onFixedUpdate', self.server_queued)
-	for key, v in pairs(self.server_queued) do --devPrint('server_queued')
-		local shapeId, position, velocity, detonationTime, capacity, explodeOld = unpack(v)
+	for key, queued in pairs(self.server_queued) do --devPrint('server_queued')
+		local shapeId, position, velocity, detonationTime, capacity, explodeOld = queued[1], queued[2], queued[3], queued[4], queued[5], queued[6]
 		
 		if self.ammo[shapeId] then
 			local i = 0
