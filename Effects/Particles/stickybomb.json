@@ -63,7 +63,7 @@
 			"visual_particle_quota" : 1001
 		 }
       ],
-      "scale" : 1,
+      "scale" : 0.4,
       "scale_time" : 1,
       "scale_velocity" : 0.0,
       "system_type" : "stream"
