@@ -419,10 +419,15 @@
 		"description": "\"Not A Flame Thrower\"\n\n\n#ffff00!WARNING!\n#ffffffFire physics is new and highly experimental! Too much fire may cause performance problems! (try turning off Dynamic Lights for better performance with fire)"
 	},
 
+	"b45b8362-041d-4216-9eb4-e4c1208e30a4":
+	{
+		"title": "Rocket Launcher",
+		"description": "Similar to other video game rocket launchers (slow flying speed for gameplay)\n\nStill a work in progress, as is everything in MP BETA."
+	},
 	"180135ca-6eb8-4a5d-bc34-94917fb82386":
 	{
 		"title": "Sticky Bomb Launcher",
-		"description": "This grenade launcher fires bombs that stick to whatever surface they contact.\n\nNumber Inputs:\nWhite: ammunition\nBlack: Detonation timer (ticks)\n\nLogic Inputs:\nAny Color: Shoot\nBlack: Manual Detonation of all live bombs"
+		"description": "This grenade launcher fires bombs that stick to whatever surface they contact.\n\nNumber Inputs:\nWhite: Ammunition\nBlack: Timer (seconds)\n\nLogic Inputs:\nAny Color: Shoot\nBlack: Manual Detonation\n\nDefault Values:\n5 Bombs / 10 seconds"
 	},
 
 
@@ -732,9 +737,29 @@
 	{
 		"title": "Steering Wheel",
 		"description": "It's a wheel, but not the type that rolls on the ground.\nFunctions like a button so you can attach your horn."
+	},
+
+
+	"601ea94a-6fb8-4951-9bc0-43776ed7906b":
+	{
+		"title": "Tie Rod 2x1",
+		"description": "Connect things together like pipes and bearings, for a nice looking alternative to those big bulky pipes."
+	},
+	"9fb367fe-d379-4ee1-8f46-dc1d6fe178fa":
+	{
+		"title": "Tie Rod 3x1",
+		"description": "Connect things together like pipes and bearings, for a nice looking alternative to those big bulky pipes."
+	},
+	"6d720061-7ccb-436e-b392-fc16a1c83479":
+	{
+		"title": "Tie Rod 2x3",
+		"description": "Connect things together like pipes and bearings, for a nice looking alternative to those big bulky pipes."
+	},
+	"de2cb2fc-4973-4a92-97dd-5a7a101fccc5":
+	{
+		"title": "Tie Rod 3x2 (flip)",
+		"description": "Connect things together like pipes and bearings, for a nice looking alternative to those big bulky pipes."
 	}
-
-
 
 
 
