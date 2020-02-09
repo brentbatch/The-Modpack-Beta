@@ -639,7 +639,8 @@
 			"density": 1250.0,
 			"physicsMaterial": "Metal",
 			"sticky": "-Z+Z-Y+Y-X+X",			
-			"rotationSet": "PropYX"
+			"rotationSet": "PropYX",
+			"qualityLevel": 4
 		},
 		{
 			"uuid": "180135ca-6eb8-4a5d-bc34-94917fb82386",
@@ -660,13 +661,14 @@
 				]
 			},
 			"scripted" : { "filename": "$MOD_DATA/Scripts/stickyGrenade.lua", "classname": "stickyGrenade" },
-			"color": "df7f00",
+			"color": "222222",
 //			"cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
 			"box": { "x": 3, "y": 1, "z": 1 },
 			"density": 1250.0,
 			"physicsMaterial": "Metal",
 			"sticky": "-Z+Z-Y+Y-X+X",			
-			"rotationSet": "PropYX"
+			"rotationSet": "PropYX",
+			"qualityLevel": 4
 		},
 
 
@@ -876,312 +878,32 @@
 						"subMeshList": [
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
+									"$MOD_DATA/Objects/Textures/pinata_dif.png",
+									"$MOD_DATA/Objects/Textures/pinata_asg.png",
 									""
 								],
 								"material" : "DifAsg"
 							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
+									"$MOD_DATA/Objects/Textures/pinata_dif.png",
+									"$MOD_DATA/Objects/Textures/pinata_asg.png",
 									""
 								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/8_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/9_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/10_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/11_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/12_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/13_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/14_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/15_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/16_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/17_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/18_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/1_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/2_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/3_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/4_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/5_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/6_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/7_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/8_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/10_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/11_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/12_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/13_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/14_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/15_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/16_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/17_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/18_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/13_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
-							},
-							{
-								"textureList": [
-									"$MOD_DATA/Objects/Textures/pinata/14_albedo.jpg",
-									"$GAME_DATA/Textures/transparent.tga",
-									""
-								],
-								"material" : "DifAsg"
+								"material" : "DifAsgAlphaFlip"
 							}
-
 						],
-						"mesh": "$MOD_DATA/Objects/Mesh/Pinata_test01.obj"
+						"mesh": "$MOD_DATA/Objects/Mesh/pinata_b.obj"
 					}
 				]
 			},
 			"scripted" : { "filename": "$MOD_DATA/Scripts/pinata.lua", "classname": "pinata" },
 			"rotationSet": "PropY",
-			"color": "00ff00",
+			"color": "000000",
 			"box": { "x": 4, "y": 8, "z": 2 },
 			"density": 250.0,
-			"physicsMaterial": "Plastic"
+			"physicsMaterial": "Plastic",
+			"qualityLevel": 2
 		},
 
 
@@ -1221,7 +943,8 @@
 			"density": 500.0,
 			"physicsMaterial": "Metal",
 			"sticky": "-Z",
-			"rotationSet": "PropZ"
+			"rotationSet": "PropZ",
+			"qualityLevel": 4
 		},
 
 
@@ -1233,29 +956,26 @@
 						"subMeshList": [
 							{
 								"textureList": [
-									"$GAME_DATA/Objects/Textures/decor/obj_decor_sign01_dif.tga",
-									"$MOD_DATA/Objects/Textures/default_asg.png",
-									"$GAME_DATA/Textures/nonor_nor.png"
+									"$MOD_DATA/Objects/Textures/lavaball_dif.png",
+									"$MOD_DATA/Objects/Textures/lavaball_asg.png",
+									"$MOD_DATA/Objects/Textures/lavaball_norA.png"
 								],
 								"material": "DifAsgNor"
 							}
 						],
-						"mesh": "$MOD_DATA/Objects/Mesh/soccer_v3c.mesh"
+						"mesh": "$MOD_DATA/Objects/Mesh/lavaball.obj"
 					}
 				]
 			},
 			"rotationSet": "PropFull",
-			"color": "882200",
+			"color": "df7f00",
 			"sphere": { "diameter": 3 },
 			"density": 500,
-			"scripted" : 
-			{
-				"filename": "$MOD_DATA/Scripts/lavaball.lua",
-				"classname": "lavaball"
-			},
+			"scripted" : { "filename": "$MOD_DATA/Scripts/lavaball.lua", "classname": "lavaball" },
 			"physicsMaterial": "Rock",
+			"qualityLevel": 4,
 			"friction": -1 // high friction -1 ? low friction 0? 
-			,"restitution": 2 // bounce around and settle
+			,"restitution": 1.5 // bounce around and settle
 		}
 
 

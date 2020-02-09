@@ -1578,16 +1578,16 @@
 						"subMeshList": [
 							{
 								"textureList": [
-									"$GAME_DATA/Textures/transparent.tga",
-									"$MOD_DATA/Objects/Textures/teflon_asg.png",
+									"$MOD_DATA/Objects/Textures/theatre_light_dif.png",
+									"$MOD_DATA/Objects/Textures/blk_t-ice_asg.png",
 									"$GAME_DATA/Textures/nonor_nor.png"
 								],
 								"material": "DifAsgNor"
 							},
 							{
 								"textureList": [
-									"$MOD_DATA/Objects/Textures/theatre_light_dif.png",
-									"$MOD_DATA/Objects/Textures/blk_t-ice_asg.png",
+									"$GAME_DATA/Textures/transparent.tga",
+									"$MOD_DATA/Objects/Textures/teflon_asg.png",
 									"$GAME_DATA/Textures/nonor_nor.png"
 								],
 								"material": "DifAsgNor"
@@ -3434,12 +3434,12 @@
 			},
 			"rotationSet": "PropFull",
 			"color": "000000",
-			//"hull": { "x": 2, "y": 2, "z": 2, "margin": 1, "pointList": [ { "x": 0, "y": 0, "z": 0 } ] },
-			"sphere": { "diameter": 2 },
+			"hull": { "x": 3, "y": 3, "z": 3, "margin": 1, "pointList": [ { "x": 0, "y": 0, "z": 0 } ] },
+			//"sphere": { "diameter": 2 },
 			"density": 1250,
 			"physicsMaterial": "Rock",
 			"friction": 0.15,
-			"restitution": 0.5
+			"restitution": 0.3
 		},
 		{
 			"uuid": "fab1db4a-abac-4579-8ac6-94d5df29642d",
@@ -3565,7 +3565,7 @@
 			"density": 250,
 			"physicsMaterial": "Wood",
 			"friction": 0.25,
-			"restitution": 0.5
+			"restitution": 0.6
 		},
 		{
 			"uuid": "2cf4121b-50a9-483f-87ff-402c49697028", 

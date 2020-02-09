@@ -60,7 +60,7 @@
 		{ // ice transparent
 			"uuid": "43c35277-b862-4786-8c5d-b1bd6b549d79",
 			"dif": "$GAME_DATA/Textures/transparent.tga",
-			"asg": "$GAME_DATA/Objects/Textures/Blocks/blk_glass_asg.tga",
+			"asg": "$MOD_DATA/Objects/Textures/t_ice_asg.png",
 			"nor": "$GAME_DATA/Textures/nonor_nor.png",
 			"color": "e4f8ff",
 			"density": 250.0,
