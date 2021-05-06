@@ -446,7 +446,7 @@
 					}
 				]
 			},
-			"scripted" : { "filename": "$MOD_DATA/Scripts/launcher.lua", "classname": "grenades" },
+			"scripted" : { "filename": "$MOD_DATA/Scripts/grenadelauncher.lua", "classname": "grenadelauncher" },
 			"color": "df7f00",
 			"box": { "x": 1, "y": 2, "z": 4 },
 			"density": 1250.0,
@@ -632,7 +632,7 @@
 					}
 				]
 			},
-			"scripted" : { "filename": "$MOD_DATA/Scripts/launcher.lua", "classname": "rocket" },
+			"scripted" : { "filename": "$MOD_DATA/Scripts/rocketlauncher.lua", "classname": "rocketlauncher" },
 			"color": "df7f00",
 //			"cylinder": { "diameter": 2, "depth": 8, "margin": 0.1, "axis": "Z" },
 			"box": { "x": 3, "y": 1, "z": 1 },

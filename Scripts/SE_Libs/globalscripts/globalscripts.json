@@ -1,15 +1,12 @@
 {
-	"debug": { // "debug" is the name used to create a scriptinstance of this script
-		"script": "test.lua", // the filename
-		"class": "test" // the class, **has to be unique in the whole mod!**
+	"customProjectile": {
+		"script": "customProjectile.lua",
+		"class": "customProjectile"
 	},
-	"projectile": {
-		"script": "projectile.lua",
-		"class": "projectile"
-	},
-	"portedFire": {
-		"script": "portedFire.lua",
-		"class": "portedFire"
+	"customFire": {
+		"crossModUuid":"65f72263-2d58-4753-87fa-a5d6cc2de8ef",
+		"script": "customFire.lua",
+		"class": "customFire"
 	},
 	"stickyBomb": {
 		"script": "stickyBombs.lua",

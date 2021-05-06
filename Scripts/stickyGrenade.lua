@@ -1,9 +1,9 @@
+--[[
+	Copyright (c) 2019 Brent Batch
+	Contact: Brent Batch#9261 on discord
+]]--
 dofile "SE_Loader.lua"
 
--- the following code prevents re-load of this file, except if in '-dev' mode.
-if stickyGrenade and not sm.isDev then -- increases performance for non '-dev' users.
-	return -- perform sm.checkDev(shape) in server_onCreate to set sm.isDev
-end 
 
 
 stickyGrenade = class( globalscript )
@@ -16,7 +16,6 @@ stickyGrenade.colorHighlight = sm.color.new( 0x11B2B2ff  )
 stickyGrenade.poseWeightCount = 1
 
 function stickyGrenade.client_onRefresh(self)
-	sm.isDev = true
 	self:client_onCreate()
 end
 function stickyGrenade.client_onCreate(self)

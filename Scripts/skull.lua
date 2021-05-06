@@ -1,3 +1,10 @@
+--[[
+	Copyright (c) 2019 Brent Batch
+	Contact: Brent Batch#9261 on discord
+]]--
+dofile "SE_Loader.lua"
+
+
 skull = class( nil )
 skull.maxParentCount = 1
 skull.maxChildCount = 0

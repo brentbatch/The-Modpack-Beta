@@ -1,9 +1,8 @@
+--[[
+	Copyright (c) 2019 Brent Batch
+	Contact: Brent Batch#9261 on discord
+]]--
 dofile "SE_Loader.lua"
-
--- the following code prevents re-load of this file, except if in '-dev' mode.
-if campfire and not sm.isDev then -- increases performance for non '-dev' users.
-	return -- perform sm.checkDev(shape) in server_onCreate to set sm.isDev
-end 
 
 
 campfire = class( globalscript )
@@ -50,11 +49,11 @@ function campfire.server_tryFire( self ) -- self.shape.at is the side flame is o
 		local hit, result = sm.physics.raycast(self.shape.worldPosition + offset, self.shape.worldPosition + offset + sm.vec3.new(0,0,4))--16 blocks up
 		if hit then
 			if result.type == "character" then
-				portedFire.server_spawnFire(
-					result.pointWorld,
-					sm.vec3.new(0,0,1),
-					result
-				)
+				customFire.server_spawnFire(self, {
+					position = result.pointWorld,
+					velocity = sm.vec3.new(0,0,1),
+					raycast = result
+				})
 			elseif result.type == "body" then
 				local shape = result:getShape()
 				if not foundobjects[shape.id] then foundobjects[shape.id] = {distance = 16, shape = shape} end
@@ -72,11 +71,11 @@ function campfire.server_tryFire( self ) -- self.shape.at is the side flame is o
 		if foundobjects[shapeid] then -- count up/spawn fire
 			trackedShape.timer = trackedShape.timer + 1/(7*foundobjects[shapeid].distance^1.8)
 			if trackedShape.timer > 1 then
-				portedFire.server_spawnFire(
-					foundobjects[shapeid].result.pointWorld,
-					sm.vec3.new(0,0,10),
-					foundobjects[shapeid].result
-				)
+				customFire.server_spawnFire(self, {
+					position = foundobjects[shapeid].result.pointWorld,
+					velocity = sm.vec3.new(0,0,1),
+					raycast = foundobjects[shapeid].result
+				})
 				
 				self.trackedShapes[shapeid] = nil
 			end
@@ -96,7 +95,7 @@ end
 -- Client
 
 function campfire.client_onCreate( self )
-	self:client_attachScript("portedFire")
+	self:client_attachScript("customFire")
 	self.shooteffect = sm.effect.createEffect("campfireEffect", self.interactable)
 	self.shooteffect:setOffsetRotation( sm.vec3.getRotation(sm.vec3.new( 0, 1, 0 ),sm.vec3.new( 0, 0, 1 )))
 	self.shooteffect:setOffsetPosition( sm.vec3.new( 0, 0.25, 0 ))
@@ -105,7 +104,8 @@ function campfire.client_onRefresh(self)
 	self:client_onCreate()
 end
 
-function campfire.client_onInteract(self)
+function campfire.client_onInteract(self, character, state)
+	if not state then return end
 	self.network:sendToServer('server_onInteract')
 end
 
