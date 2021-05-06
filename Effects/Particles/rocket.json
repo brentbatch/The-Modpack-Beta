@@ -1,0 +1,49 @@
+{//Credit & Copyright: Brent Batch  /  DO NOT COPY without permission from Brent Batch#9261 (discord)
+   "system" : {
+      "emitters" : [
+		  {
+            //"ASG_map" : "$GAME_DATA/Textures/transparent.tga",
+			"default_mesh_depth" : 1.0,
+			"default_mesh_height" : 1.0,
+			"default_mesh_width" : 1.0,
+			"direction_type" : "object",
+			"emission_mode" : "loop",
+			"emission_rate" : 6,
+			"glow" : false,
+			"guid" : 0,
+			"hidden" : false,
+			"keep_local" : true,
+			"mesh" : "Mesh/rocket.obj",
+			"mesh_diffuse" : "Textures/obj_interactive_bikeseat_dif.tga",
+			"name" : "orange shot 1",
+			"particle" : "mesh",
+            "color" : {
+               "a" : 1.0,
+               "b" : 0.0,
+               "g" : 0.5,
+               "r" : 0.9
+            },
+			"rotation_axis" : {
+			   "x" : 0.0,
+			   "y" : 1.0,
+			   "z" : 0.0
+			},
+            "rotation_delta" : 0.0,
+            "rotation_max" : 180.0,
+            "rotation_min" : 180.0,
+			"scene_blend" : "alpha_blend",
+			"shadows" : true,
+			"soft_particles_bias" : 1024,
+			"time_to_live_delta" : 0.0,
+			"time_to_live_max" : 0.3,
+			"time_to_live_min" : 0.3,
+			"time_to_live_val" : 0.3,
+			"visual_particle_quota" : 1001
+		 }
+      ],
+      "scale" : 1,
+      "scale_time" : 4,
+      "scale_velocity" : 0.0,
+      "system_type" : "stream"
+   }
+}

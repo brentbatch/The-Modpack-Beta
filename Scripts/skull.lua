@@ -81,7 +81,7 @@ function skull.client_onFixedUpdate( self, dt )
 	for k, bullet in pairs(self.bullets) do
 		if bullet then
 			if bullet.alive + dt > skull.livetime or bullet.hit then --lives for 2 sec, clean up after
-				bullet.effect:setPosition(sm.vec3.new(0,0,1000000))
+				bullet.effect:setPosition(sm.vec3.new(0,0,1000))
 				bullet.effect:stop()
 				--bullet.effect2:setPosition(sm.vec3.new(0,0,1000000))
 				--bullet.effect2:stop()
@@ -122,20 +122,15 @@ function skull.client_onFixedUpdate( self, dt )
 				bullet.hit = result.pointWorld
 			end
 			
-			--sm.particle.createParticle( "p_spudgun_basic_impact_potato", bullet.pos, rot, sm.color.new(0.2,0.2,0.2,1) )
-			--sm.particle.createParticle( "paint_smoke", bullet.pos, rot, sm.color.new(0.2,0.2,0.2,1) )
 			
-			bullet.pos = bullet.pos + bullet.direction* dt
-			bullet.effect:setPosition(bullet.pos)
-			--bullet.effect2:setPosition(bullet.pos)
-			bullet.effect:setVelocity(bullet.direction)
-			--bullet.effect2:setVelocity(bullet.direction)
-			local rot = sm.vec3.getRotation( sm.vec3.new( 0, 1, 0 ), bullet.direction )
-			--if bullet.tick%2 == 1 then
+			if not (bullet.alive + dt > skull.livetime or bullet.hit) then
+				bullet.pos = bullet.pos + bullet.direction* dt
+				bullet.effect:setPosition(bullet.pos)
+				bullet.effect:setVelocity(bullet.direction)
+				local rot = sm.vec3.getRotation( sm.vec3.new( 0, 1, 0 ), bullet.direction )
 				bullet.effect:setRotation( rot )
-			--else
-			--	bullet.effect2:setRotation( rot )
-			--end
+			end
+
 			bullet.alive = bullet.alive + dt
 			bullet.tick = bullet.tick + 1
 		end
